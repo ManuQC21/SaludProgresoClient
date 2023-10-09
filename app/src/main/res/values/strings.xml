@@ -1,10 +1,9 @@
 <resources>
-    <string name="app_name">NanoTech-App</string>
+    <string name="app_name">SaludProgreso</string>
     <string name="label_usuario">Correo Electrónico</string>
     <string name="label_password">Contraseña</string>
     <string name="label_start_session">Iniciar Sesión</string>
     <string name="label_nuevoUser"><u>Nuevo Usuario ? Registrarme Ahora</u></string>
-    <string name="label_olvide_password">Olvide mi contraseña ?</string>
     <string name="label_bienvenida">Hola ! - Identifíquese para iniciar sesión</string>
     <string name="title_activity_inicio">InicioActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -13,15 +12,9 @@
     <string name="nav_header_subtitle">mquispecueva1@upao.edu.pe</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Cerrar Sesión</string>
-    <string name="descripcion_producto">Este producto electrónico de computadoras combina potencia y rendimiento en un diseño elegante y compacto. Con una amplia capacidad de almacenamiento y un procesador de última generación, ofrece un rendimiento excepcional. Su carcasa duradera y ergonómica protege los componentes internos, mientras que su tamaño y portabilidad lo hacen perfecto para cualquier entorno. Su descripción detallada permite conocer todas las características y beneficios clave del producto, asegurando una experiencia informática fluida y productiva.</string>
-    <string name="medida_producto">Unidades</string>
-    <string name="cantidad_producto">16</string>
-    <string name="precio_producto">S/. 16.00</string>
     <string name="menu_home">Inicio</string>
-    <string name="menu_gallery">Mis Compras</string>
+    <string name="menu_gallery">Menu de galeria</string>
     <string name="menu_slideshow">Configuración</string>
-    <string name="add_shop">Añadir al Carrito</string>
-    <string name="comprar_p">Comprar</string>
     <string-array name="tipoDoc">
         <item>DNI</item>
         <item>RUC</item>

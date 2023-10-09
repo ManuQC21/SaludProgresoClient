@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
     <LinearLayout
         android:id="@+id/linearParte1"
         android:layout_width="match_parent"
@@ -14,14 +14,14 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="273dp"
-            android:background="@drawable/green_bg">
+            android:background="@drawable/blue_bg">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="156dp"
+                android:layout_width="270dp"
+                android:layout_height="191dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="55dp"
-                android:src="@drawable/logo" />
+                android:layout_marginTop="15dp"
+                android:src="@drawable/one" />
         </FrameLayout>
     </LinearLayout>
     <LinearLayout
@@ -121,23 +121,4 @@
             android:gravity="center|center_horizontal"
             android:text="@string/label_nuevoUser"/>
     </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_below="@+id/linearParte5"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/san_francisco"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:gravity="center|center_horizontal"
-            android:text="@string/label_olvide_password"/>
-
-    </LinearLayout>
-
 </RelativeLayout>
