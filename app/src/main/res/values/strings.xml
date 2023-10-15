@@ -13,8 +13,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Cerrar Sesión</string>
     <string name="menu_home">Inicio</string>
-    <string name="menu_gallery">Menu de galeria</string>
-    <string name="menu_slideshow">Configuración</string>
+    <string name="menu_gallery">Mis Citas</string>
+    <string name="menu_slideshow">Mi perfil</string>
     <string-array name="tipoDoc">
         <item>DNI</item>
         <item>RUC</item>

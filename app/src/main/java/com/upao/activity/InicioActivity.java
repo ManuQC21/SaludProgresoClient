@@ -30,7 +30,7 @@ public class InicioActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarInicio.toolbar);
-        binding.appBarInicio.fab.setOnClickListener(new View.OnClickListener() {
+        binding.appBarInicio.whatsappIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -42,7 +42,7 @@ public class InicioActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_inicio, R.id.nav_citas, R.id.nav_perfil)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_inicio);

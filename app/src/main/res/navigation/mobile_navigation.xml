@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_inicio">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.upao.activity.ui.home.HomeFragment"
+        android:id="@+id/nav_inicio"
+        android:name="com.upao.activity.ui.inicio.InicioFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.upao.activity.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_citas"
+        android:name="com.upao.activity.ui.citas.CitasFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_citas" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.upao.activity.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_perfil"
+        android:name="com.upao.activity.ui.perfil.PerfilFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_perfil" />
 </navigation>

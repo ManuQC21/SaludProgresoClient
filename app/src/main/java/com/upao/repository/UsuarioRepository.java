@@ -25,7 +25,7 @@ public class UsuarioRepository {
         }
         return repository;
     }
-
+    @SuppressWarnings("unchecked")
     public LiveData<GenericResponse<Usuario>> login(String correo, String clave){
         final MutableLiveData<GenericResponse<Usuario>> mld = new MutableLiveData<>();
         this.api.login(correo, clave).enqueue(new Callback<GenericResponse<Usuario>>() {
