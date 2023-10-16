@@ -1,21 +1,20 @@
 package com.upao.activity.entity.service;
 
-
 import java.util.Date;
 
 public class RecetaMedica {
-    private int ID_Receta;
+
+    private int id;
     private Paciente paciente;
     private Medico medico;
-    private Medicamentos medicamentos;
     private Date FechaReceta;
 
-    public int getID_Receta() {
-        return ID_Receta;
+    public int getId() {
+        return id;
     }
 
-    public void setID_Receta(int ID_Receta) {
-        this.ID_Receta = ID_Receta;
+    public void setId(int ID_Receta) {
+        this.id = ID_Receta;
     }
 
     public Paciente getPaciente() {
@@ -32,14 +31,6 @@ public class RecetaMedica {
 
     public void setMedico(Medico medico) {
         this.medico = medico;
-    }
-
-    public Medicamentos getMedicamentos() {
-        return medicamentos;
-    }
-
-    public void setMedicamentos(Medicamentos medicamentos) {
-        this.medicamentos = medicamentos;
     }
 
     public Date getFechaReceta() {

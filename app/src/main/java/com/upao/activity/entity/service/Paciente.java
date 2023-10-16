@@ -1,37 +1,33 @@
 package com.upao.activity.entity.service;
 
 import java.util.Date;
-import java.util.List;
 
 
 public class Paciente {
 
-    private int ID_Paciente;
+    private int id;
     private String nombre;
     private String apellidoPaterno;
     private String apellidoMaterno;
     private Date fechanacimiento;
     private String tipoDoc;
     private String numDoc;
-    private String genero;
+    private String departamento;
+    private String provincia;
     private String distrito;
     private String direccion;
+    private String genero;
     private String telefono;
     private String alergias;
     private String informacionadicional;
-    private List<CitasMedicas> citasMedicas;
-    private List<Medicamentos> medicamentos;
-    private List<RegistroSalud> registrosSalud;
-    private List<ControlMedico> controlMedico;
-    private Medico medicoAsignado;
     private DocumentoAlmacenado foto;
 
-    public int getID_Paciente() {
-        return ID_Paciente;
+    public int getId() {
+        return id;
     }
 
-    public void setID_Paciente(int ID_Paciente) {
-        this.ID_Paciente = ID_Paciente;
+    public void setId(int ID_Paciente) {
+        this.id = ID_Paciente;
     }
 
     public String getNombre() {
@@ -106,6 +102,22 @@ public class Paciente {
         this.direccion = direccion;
     }
 
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
     public String getTelefono() {
         return telefono;
     }
@@ -136,46 +148,6 @@ public class Paciente {
 
     public void setFoto(DocumentoAlmacenado foto) {
         this.foto = foto;
-    }
-
-    public List<CitasMedicas> getCitasMedicas() {
-        return citasMedicas;
-    }
-
-    public void setCitasMedicas(List<CitasMedicas> citasMedicas) {
-        this.citasMedicas = citasMedicas;
-    }
-
-    public List<Medicamentos> getMedicamentos() {
-        return medicamentos;
-    }
-
-    public void setMedicamentos(List<Medicamentos> medicamentos) {
-        this.medicamentos = medicamentos;
-    }
-
-    public List<RegistroSalud> getRegistrosSalud() {
-        return registrosSalud;
-    }
-
-    public void setRegistrosSalud(List<RegistroSalud> registrosSalud) {
-        this.registrosSalud = registrosSalud;
-    }
-
-    public List<ControlMedico> getControlMedico() {
-        return controlMedico;
-    }
-
-    public void setControlMedico(List<ControlMedico> controlMedico) {
-        this.controlMedico = controlMedico;
-    }
-
-    public Medico getMedicoAsignado() {
-        return medicoAsignado;
-    }
-
-    public void setMedicoAsignado(Medico medicoAsignado) {
-        this.medicoAsignado = medicoAsignado;
     }
 
 }

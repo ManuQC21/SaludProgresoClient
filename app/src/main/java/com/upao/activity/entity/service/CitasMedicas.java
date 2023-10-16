@@ -3,11 +3,13 @@ package com.upao.activity.entity.service;
 import java.util.Date;
 
 public class CitasMedicas {
+
     private int id;
     private Paciente paciente;
     private Date FechaHoraCita;
     private String AreaEspecialidad;
     private String Comentarios;
+    private Medico medico;
 
     public int getId() {
         return id;
@@ -49,5 +51,11 @@ public class CitasMedicas {
         Comentarios = comentarios;
     }
 
+    public Medico getMedico() {
+        return medico;
+    }
 
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
 }

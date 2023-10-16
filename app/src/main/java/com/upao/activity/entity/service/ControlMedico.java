@@ -3,19 +3,20 @@ package com.upao.activity.entity.service;
 import java.util.Date;
 
 public class ControlMedico {
-    private int ID_Control;
+
+    private int id;
     private Paciente paciente;
     private Medico medico;
     private Date FechaControl;
     private String Resultados;
     private byte[] Documentos;
 
-    public int getID_Control() {
-        return ID_Control;
+    public int getId() {
+        return id;
     }
 
-    public void setID_Control(int ID_Control) {
-        this.ID_Control = ID_Control;
+    public void setId(int ID_Control) {
+        this.id = ID_Control;
     }
 
     public Paciente getPaciente() {

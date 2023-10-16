@@ -3,21 +3,20 @@ package com.upao.activity.entity.service;
 import java.math.BigDecimal;
 import java.util.Date;
 
-
 public class RegistroSalud {
-    private int ID_Registro;
+    private int id;
     private Paciente paciente;
     private Date fechaRegistro;
     private BigDecimal peso;
     private String presionArterial;
     private BigDecimal nivelGlucosa;
 
-    public int getID_Registro() {
-        return ID_Registro;
+    public int getId() {
+        return id;
     }
 
-    public void setID_Registro(int ID_Registro) {
-        this.ID_Registro = ID_Registro;
+    public void setId(int ID_Registro) {
+        this.id = ID_Registro;
     }
 
     public Paciente getPaciente() {

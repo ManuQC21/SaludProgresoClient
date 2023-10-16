@@ -3,7 +3,7 @@ package com.upao.activity.entity.service;
 import java.util.Date;
 
 public class Medicamentos {
-    private int ID_Medicamento;
+    private int id;
     private Paciente paciente;
     private String NombreMedicamento;
     private Date FechaInicio;
@@ -11,12 +11,12 @@ public class Medicamentos {
     private String IndicacionesMedicas;
     private boolean RecordatorioMedicacion;
 
-    public int getID_Medicamento() {
-        return ID_Medicamento;
+    public int getId() {
+        return id;
     }
 
-    public void setID_Medicamento(int ID_Medicamento) {
-        this.ID_Medicamento = ID_Medicamento;
+    public void setId(int ID_Medicamento) {
+        this.id = ID_Medicamento;
     }
 
     public Paciente getPaciente() {
