@@ -156,7 +156,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
@@ -180,7 +180,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
@@ -197,7 +197,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -221,7 +221,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp"
+                                        android:textSize="12sp"
                                         android:clickable="true"
                                         android:focusable="false" />
                                 </com.google.android.material.textfield.TextInputLayout>
@@ -240,8 +240,9 @@
                                         android:id="@+id/dropdownGeneros"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:inputType="none"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -266,7 +267,7 @@
                                         android:clickable="true"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="none"
-                                        android:textSize="15sp" />
+                                        android:textSize="10sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
@@ -284,7 +285,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="number"
-                                        android:textSize="15sp" />
+                                        android:textSize="10sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
@@ -310,7 +311,7 @@
                                         android:clickable="true"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="none"
-                                        android:textSize="15sp" />
+                                        android:textSize="10sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
@@ -329,7 +330,7 @@
                                         android:clickable="true"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="none"
-                                        android:textSize="15sp" />
+                                        android:textSize="10sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
@@ -355,7 +356,7 @@
                                         android:clickable="true"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="none"
-                                        android:textSize="15sp" />
+                                        android:textSize="10sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
@@ -395,7 +396,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -416,7 +417,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -437,7 +438,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="15sp" />
+                                        android:textSize="12sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                         </LinearLayout>
@@ -511,7 +512,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="textEmailAddress"
-                                        android:textSize="15sp" />
+                                        android:textSize="13sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
@@ -528,7 +529,7 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="textPassword"
-                                        android:textSize="15sp" />
+                                        android:textSize="13sp" />
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.button.MaterialButton

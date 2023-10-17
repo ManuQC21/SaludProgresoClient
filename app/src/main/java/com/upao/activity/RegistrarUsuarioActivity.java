@@ -686,15 +686,288 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
     }
 
     private void loadDepartamentos() {
-        // Carga tus datos de departamentos, provincias y distritos aquí
-        // Ejemplo:
+        // AMAZONAS:
         HashMap<String, String[]> amazonasData = new HashMap<>();
         amazonasData.put("Condorcanqui", getResources().getStringArray(R.array.Condorcanqui));
         amazonasData.put("Bagua", getResources().getStringArray(R.array.Bagua));
         amazonasData.put("Bongara", getResources().getStringArray(R.array.Bongara));
+        amazonasData.put("Utcubamba", getResources().getStringArray(R.array.Utcubamba));
+        amazonasData.put("Luya", getResources().getStringArray(R.array.Luya));
+        amazonasData.put("Rodriguez de Mendoza", getResources().getStringArray(R.array.RodriguezDeMendoza));
+        amazonasData.put("Chachapoyas", getResources().getStringArray(R.array.Chachapoyas));
+
+        // Ancash:
+        HashMap<String, String[]> ancashData = new HashMap<>();
+        amazonasData.put("Aija", getResources().getStringArray(R.array.Aija));
+        amazonasData.put("Antonio Raymondi", getResources().getStringArray(R.array.AntonioRaymondi));
+        amazonasData.put("Asunción", getResources().getStringArray(R.array.Asuncion));
+        amazonasData.put("Bolognesi", getResources().getStringArray(R.array.Bolognesi));
+        amazonasData.put("Carhuaz", getResources().getStringArray(R.array.Carhuaz));
+        amazonasData.put("Casma", getResources().getStringArray(R.array.Casma));
+        amazonasData.put("Corongo", getResources().getStringArray(R.array.Corongo));
+        amazonasData.put("Huaraz", getResources().getStringArray(R.array.Huaraz));
+        amazonasData.put("Huari", getResources().getStringArray(R.array.Huari));
+        amazonasData.put("Huarmey", getResources().getStringArray(R.array.Huarmey));
+        amazonasData.put("Mariscal Luzuriaga", getResources().getStringArray(R.array.MariscalLuzuriaga));
+        amazonasData.put("Ocros", getResources().getStringArray(R.array.Ocros));
+        amazonasData.put("Pallasca", getResources().getStringArray(R.array.Pallasca));
+        amazonasData.put("Pomabamba", getResources().getStringArray(R.array.Pomabamba));
+        amazonasData.put("Recuay", getResources().getStringArray(R.array.Recuay));
+        amazonasData.put("Santa", getResources().getStringArray(R.array.Santa));
+        amazonasData.put("Sihuas", getResources().getStringArray(R.array.Sihuas));
+        amazonasData.put("Yungay", getResources().getStringArray(R.array.Yungay));
+        // APURIMAC:
+        HashMap<String, String[]> apurimacData = new HashMap<>();
+        amazonasData.put("Abancay", getResources().getStringArray(R.array.Abancay));
+        amazonasData.put("Andahuaylas", getResources().getStringArray(R.array.Andahuaylas));
+        amazonasData.put("Antabamba", getResources().getStringArray(R.array.Antabamba));
+        amazonasData.put("Aymaraes", getResources().getStringArray(R.array.Aymaraes));
+        amazonasData.put("Chincheros", getResources().getStringArray(R.array.Chincheros));
+        amazonasData.put("Cotabambas", getResources().getStringArray(R.array.Cotabambas));
+        amazonasData.put("Grau", getResources().getStringArray(R.array.Grau));
+        amazonasData.put("Huancarama", getResources().getStringArray(R.array.Huancarama));
+        amazonasData.put("Tambobamba", getResources().getStringArray(R.array.Tambobamba));
+        amazonasData.put("Coyllurqui", getResources().getStringArray(R.array.Coyllurqui));
+        amazonasData.put("Haquira", getResources().getStringArray(R.array.Haquira));
+        amazonasData.put("Lucanas", getResources().getStringArray(R.array.Lucanas));
+        amazonasData.put("Saul Cantoral", getResources().getStringArray(R.array.SaulCantoral));
+        amazonasData.put("San Pedro de Cachora", getResources().getStringArray(R.array.SanPedroDeCachora));
+        //Arequipa:
+        HashMap<String, String[]> arequipaData = new HashMap<>();
+        arequipaData.put("Arequipa", getResources().getStringArray(R.array.Arequipa));
+        arequipaData.put("Camaná", getResources().getStringArray(R.array.Camana));
+        arequipaData.put("Caravelí", getResources().getStringArray(R.array.Caraveli));
+        arequipaData.put("Castilla", getResources().getStringArray(R.array.Castilla));
+        arequipaData.put("Caylloma", getResources().getStringArray(R.array.Caylloma));
+        arequipaData.put("Condesuyos", getResources().getStringArray(R.array.Condesuyos));
+        arequipaData.put("Islay", getResources().getStringArray(R.array.Islay));
+        arequipaData.put("La Unión", getResources().getStringArray(R.array.LaUnion));
+        arequipaData.put("Castilla", getResources().getStringArray(R.array.Castilla));
+        arequipaData.put("Huarinavi", getResources().getStringArray(R.array.Huarinavi));
+        arequipaData.put("Piscopi", getResources().getStringArray(R.array.Piscopi));
+        //Ayacucho:
+        HashMap<String, String[]> ayacuchoData = new HashMap<>();
+        ayacuchoData.put("Huamanga", getResources().getStringArray(R.array.Huamanga));
+        ayacuchoData.put("Cangallo", getResources().getStringArray(R.array.Cangallo));
+        ayacuchoData.put("Huanta", getResources().getStringArray(R.array.Huanta));
+        ayacuchoData.put("La Mar", getResources().getStringArray(R.array.LaMar));
+        ayacuchoData.put("Lucanas", getResources().getStringArray(R.array.Lucanas));
+        ayacuchoData.put("Parinacochas", getResources().getStringArray(R.array.Parinacochas));
+        ayacuchoData.put("Paucar del Sara Sara", getResources().getStringArray(R.array.PaucarDelSaraSara));
+        ayacuchoData.put("Sucre", getResources().getStringArray(R.array.Sucre));
+        ayacuchoData.put("Victor Fajardo", getResources().getStringArray(R.array.VictorFajardo));
+        ayacuchoData.put("Vilcas Huamán", getResources().getStringArray(R.array.VilcasHuaman));
+        //CAJAMARCA:
+        HashMap<String, String[]> cajamarcaData = new HashMap<>();
+        cajamarcaData.put("Cajamarca", getResources().getStringArray(R.array.Cajamarca));
+        cajamarcaData.put("Cajabamba", getResources().getStringArray(R.array.Cajabamba));
+        cajamarcaData.put("Celendín", getResources().getStringArray(R.array.Celendin));
+        cajamarcaData.put("Chota", getResources().getStringArray(R.array.Chota));
+        cajamarcaData.put("Contumaza", getResources().getStringArray(R.array.Contumaza));
+        cajamarcaData.put("Cutervo", getResources().getStringArray(R.array.Cutervo));
+        cajamarcaData.put("Hualgayoc", getResources().getStringArray(R.array.Hualgayoc));
+        cajamarcaData.put("Jaen", getResources().getStringArray(R.array.Jaen));
+        cajamarcaData.put("San Ignacio", getResources().getStringArray(R.array.SanIgnacio));
+        cajamarcaData.put("San Marcos", getResources().getStringArray(R.array.SanMarcos));
+        cajamarcaData.put("San Miguel", getResources().getStringArray(R.array.SanMiguel));
+        cajamarcaData.put("San Pablo", getResources().getStringArray(R.array.SanPablo));
+        cajamarcaData.put("Santa Cruz", getResources().getStringArray(R.array.SantaCruz));
+        //CALLAO:
+        HashMap<String, String[]> callaoData = new HashMap<>();
+        cajamarcaData.put("Callao", getResources().getStringArray(R.array.Callao));
+        //CUSCO:
+        HashMap<String, String[]> cuscoData = new HashMap<>();
+        cuscoData.put("Acomayo", getResources().getStringArray(R.array.Acomayo));
+        cuscoData.put("Anta", getResources().getStringArray(R.array.Anta));
+        cuscoData.put("Calca", getResources().getStringArray(R.array.Calca));
+        cuscoData.put("Canas", getResources().getStringArray(R.array.Canas));
+        cuscoData.put("Canchis", getResources().getStringArray(R.array.Canchis));
+        cuscoData.put("Chumbivilcas", getResources().getStringArray(R.array.Chumbivilcas));
+        cuscoData.put("Cusco", getResources().getStringArray(R.array.Cusco));
+        cuscoData.put("Espinar", getResources().getStringArray(R.array.Espinar));
+        cuscoData.put("La Convención", getResources().getStringArray(R.array.LaConvencion));
+        cuscoData.put("Paruro", getResources().getStringArray(R.array.Paruro));
+        cuscoData.put("Paucartambo", getResources().getStringArray(R.array.Paucartambo));
+        cuscoData.put("Quispicanchi", getResources().getStringArray(R.array.Quispicanchi));
+        cuscoData.put("Urubamba", getResources().getStringArray(R.array.Urubamba));
+        //HUANCAVELICA:
+        HashMap<String, String[]> huancavelicaData = new HashMap<>();
+        huancavelicaData.put("Huancavelica", getResources().getStringArray(R.array.Huancavelica));
+        huancavelicaData.put("Acobamba", getResources().getStringArray(R.array.Acobamba));
+        huancavelicaData.put("Angaraes", getResources().getStringArray(R.array.Angaraes));
+        huancavelicaData.put("Castrovirreyna", getResources().getStringArray(R.array.Castrovirreyna));
+        huancavelicaData.put("Churcampa", getResources().getStringArray(R.array.Churcampa));
+        huancavelicaData.put("Huaytara", getResources().getStringArray(R.array.Huaytara));
+        huancavelicaData.put("Tayacaja", getResources().getStringArray(R.array.Tayacaja));
+        //HUANUCO:
+        HashMap<String, String[]> huanucoData = new HashMap<>();
+        huanucoData.put("Huanuco", getResources().getStringArray(R.array.Huanuco));
+        huanucoData.put("Ambo", getResources().getStringArray(R.array.Ambo));
+        huanucoData.put("Dos de Mayo", getResources().getStringArray(R.array.DosdeMayo));
+        huanucoData.put("Huacaybamba", getResources().getStringArray(R.array.Huacaybamba));
+        huanucoData.put("Huamalíes", getResources().getStringArray(R.array.Huamalies));
+        huanucoData.put("Leoncio Prado", getResources().getStringArray(R.array.LeoncioPrado));
+        huanucoData.put("Marañón", getResources().getStringArray(R.array.Marañon));
+        huanucoData.put("Pachitea", getResources().getStringArray(R.array.Pachitea));
+        huanucoData.put("Puerto Inca", getResources().getStringArray(R.array.PuertoInca));
+        huanucoData.put("Lauricocha", getResources().getStringArray(R.array.Lauricocha));
+        huanucoData.put("Yarowilca", getResources().getStringArray(R.array.Yarowilca));
+        //ICA:
+        HashMap<String, String[]> icaData = new HashMap<>();
+        icaData.put("Ica", getResources().getStringArray(R.array.Ica));
+        icaData.put("Chincha", getResources().getStringArray(R.array.Chincha));
+        icaData.put("Nazca", getResources().getStringArray(R.array.Nazca));
+        icaData.put("Palpa", getResources().getStringArray(R.array.Palpa));
+        icaData.put("Pisco", getResources().getStringArray(R.array.Pisco));
+        icaData.put("Subtanjalla", getResources().getStringArray(R.array.Subtanjalla));
+        //JUNIN
+        HashMap<String, String[]> juninData = new HashMap<>();
+        juninData.put("Huancayo", getResources().getStringArray(R.array.Huancayo));
+        juninData.put("Concepción", getResources().getStringArray(R.array.Concepcion));
+        juninData.put("Chanchamayo", getResources().getStringArray(R.array.Chanchamayo));
+        juninData.put("Jauja", getResources().getStringArray(R.array.Jauja));
+        juninData.put("Junín", getResources().getStringArray(R.array.Junin));
+        juninData.put("Satipo", getResources().getStringArray(R.array.Satipo));
+        juninData.put("Tarma", getResources().getStringArray(R.array.Tarma));
+        juninData.put("Yauli", getResources().getStringArray(R.array.Yauli));
+        juninData.put("Chupaca", getResources().getStringArray(R.array.Chupaca));
+        //LA LIBERTAD:
+        HashMap<String, String[]> laLibertadData = new HashMap<>();
+        laLibertadData.put("Trujillo", getResources().getStringArray(R.array.Trujillo));
+        laLibertadData.put("Ascope", getResources().getStringArray(R.array.Ascope));
+        laLibertadData.put("Bolívar", getResources().getStringArray(R.array.Bolivar));
+        laLibertadData.put("Gran Chimú", getResources().getStringArray(R.array.GranChimu));
+        laLibertadData.put("Julcán", getResources().getStringArray(R.array.Julcan));
+        laLibertadData.put("Pacasmayo", getResources().getStringArray(R.array.Pacasmayo));
+        laLibertadData.put("Pataz", getResources().getStringArray(R.array.Pataz));
+        laLibertadData.put("Sánchez Carrión", getResources().getStringArray(R.array.SanchezCarrion));
+        laLibertadData.put("Santiago de Chuco", getResources().getStringArray(R.array.SantiagodeChuco));
+        laLibertadData.put("Virú", getResources().getStringArray(R.array.Viru));
+        //LAMBAYEQUE:
+        HashMap<String, String[]> lambayequeData = new HashMap<>();
+        lambayequeData.put("Chiclayo", getResources().getStringArray(R.array.Motupe));
+        lambayequeData.put("Ferreñafe", getResources().getStringArray(R.array.Ferrenafe));
+        lambayequeData.put("Olmos", getResources().getStringArray(R.array.Olmos));
+        lambayequeData.put("Lambayeque", getResources().getStringArray(R.array.lambayeque));
+        //LIMA:
+        HashMap<String, String[]> limaData = new HashMap<>();
+        limaData.put("Lima", getResources().getStringArray(R.array.lima));
+        limaData.put("Barranca", getResources().getStringArray(R.array.Barranca));
+        limaData.put("Cajatambo", getResources().getStringArray(R.array.Cajatambo));
+        limaData.put("Canta", getResources().getStringArray(R.array.Canta));
+        limaData.put("Cañete", getResources().getStringArray(R.array.Cañete));
+        limaData.put("Huaral", getResources().getStringArray(R.array.Huaral));
+        limaData.put("Huarochirí", getResources().getStringArray(R.array.Huarochiri));
+        limaData.put("Huaura", getResources().getStringArray(R.array.Huaura));
+        limaData.put("Oyon", getResources().getStringArray(R.array.Oyon));
+        limaData.put("Yauyos", getResources().getStringArray(R.array.Yauyos));
+        //LORETO:
+        HashMap<String, String[]> loretoData = new HashMap<>();
+        loretoData.put("Alto Amazonas", getResources().getStringArray(R.array.AltoAmazonas));
+        loretoData.put("Datem del Marañón", getResources().getStringArray(R.array.DatemdelMaranon));
+        loretoData.put("Loreto", getResources().getStringArray(R.array.loreto));
+        loretoData.put("Mariscal Ramón Castilla", getResources().getStringArray(R.array.MariscalRamonCastilla));
+        loretoData.put("Maynas", getResources().getStringArray(R.array.Maynas));
+        loretoData.put("Requena", getResources().getStringArray(R.array.Requena));
+        loretoData.put("Ucayali", getResources().getStringArray(R.array.Ucayali));
+        //MADRE DE DIOS:
+        HashMap<String, String[]> madreDeDiosData = new HashMap<>();
+        madreDeDiosData.put("Tambopata", getResources().getStringArray(R.array.Tambopata));
+        madreDeDiosData.put("Manu", getResources().getStringArray(R.array.Manu));
+        madreDeDiosData.put("Tahuamanu", getResources().getStringArray(R.array.Tahuamanu));
+        //MOQUEGUA:
+        HashMap<String, String[]> moqueguaData = new HashMap<>();
+        moqueguaData.put("Mariscal Nieto", getResources().getStringArray(R.array.MariscalNieto));
+        moqueguaData.put("Ilo", getResources().getStringArray(R.array.Ilo));
+        moqueguaData.put("General Sánchez Cerro", getResources().getStringArray(R.array.GeneralSanchezCerro));
+        //PASCO:
+        HashMap<String, String[]> pascoData = new HashMap<>();
+        pascoData.put("Pasco", getResources().getStringArray(R.array.Pasco));
+        pascoData.put("Daniel Alcides Carrion", getResources().getStringArray(R.array.DanielAlcidesCarrion));
+        pascoData.put("Oxapampa", getResources().getStringArray(R.array.Oxapampa));
+        //PIURA:
+        HashMap<String, String[]> piuraData = new HashMap<>();
+        piuraData.put("Ayabaca", getResources().getStringArray(R.array.Ayabaca));
+        piuraData.put("Huancabamba", getResources().getStringArray(R.array.Huancabamba));
+        piuraData.put("Luciano Castillo Colonna", getResources().getStringArray(R.array.LucianoCastilloColonna));
+        piuraData.put("Mercedes Cáceres", getResources().getStringArray(R.array.MercedesCaceres));
+        piuraData.put("Sechura", getResources().getStringArray(R.array.Sechura));
+        piuraData.put("Paita", getResources().getStringArray(R.array.Paita));
+        piuraData.put("Piura", getResources().getStringArray(R.array.Piura));
+        piuraData.put("Talara", getResources().getStringArray(R.array.Talara));
+        //PUNO:
+        HashMap<String, String[]> punoData = new HashMap<>();
+        punoData.put("Azángaro", getResources().getStringArray(R.array.Azangaro));
+        punoData.put("Carabaya", getResources().getStringArray(R.array.Carabaya));
+        punoData.put("Chucuito", getResources().getStringArray(R.array.Chucuito));
+        punoData.put("El Collao", getResources().getStringArray(R.array.ElCollao));
+        punoData.put("Huancané", getResources().getStringArray(R.array.Huancane));
+        punoData.put("Lampa", getResources().getStringArray(R.array.Lampa));
+        punoData.put("Melgar", getResources().getStringArray(R.array.Melgar));
+        punoData.put("Puno", getResources().getStringArray(R.array.Puno));
+        punoData.put("San Antonio de Putina", getResources().getStringArray(R.array.SanAntoniodePutina));
+        punoData.put("Sandia", getResources().getStringArray(R.array.Sandia));
+        punoData.put("Yunguyo", getResources().getStringArray(R.array.Yunguyo));
+        //SAN MARTIN:
+        HashMap<String, String[]> sanMartinData = new HashMap<>();
+        sanMartinData.put("Bellavista", getResources().getStringArray(R.array.Bellavista));
+        sanMartinData.put("El Dorado", getResources().getStringArray(R.array.ElDorado));
+        sanMartinData.put("Huallaga", getResources().getStringArray(R.array.Huallaga));
+        sanMartinData.put("Lamas", getResources().getStringArray(R.array.Lamas));
+        sanMartinData.put("Mariscal Caceres", getResources().getStringArray(R.array.MariscalCaceres));
+        sanMartinData.put("Moyobamba", getResources().getStringArray(R.array.Moyobamba));
+        sanMartinData.put("Picota", getResources().getStringArray(R.array.Picota));
+        sanMartinData.put("Rioja", getResources().getStringArray(R.array.Rioja));
+        sanMartinData.put("San Martín", getResources().getStringArray(R.array.SanMartin));
+        sanMartinData.put("Tocache", getResources().getStringArray(R.array.Tocache));
+        //TACNA:
+        HashMap<String, String[]> tacnaData = new HashMap<>();
+        tacnaData.put("Tacna", getResources().getStringArray(R.array.Tacna));
+        tacnaData.put("Candarave", getResources().getStringArray(R.array.Candarave));
+        tacnaData.put("Jorge Basadre", getResources().getStringArray(R.array.JorgeBasadre));
+        tacnaData.put("Tarata", getResources().getStringArray(R.array.Tarata));
+        //TUMBES:
+        HashMap<String, String[]> tumbesData = new HashMap<>();
+        tumbesData.put("Tumbes", getResources().getStringArray(R.array.Tumbes));
+        tumbesData.put("Zarumilla", getResources().getStringArray(R.array.Zarumilla));
+        tumbesData.put("Contralmirante Villar", getResources().getStringArray(R.array.ContralmiranteVillar));
+        //UCAYALI:
+        HashMap<String, String[]> ucayaliData = new HashMap<>();
+        ucayaliData.put("Pucallpa", getResources().getStringArray(R.array.Pucallpa));
+        ucayaliData.put("Coronel Portillo", getResources().getStringArray(R.array.CoronelPortillo));
+        ucayaliData.put("Atalaya", getResources().getStringArray(R.array.Atalaya));
+        ucayaliData.put("Padre Abad", getResources().getStringArray(R.array.PadreAbad));
+        ucayaliData.put("Purus", getResources().getStringArray(R.array.Purus));
+
+
         // Añade más provincias y departamentos según tus necesidades
 
         data.put("Amazonas", amazonasData);
+        data.put("Ancash", ancashData);
+        data.put("Apurimac", apurimacData);
+        data.put("Arequipa", arequipaData);
+        data.put("Ayacucho", ayacuchoData);
+        data.put("Cajamarca", cajamarcaData);
+        data.put("Callao", callaoData);
+        data.put("Cusco", cuscoData);
+        data.put("Huancavelica", huancavelicaData);
+        data.put("Huanuco", huanucoData);
+        data.put("Ica", icaData);
+        data.put("Junin", juninData);
+        data.put("La Libertad", laLibertadData);
+        data.put("Lambayeque", lambayequeData);
+        data.put("Lima", limaData);
+        data.put("Loreto", loretoData);
+        data.put("Madre de Dios", madreDeDiosData);
+        data.put("Moquegua", moqueguaData);
+        data.put("Pasco", pascoData);
+        data.put("Piura", piuraData);
+        data.put("Puno", punoData);
+        data.put("San Martin", sanMartinData);
+        data.put("Tacna", tacnaData);
+        data.put("Tumbes", tumbesData);
+        data.put("Ucayali", ucayaliData);
+
         // Agrega más departamentos según tus necesidades
     }
     private void showDatePickerDialog() {

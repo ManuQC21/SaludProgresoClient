@@ -47,7 +47,6 @@
         <item>Tacna</item>
         <item>Tumbes</item>
         <item>Ucayali</item>
-        <item>Lima</item>
     </string-array>
     <string-array name="generos">
         <item>Masculino</item>
@@ -62,7 +61,7 @@
         <item>Bongara</item>
         <item>Utcubamba</item>
         <item>Luya</item>
-        <item>Rodríguez de Mendoza</item>
+        <item>Rodriguez de Mendoza</item>
         <item>Chachapoyas</item>
     </string-array>
 
@@ -103,20 +102,20 @@
         <item>Coyllurqui</item>
         <item>Haquira</item>
         <item>Lucanas</item>
-        <item>Saúl Cantoral</item>
+        <item>Saul Cantoral</item>
         <item>San Pedro de Cachora</item>
     </string-array>
 
     <!-- Departamento 4: Arequipa -->
     <string-array name="Arequipa">
         <item>Arequipa</item>
-        <item>Camaná</item>
+        <item>Camana</item>
         <item>Caravelí</item>
         <item>Castilla</item>
         <item>Caylloma</item>
         <item>Condesuyos</item>
         <item>Islay</item>
-        <item>La Unión</item>
+        <item>La Union</item>
         <item>Castilla</item>
         <item>Huarinavi</item>
         <item>Píscopi</item>
@@ -140,12 +139,12 @@
     <string-array name="Cajamarca">
         <item>Cajamarca</item>
         <item>Cajabamba</item>
-        <item>Celendín</item>
+        <item>Celendin</item>
         <item>Chota</item>
-        <item>Contumazá</item>
+        <item>Contumaza</item>
         <item>Cutervo</item>
         <item>Hualgayoc</item>
-        <item>Jaén</item>
+        <item>Jaen</item>
         <item>San Ignacio</item>
         <item>San Marcos</item>
         <item>San Miguel</item>
@@ -168,7 +167,7 @@
         <item>Chumbivilcas</item>
         <item>Cusco</item>
         <item>Espinar</item>
-        <item>La Convención</item>
+        <item>La Convencion</item>
         <item>Paruro</item>
         <item>Paucartambo</item>
         <item>Quispicanchi</item>
@@ -182,7 +181,7 @@
         <item>Castrovirreyna</item>
         <item>Churcampa</item>
         <item>Huancavelica</item>
-        <item>Huaytará</item>
+        <item>Huaytara</item>
         <item>Tayacaja</item>
     </string-array>
 
@@ -193,9 +192,9 @@
         <item>Huacaybamba</item>
         <item>Huamalíes</item>
         <item>Huanuco</item>
-        <item>La Unión</item>
+        <item>La Union</item>
         <item>Leoncio Prado</item>
-        <item>Marañón</item>
+        <item>Marañon</item>
         <item>Pachitea</item>
         <item>Puerto Inca</item>
         <item>Lauricocha</item>
@@ -229,22 +228,23 @@
     <!-- Departamento 13: La Libertad -->
     <string-array name="LaLibertad">
         <item>Ascope</item>
-        <item>Bolívar</item>
+        <item>Bolivar</item>
         <item>Gran Chimú</item>
         <item>Julcán</item>
         <item>Pacasmayo</item>
         <item>Pataz</item>
-        <item>Sánchez Carrión</item>
+        <item>Sanchez Carrion</item>
         <item>Santiago de Chuco</item>
         <item>Trujillo</item>
-        <item>Virú</item>
+        <item>Viru</item>
     </string-array>
 
     <!-- Departamento 14: Lambayeque -->
     <string-array name="Lambayeque">
-    <item>Chiclayo</item>
     <item>Ferreñafe</item>
     <item>Lambayeque</item>
+    <item>Motupe</item>
+    <item>Olmos</item>
     </string-array>
 
     <!-- Departamento 15: Lima -->
@@ -256,8 +256,8 @@
         <item>Huaral</item>
         <item>Huarochirí</item>
         <item>Huaura</item>
-        <item>Lima</item>
-        <item>Oyón</item>
+        <item>lima</item>
+        <item>Oyon</item>
         <item>Yauyos</item>
     </string-array>
 
@@ -303,7 +303,6 @@
         <item>Paita</item>
         <item>Piura</item>
         <item>Talara</item>
-
     </string-array>
 
     <!-- Departamento 21: Puno -->
@@ -350,7 +349,7 @@
         <item>Zarumilla</item>
     </string-array>
 
-    <!-- Departamento 25: Ucayali -->
+    <!-- Departamento constitucional 25: Ucayali -->
     <string-array name="Ucayali">
         <item>Atalaya</item>
         <item>Coronel Portillo</item>
@@ -358,21 +357,2461 @@
         <item>Purús</item>
     </string-array>
 
+    <!-- AMAZONAS -->
+    <!-- Provincia de Condorcanqui -->
     <string-array name="Condorcanqui">
-        <item>Distrito 1</item>
-        <item>Distrito 2</item>
-        <item>Distrito 3</item>
+        <item>Nieva</item>
+        <item>El Cenepa (Santa María de Nieva)</item>
+        <item>Río Santiago</item>
     </string-array>
 
+    <!-- Provincia de Bagua -->
     <string-array name="Bagua">
-        <item>Distrito 1</item>
-        <item>Distrito 2</item>
-        <item>Distrito 3</item>
+        <item>Bagua</item>
+        <item>La Peca</item>
+        <item>Aramango</item>
+        <item>Copallin</item>
+        <item>El Parco</item>
+        <item>Imaza</item>
     </string-array>
+
+    <!-- Provincia de Bongara -->
     <string-array name="Bongara">
-        <item>Distrito 1</item>
-        <item>Distrito 2</item>
-        <item>Distrito 3</item>
+        <item>Jumbilla</item>
+        <item>Chisquilla</item>
+        <item>Churuja</item>
+        <item>Corosha</item>
+        <item>Cuispes</item>
+        <item>Florida</item>
+        <item>Jazan</item>
+        <item>Recta</item>
+        <item>San Carlos</item>
+        <item>Shipasbamba</item>
+        <item>Valera</item>
+        <item>Yambrasbamba</item>
+    </string-array>
+
+    <!-- Provincia de Utcubamba -->
+    <string-array name="Utcubamba">
+        <item>Bagua Grande</item>
+        <item>Imaza</item>
+        <item>La Peca</item>
+    </string-array>
+
+    <!-- Provincia de Luya -->
+    <string-array name="Luya">
+        <item>Luya</item>
+        <item>Lamud</item>
+        <item>Leimebamba</item>
+        <item>Choctamal</item>
+        <item>María</item>
+        <item>Ocalli</item>
+        <item>Ocumal</item>
+        <item>Pisuquia</item>
+        <item>Providencia</item>
+        <item>San Cristóbal</item>
+        <item>San Francisco de Yeso</item>
+        <item>San Jerónimo</item>
+        <item>San Juan de Lopecancha</item>
+        <item>Santa Catalina</item>
+        <item>Santo Tomas</item>
+        <item>Tingo</item>
+        <item>Trita</item>
+    </string-array>
+
+    <!-- Provincia de Rodríguez de Mendoza -->
+    <string-array name="RodriguezDeMendoza">
+        <item>Rodríguez de Mendoza</item>
+        <item>San Nicolás</item>
+        <item>Chirimoto</item>
+        <item>Cochamal</item>
+        <item>Huambo</item>
+        <item>Longar</item>
+        <item>Mariscal Benavides</item>
+        <item>Milpuc</item>
+        <item>Omia</item>
+        <item>San Carlos</item>
+        <item>San Juan de Licupis</item>
+        <item>Santa Rosa</item>
+    </string-array>
+
+    <!-- Provincia de Chachapoyas -->
+    <string-array name="Chachapoyas">
+        <item>Chachapoyas</item>
+        <item>Asunción</item>
+        <item>Balsas</item>
+        <item>Cheto</item>
+        <item>Chiliquin</item>
+        <item>Chuquibamba</item>
+        <item>Granada</item>
+        <item>Huancas</item>
+        <item>La Jalca</item>
+        <item>Leimebamba</item>
+        <item>Levanto</item>
+        <item>Magdalena</item>
+        <item>Mariscal Castilla</item>
+        <item>Molinopampa</item>
+        <item>Montevideo</item>
+        <item>Olleros</item>
+        <item>Quinjalca</item>
+        <item>San Felipe</item>
+        <item>San Juan de Lopecancha</item>
+        <item>San Pedro de Soloco</item>
+        <item>Santiago de Challas</item>
+        <item>Sonche</item>
+    </string-array>
+    <!-- ANCASH -->
+    <!-- Provincia de Aija -->
+    <string-array name="Aija">
+        <item>Aija</item>
+        <item>Coris</item>
+        <item>Huacllan</item>
+        <item>La Merced</item>
+        <item>Succha</item>
+    </string-array>
+
+    <!-- Provincia de Antonio Raymondi -->
+    <string-array name="AntonioRaymondi">
+        <item>Llamellin</item>
+        <item>Aczo</item>
+        <item>Chaccho</item>
+        <item>Chingas</item>
+        <item>Mirgas</item>
+    </string-array>
+
+    <!-- Provincia de Asuncion -->
+    <string-array name="Asuncion">
+        <item>Chacas</item>
+        <item>Acochaca</item>
+    </string-array>
+
+    <!-- Provincia de Bolognesi -->
+    <string-array name="Bolognesi">
+        <item>Chiquian</item>
+        <item>Aquias</item>
+        <item>Huallanca</item>
+        <item>La Primavera</item>
+        <item>Mangas</item>
+    </string-array>
+
+    <!-- Provincia de Carhuaz -->
+    <string-array name="Carhuaz">
+        <item>Carhuaz</item>
+        <item>Acopampa</item>
+        <item>Amashca</item>
+        <item>Anta</item>
+        <item>Ataquero</item>
+    </string-array>
+
+    <!-- Provincia de Casma -->
+    <string-array name="Casma">
+        <item>Casma</item>
+        <item>Buena Vista Alta</item>
+        <item>Comandante Noel</item>
+        <item>Yautan</item>
+    </string-array>
+
+    <!-- Provincia de Corongo -->
+    <string-array name="Corongo">
+        <item>Corongo</item>
+        <item>Aco</item>
+        <item>Bambas</item>
+        <item>Cusca</item>
+        <item>La Pampa</item>
+    </string-array>
+
+    <!-- Provincia de Huaraz -->
+    <string-array name="Huaraz">
+        <item>Huaraz</item>
+        <item>Cochabamba</item>
+        <item>Colcabamba</item>
+        <item>Huanchay</item>
+        <item>Olleros</item>
+    </string-array>
+
+    <!-- Provincia de Huari -->
+    <string-array name="Huari">
+        <item>Huari</item>
+        <item>Anra</item>
+        <item>Cajay</item>
+        <item>Chavin de Huantar</item>
+        <item>Huacachi</item>
+    </string-array>
+
+    <!-- Provincia de Huarmey -->
+    <string-array name="Huarmey">
+        <item>Huarmey</item>
+        <item>Cochapeti</item>
+        <item>Culebras</item>
+    </string-array>
+
+    <!-- Provincia de Huaylas -->
+    <string-array name="Huaylas">
+        <item>Huaylas</item>
+        <item>Caraz</item>
+        <item>San Miguel de Aco</item>
+        <item>Shilla</item>
+    </string-array>
+
+    <!-- Provincia de Mariscal Luzuriaga -->
+    <string-array name="MariscalLuzuriaga">
+        <item>Piscobamba</item>
+        <item>Casca</item>
+        <item>Eleazar Guzmán Barrón</item>
+        <item>Fidel Olivas Escudero</item>
+    </string-array>
+
+    <!-- Provincia de Ocros -->
+    <string-array name="Ocros">
+        <item>Ocros</item>
+        <item>Acas</item>
+        <item>Cajamarquilla</item>
+        <item>Carhuapampa</item>
+        <item>Cochas</item>
+    </string-array>
+
+    <!-- Provincia de Pallasca -->
+    <string-array name="Pallasca">
+        <item>Cabana</item>
+        <item>Bolognesi</item>
+        <item>Conchucos</item>
+        <item>Huacaschuque</item>
+        <item>Llapo</item>
+    </string-array>
+
+    <!-- Provincia de Pomabamba -->
+    <string-array name="Pomabamba">
+        <item>Pomabamba</item>
+        <item>Huayllan</item>
+        <item>Pucahirca</item>
+        <item>Parobamba</item>
+    </string-array>
+
+    <!-- Provincia de Recuay -->
+    <string-array name="Recuay">
+        <item>Recuay</item>
+        <item>Catac</item>
+        <item>Cotaparaco</item>
+        <item>Huayllapampa</item>
+        <item>Llacllin</item>
+    </string-array>
+
+    <!-- Provincia de Santa -->
+    <string-array name="Santa">
+        <item>Chimbote</item>
+        <item>Cáceres del Perú</item>
+        <item>Coishco</item>
+        <item>Macate</item>
+        <item>Morrope</item>
+    </string-array>
+
+    <!-- Provincia de Sihuas -->
+    <string-array name="Sihuas">
+        <item>Shupluy</item>
+        <item>Yungar</item>
+        <item>Cashapampa</item>
+    </string-array>
+
+    <!-- Provincia de Yungay -->
+    <string-array name="Yungay">
+        <item>Yungay</item>
+        <item>Cascapara</item>
+        <item>Mancos</item>
+    </string-array>
+
+    <!-- APURIMAC -->
+    <!-- Provincia de Abancay -->
+    <string-array name="Abancay">
+        <item>Abancay</item>
+        <item>Chacoche</item>
+        <item>Circa</item>
+        <item>Lambrama</item>
+        <item>Pichirhua</item>
+        <item>San Pedro de Cachora</item>
+    </string-array>
+
+    <!-- Provincia de Andahuaylas -->
+    <string-array name="Andahuaylas">
+        <item>Andahuaylas</item>
+        <item>Andarapa</item>
+        <item>Chiara</item>
+        <item>Huancarama</item>
+        <item>Huancaray</item>
+        <item>Kishuara</item>
+        <item>Pacobamba</item>
+        <item>Pacucha</item>
+        <item>Pampachiri</item>
+        <item>Pomacocha</item>
+        <item>San Antonio de Cachi</item>
+        <item>San Jerónimo</item>
+        <item>San Miguel de Chaccrampa</item>
+        <item>Santa María de Chicmo</item>
+        <item>Talavera</item>
+        <item>Tumay Huaraca</item>
+        <item>Turpo</item>
+        <item>Kaquiabamba</item>
+    </string-array>
+
+    <!-- Provincia de Antabamba -->
+    <string-array name="Antabamba">
+        <item>Antabamba</item>
+        <item>El Oro</item>
+        <item>Huaquirca</item>
+        <item>Juan Espinoza Medrano</item>
+    </string-array>
+
+    <!-- Provincia de Aymaraes -->
+    <string-array name="Aymaraes">
+        <item>Chalhuanca</item>
+        <item>Capaya</item>
+        <item>Caraybamba</item>
+        <item>Chapimarca</item>
+        <item>Colcabamba</item>
+        <item>Cotaruse</item>
+        <item>Ihua</item>
+        <item>Justo Apu Sahuaraura</item>
+        <item>Llusco</item>
+        <item>Lucanas</item>
+        <item>Oropesa</item>
+        <item>Pauza</item>
+        <item>Sabaino</item>
+        <item>San Juan de Chacña</item>
+    </string-array>
+
+    <!-- Provincia de Chincheros -->
+    <string-array name="Chincheros">
+        <item>Chincheros</item>
+        <item>Anco_Huallo</item>
+        <item>Cocharcas</item>
+        <item>Chincheros</item>
+        <item>El Porvenir</item>
+        <item>Los Chankas</item>
+        <item>Miguel Grau</item>
+        <item>Pacucha</item>
+    </string-array>
+
+    <!-- Provincia de Cotabambas -->
+    <string-array name="Cotabambas">
+        <item>Tambobamba</item>
+        <item>Coyllurqui</item>
+        <item>Haquira</item>
+    </string-array>
+
+    <!-- Provincia de Grau -->
+    <string-array name="Grau">
+        <item>Chuquibambilla</item>
+        <item>Curasco</item>
+        <item>Curpahuasi</item>
+        <item>Huanipaca</item>
+        <item>Salcahuasi</item>
+    </string-array>
+
+    <!-- Provincia de Huancarama -->
+    <string-array name="Huancarama">
+        <item>Pataypampa</item>
+        <item>Accomarca</item>
+        <item>Antabamba</item>
+    </string-array>
+
+    <!-- Provincia de Tambobamba -->
+    <string-array name="Tambobamba">
+        <item>Cotabambas</item>
+        <item>Coyllurqui</item>
+        <item>Haquira</item>
+    </string-array>
+
+    <!-- Provincia de Coyllurqui -->
+    <string-array name="Coyllurqui">
+        <item>Antabamba</item>
+        <item>Cotabambas</item>
+        <item>Tambobamba</item>
+    </string-array>
+
+    <!-- Provincia de Haquira -->
+    <string-array name="Haquira">
+        <item>Cotabambas</item>
+        <item>Coyllurqui</item>
+        <item>Tambobamba</item>
+    </string-array>
+
+    <!-- Provincia de Lucanas -->
+    <string-array name="lucanas">
+        <item>San Pedro de Cachora</item>
+        <item>Chicche</item>
+        <item>Curasco</item>
+        <item>Curpahuasi</item>
+        <item>Huac-Huas</item>
+        <item>Saños</item>
+        <item>San Juan</item>
+        <item>San Pedro</item>
+    </string-array>
+
+    <!-- Provincia de Saul Cantoral -->
+    <string-array name="SaulCantoral">
+        <item>Morcolla</item>
+        <item>Corculla</item>
+        <item>Chuquibamba</item>
+    </string-array>
+
+    <!-- Provincia de San Pedro de Cachora -->
+    <string-array name="SanPedroDeCachora">
+        <item>San Pedro de Cachora</item>
+    </string-array>
+
+    <!-- AREQUIPA -->
+    <!-- Provincia de Arequipa -->
+    <string-array name="arequipa">
+        <item>Arequipa</item>
+        <item>Alto Selva Alegre</item>
+        <item>Cayma</item>
+        <item>Cerro Colorado</item>
+        <item>Characato</item>
+        <item>Chiguata</item>
+        <item>Jacobo Hunter</item>
+        <item>La Joya</item>
+        <item>Mariano Melgar</item>
+        <item>Miraflores</item>
+        <item>Mollebaya</item>
+        <item>Paicilla</item>
+        <item>Pocsi</item>
+        <item>Pueblo Tradicional de Yura</item>
+        <item>Quequeña</item>
+        <item>Sabandia</item>
+        <item>Sachaca</item>
+        <item>San Juan de Siguas</item>
+        <item>San Juan de Tarucani</item>
+        <item>Santa Isabel de Siguas</item>
+        <item>Santa Rita de Siguas</item>
+        <item>Socabaya</item>
+        <item>Tiabaya</item>
+        <item>Uchumayo</item>
+        <item>Vitor</item>
+        <item>Yanahuara</item>
+        <item>Yarabamba</item>
+        <item>Yura</item>
+    </string-array>
+
+    <!-- Provincia de Camana -->
+    <string-array name="Camana">
+        <item>Camana</item>
+        <item>Jose Maria Quimper</item>
+        <item>Mariano Nicolas Valcarcel</item>
+        <item>Mariscal Caceres</item>
+        <item>Nicolas de Pierola</item>
+        <item>Ocoña</item>
+        <item>Quilca</item>
+        <item>Samuel Pastor</item>
+        <item>Quinistacas</item>
+    </string-array>
+
+    <!-- Provincia de Caraveli -->
+    <string-array name="Caraveli">
+        <item>Caraveli</item>
+        <item>Acari</item>
+        <item>Atico</item>
+        <item>Atiquipa</item>
+        <item>Bella Union</item>
+        <item>Cahuacho</item>
+        <item>Chala</item>
+        <item>Chaparra</item>
+        <item>Huancarqui</item>
+        <item>Jaqui</item>
+        <item>Lomas</item>
+        <item>Quicacha</item>
+        <item>Yauca</item>
+    </string-array>
+
+    <!-- Provincia de Castilla -->
+    <string-array name="Castilla">
+        <item>Aplao</item>
+        <item>Andagua</item>
+        <item>Ayo</item>
+        <item>Chachas</item>
+        <item>Choco</item>
+        <item>Huancarqui</item>
+        <item>Machaguay</item>
+        <item>Orcopampa</item>
+        <item>Pampacolca</item>
+        <item>Tauria</item>
+        <item>Yanque</item>
+    </string-array>
+
+    <!-- Provincia de Caylloma -->
+    <string-array name="Caylloma">
+        <item>Chivay</item>
+        <item>Achoma</item>
+        <item>Cabanaconde</item>
+        <item>Callalli</item>
+        <item>Caylloma</item>
+        <item>Coporaque</item>
+        <item>Huambo</item>
+        <item>Huanca</item>
+        <item>Ishua</item>
+        <item>La Union</item>
+        <item>Lari</item>
+        <item>Lluta</item>
+        <item>Maca</item>
+        <item>Madrigal</item>
+        <item>Majes</item>
+        <item>San Antonio de Chuca</item>
+        <item>Sibayo</item>
+        <item>Tapay</item>
+        <item>Tisco</item>
+        <item>Tuti</item>
+        <item>Yanque</item>
+        <item>Zapallar</item>
+    </string-array>
+
+    <!-- Provincia de Condesuyos -->
+    <string-array name="Condesuyos">
+        <item>Chuquibamba</item>
+        <item>Andaray</item>
+        <item>Cayarani</item>
+        <item>Chichas</item>
+        <item>Iray</item>
+        <item>Rio Grande</item>
+        <item>Salamanca</item>
+        <item>Yanaquihua</item>
+    </string-array>
+
+    <!-- Provincia de Islay -->
+    <string-array name="Islay">
+        <item>Mollendo</item>
+        <item>Cocachacra</item>
+        <item>Dean Valdivia</item>
+        <item>Islay</item>
+        <item>Mejia</item>
+        <item>Punta de Bombon</item>
+    </string-array>
+
+    <!-- Provincia de La Union -->
+    <string-array name="LaUnion">
+        <item>La Union</item>
+        <item>Ariri</item>
+        <item>Desaguadero</item>
+        <item>Huachuy</item>
+        <item>Huarapampa</item>
+        <item>Lloque</item>
+        <item>Pampamarca</item>
+        <item>Patapo</item>
+        <item>Tincopalca</item>
+        <item>Uchusuma</item>
+    </string-array>
+
+    <!-- Provincia de Castilla -->
+    <string-array name="Huarinavi">
+        <item>Chuquibamba</item>
+        <item>Andaray</item>
+        <item>Cayarani</item>
+        <item>Chichas</item>
+        <item>Iray</item>
+        <item>Rio Grande</item>
+        <item>Salamanca</item>
+        <item>Yanaquihua</item>
+    </string-array>
+
+    <!-- Provincia de Piscopi -->
+    <string-array name="Piscopi">
+        <item>Chuquibamba</item>
+        <item>Andaray</item>
+        <item>Cayarani</item>
+        <item>Chichas</item>
+        <item>Iray</item>
+        <item>Rio Grande</item>
+        <item>Salamanca</item>
+        <item>Yanaquihua</item>
+    </string-array>
+
+    <!--AYACUCHO-->
+    <!-- Provincia de Cangallo -->
+    <string-array name="Cangallo">
+        <item>Cangallo</item>
+        <item>Chuschi</item>
+        <item>Los Morochucos</item>
+        <item>María Parado de Bellido</item>
+        <item>Paras</item>
+        <item>Totos</item>
+    </string-array>
+
+    <!-- Provincia de Huanta -->
+    <string-array name="Huanta">
+        <item>Huanta</item>
+        <item>Ayahuanco</item>
+        <item>Huamanguilla</item>
+        <item>Iguain</item>
+        <item>Luricocha</item>
+        <item>Santillana</item>
+        <item>Sivia</item>
+        <item>Uchuraccay</item>
+    </string-array>
+
+    <!-- Provincia de Huamanga -->
+    <string-array name="Huamanga">
+        <item>Ayacucho</item>
+        <item>Acocro</item>
+        <item>Acos Vinchos</item>
+        <item>Carmen Alto</item>
+        <item>Chiara</item>
+        <item>Jesús Nazareno</item>
+        <item>Ocros</item>
+        <item>Pacaycasa</item>
+        <item>Quinua</item>
+        <item>San José de Ticllas</item>
+        <item>San Juan Bautista</item>
+        <item>Santiago de Pischa</item>
+        <item>Socos</item>
+        <item>Tambillo</item>
+        <item>Vinchos</item>
+        <item>Vito</item>
+    </string-array>
+
+    <!-- Provincia de La Mar -->
+    <string-array name="LaMar">
+        <item>San Miguel</item>
+        <item>Anchihuay</item>
+        <item>Chilcas</item>
+        <item>Chongos Alto</item>
+        <item>Chongos Bajo</item>
+        <item>Cobia</item>
+        <item>Hongos</item>
+        <item>Huanca-Huanca</item>
+        <item>Huay-Huay</item>
+        <item>Jesus Nazareno</item>
+        <item>Ocaña</item>
+        <item>Pachas</item>
+        <item>San Juan</item>
+        <item>Santa Ana</item>
+        <item>Santa Lucia</item>
+        <item>Chungui</item>
+        <item>Los Morochucos</item>
+    </string-array>
+
+    <!-- Provincia de Lucanas -->
+    <string-array name="Lucanas">
+        <item>Puquio</item>
+        <item>Andamarca</item>
+        <item>Carmen Salcedo</item>
+        <item>Chalcos</item>
+        <item>Huachos</item>
+        <item>Laramate</item>
+        <item>Leoncio Prado</item>
+        <item>Llauta</item>
+        <item>Lucanas</item>
+        <item>Ocaña</item>
+        <item>Otoca</item>
+        <item>Saisa</item>
+        <item>San Cristobal</item>
+        <item>San Juan</item>
+        <item>San Pedro</item>
+        <item>San Pedro de Palco</item>
+        <item>Sancos</item>
+        <item>Santa Ana de Huaycahuacho</item>
+        <item>Santa Lucia</item>
+        <item>Chumpi</item>
+    </string-array>
+
+    <!-- Provincia de Parinacochas -->
+    <string-array name="Parinacochas">
+        <item>Coracora</item>
+        <item>Chumpi</item>
+        <item>Coronel Castañeda</item>
+        <item>Pacapausa</item>
+        <item>Pullo</item>
+        <item>Puyusca</item>
+        <item>San Francisco de Ravacayco</item>
+        <item>Upahuacho</item>
+    </string-array>
+
+    <!-- Provincia de Paucar del Sara Sara -->
+    <string-array name="PaucarDelSaraSara">
+        <item>Paucar del Sara Sara</item>
+        <item>Colta</item>
+        <item>Corculla</item>
+        <item>Lampa</item>
+        <item>Marcabamba</item>
+        <item>Oyolo</item>
+        <item>Pararca</item>
+        <item>San Javier de Alpabamba</item>
+        <item>San Jose de Ushua</item>
+    </string-array>
+
+    <!-- Provincia de Sucre -->
+    <string-array name="Sucre">
+        <item>Querobamba</item>
+        <item>Belen</item>
+        <item>Chalcos</item>
+        <item>Chilcayoc</item>
+        <item>Chuquibambilla</item>
+        <item>Curpahuasi</item>
+        <item>Espinar</item>
+        <item>Moorsam</item>
+        <item>Oropesa</item>
+        <item>Palomino</item>
+        <item>Puyusca</item>
+        <item>Saño</item>
+        <item>Tintay Puncu</item>
+    </string-array>
+
+    <!-- Provincia de Victor Fajardo -->
+    <string-array name="VictorFajardo">
+        <item>San Pedro</item>
+        <item>Carapo</item>
+        <item>Huancapi</item>
+        <item>Ramos</item>
+        <item>Samugari</item>
+        <item>Santiago de Lucanamarca</item>
+    </string-array>
+
+    <!-- Provincia de Vilcas Huaman -->
+    <string-array name="VilcasHuaman">
+        <item>Vilcas Huaman</item>
+        <item>Accomarca</item>
+        <item>Carhuanca</item>
+        <item>Concepcion</item>
+        <item>Huambalpa</item>
+        <item>Independencia</item>
+        <item>Saurama</item>
+    </string-array>
+    <!--CAJAMARCA-->
+    <!-- Provincia de Cajamarca -->
+    <string-array name="cajamarca">
+        <item>Cajamarca</item>
+        <item>Asunción</item>
+        <item>Chetilla</item>
+        <item>Cospán</item>
+        <item>Encañada</item>
+        <item>Jesus</item>
+        <item>La Encañada</item>
+        <item>Los Baños del Inca</item>
+        <item>Magdalena</item>
+        <item>Matara</item>
+        <item>Namora</item>
+        <item>San Juan</item>
+        <item>Sorochuco</item>
+        <item>Sucre</item>
+        <item>Tres Unidos</item>
+        <item>Utco</item>
+        <item>La Libertad de Pallan</item>
+        <item>San Gregorio</item>
+        <item>Tacabamba</item>
+    </string-array>
+
+    <!-- Provincia de Cajabamba -->
+    <string-array name="Cajabamba">
+        <item>Cajabamba</item>
+        <item>Cachachi</item>
+        <item>Condebamba</item>
+        <item>La Encanada</item>
+        <item>San Miguel de Acoes</item>
+    </string-array>
+
+    <!-- Provincia de Celendin -->
+    <string-array name="Celendin">
+        <item>Celendín</item>
+        <item>Chumuch</item>
+        <item>Cortegana</item>
+        <item>La Libertad de Pallan</item>
+        <item>Miguel Iglesias</item>
+    </string-array>
+
+    <!-- Provincia de Chota -->
+    <string-array name="Chota">
+        <item>Chota</item>
+        <item>Anguia</item>
+        <item>Chadin</item>
+        <item>La Libertad de Pallan</item>
+        <item>Paccha</item>
+        <item>Pion</item>
+        <item>Querocoto</item>
+    </string-array>
+
+    <!-- Provincia de Contumaza -->
+    <string-array name="Contumaza">
+        <item>Contumazá</item>
+        <item>Chilete</item>
+        <item>Contumazá</item>
+        <item>Cupisnique</item>
+        <item>Guzmango</item>
+        <item>San Benito</item>
+        <item>Santa Cruz de Toledo</item>
+        <item>Tantarica</item>
+    </string-array>
+
+    <!-- Provincia de Cutervo -->
+    <string-array name="Cutervo">
+        <item>Cutervo</item>
+        <item>Callayuc</item>
+        <item>Choros</item>
+        <item>Chota</item>
+        <item>Cochabamba</item>
+        <item>Coyabamba</item>
+        <item>La Libertad de Pallan</item>
+        <item>Pimpingos</item>
+        <item>Querocotillo</item>
+        <item>San Andres de Cutervo</item>
+        <item>San Juan de Cutervo</item>
+        <item>San Luis de Lucma</item>
+        <item>Santa Cruz</item>
+        <item>Santo Domingo de la Capilla</item>
+        <item>Santo Tomas</item>
+        <item>Socota</item>
+    </string-array>
+
+    <!-- Provincia de Hualgayoc -->
+    <string-array name="Hualgayoc">
+        <item>Bambamarca</item>
+        <item>Chugur</item>
+        <item>Hualgayoc</item>
+    </string-array>
+
+    <!-- Provincia de Jaen -->
+    <string-array name="Jaen">
+        <item>Jaén</item>
+        <item>Bellavista</item>
+        <item>Callaca</item>
+        <item>Chontali</item>
+        <item>Colasay</item>
+        <item>Huabal</item>
+        <item>Las Pirias</item>
+        <item>Pomahuaca</item>
+        <item>Pucara</item>
+        <item>Sallique</item>
+        <item>San Felipe</item>
+        <item>San Jose de la Calle</item>
+        <item>Santo Domingo de la Capilla</item>
+        <item>Shumba</item>
+        <item>Yambrasbamba</item>
+    </string-array>
+
+    <!-- Provincia de San Ignacio -->
+    <string-array name="SanIgnacio">
+        <item>San Ignacio</item>
+        <item>Chirinos</item>
+        <item>Huarango</item>
+        <item>La Coipa</item>
+        <item>Namballe</item>
+        <item>Pachiza</item>
+        <item>San Jose de Lourdes</item>
+        <item>Tambogrande</item>
+    </string-array>
+
+    <!-- Provincia de San Marcos -->
+    <string-array name="SanMarcos">
+        <item>San Marcos</item>
+        <item>Chancay</item>
+        <item>Eduardo Villanueva</item>
+        <item>Gregorio Pita</item>
+        <item>Ichocan</item>
+        <item>Jose Manuel Quiroz</item>
+        <item>Jose Sabogal</item>
+        <item>La Libertad de Pallan</item>
+        <item>Roque</item>
+        <item>Yonan</item>
+    </string-array>
+
+    <!-- Provincia de San Miguel -->
+    <string-array name="SanMiguel">
+        <item>San Miguel</item>
+        <item>Bolivar</item>
+        <item>Calquis</item>
+        <item>El Prado</item>
+        <item>La Florida</item>
+        <item>Llapa</item>
+        <item>Nanchoc</item>
+        <item>Niepos</item>
+        <item>San Gregorio</item>
+    </string-array>
+
+    <!-- Provincia de San Pablo -->
+    <string-array name="SanPablo">
+        <item>San Pablo</item>
+        <item>San Bernardino</item>
+        <item>San Luis</item>
+        <item>Tumbaden</item>
+    </string-array>
+
+    <!-- Provincia de Santa Cruz -->
+    <string-array name="SantaCruz">
+        <item>Santa Cruz</item>
+        <item>Andabamba</item>
+        <item>Catache</item>
+        <item>Chancaybaños</item>
+        <item>La Esperanza</item>
+        <item>Ninabamba</item>
+        <item>Pulan</item>
+        <item>Sausa</item>
+        <item>Sayan</item>
+        <item>Tauca</item>
+        <item>Tomepampa</item>
+        <item>Yauyucan</item>
+    </string-array>
+
+    <!--Callao-->
+    <string-array name="callao">
+        <item>Callao</item>
+        <item>Bellavista</item>
+        <item>Carmen de la Legua Reynoso</item>
+        <item>La Perla</item>
+        <item>La Punta</item>
+        <item>Ventanilla</item>
+    </string-array>
+    <!--Cusco-->
+    <!-- Provincia de Acomayo -->
+    <string-array name="Acomayo">
+        <item>Acomayo</item>
+        <item>Acopia</item>
+        <item>Acos</item>
+        <item>Mosoc Llacta</item>
+        <item>Pomacanchi</item>
+        <item>Rondocan</item>
+        <item>Sangarara</item>
+    </string-array>
+
+    <!-- Provincia de Anta -->
+    <string-array name="Anta">
+        <item>Anta</item>
+        <item>Chinchaypujio</item>
+        <item>Huarocondo</item>
+        <item>Labrahuasi</item>
+        <item>Maras</item>
+        <item>Progreso</item>
+        <item>San Antonio de Huarocondo</item>
+        <item>San Jerónimo</item>
+        <item>Sicuani</item>
+        <item>Tiobamba</item>
+        <item>Urcos</item>
+        <item>Yanaoca</item>
+    </string-array>
+
+    <!-- Provincia de Calca -->
+    <string-array name="Calca">
+        <item>Calca</item>
+        <item>Coya</item>
+        <item>Lares</item>
+        <item>Lamay</item>
+        <item>San Salvador</item>
+        <item>Taray</item>
+        <item>Yanatile</item>
+    </string-array>
+
+    <!-- Provincia de Canas -->
+    <string-array name="Canas">
+        <item>Yanaoca</item>
+        <item>Checca</item>
+        <item>Kunturkanki</item>
+        <item>Langui</item>
+        <item>Layo</item>
+        <item>Pampamarca</item>
+        <item>Quehue</item>
+        <item>Tapay</item>
+        <item>Tinke</item>
+        <item>Urcos</item>
+    </string-array>
+
+    <!-- Provincia de Canchis -->
+    <string-array name="Canchis">
+        <item>Sicuani</item>
+        <item>Combapata</item>
+        <item>Marangani</item>
+        <item>Pitumarca</item>
+        <item>San Pablo</item>
+        <item>San Pedro</item>
+        <item>Tinta</item>
+    </string-array>
+
+    <!-- Provincia de Chumbivilcas -->
+    <string-array name="Chumbivilcas">
+        <item>Santo Tomas</item>
+        <item>Capacmarca</item>
+        <item>Chamaca</item>
+        <item>Colquemarca</item>
+        <item>Livitaca</item>
+        <item>Llusco</item>
+        <item>Quiñota</item>
+        <item>Velille</item>
+    </string-array>
+
+    <!-- Provincia de Cusco -->
+    <string-array name="cusco">
+        <item>Cusco</item>
+        <item>CCorca</item>
+        <item>Poroy</item>
+        <item>San Jeronimo</item>
+        <item>San Sebastian</item>
+        <item>Santiago</item>
+        <item>Saylla</item>
+        <item>Wanchaq</item>
+    </string-array>
+
+    <!-- Provincia de Espinar -->
+    <string-array name="Espinar">
+        <item>Yauri</item>
+        <item>Condoroma</item>
+        <item>Coporaque</item>
+        <item>Ocoruro</item>
+        <item>Pallpata</item>
+        <item>Pichigua</item>
+        <item>San Antonio de Esquilache</item>
+        <item>San Juan de Tarucani</item>
+        <item>Sicuani</item>
+    </string-array>
+
+    <!-- Provincia de La Convencion -->
+    <string-array name="LaConvencion">
+        <item>Quillabamba</item>
+        <item>Chuquibambilla</item>
+        <item>Curahuasi</item>
+        <item>Huayopata</item>
+        <item>Kimbiri</item>
+        <item>Megantoni</item>
+        <item>Santa Ana</item>
+        <item>Santa Teresa</item>
+        <item>Vilcabamba</item>
+        <item>Echarate</item>
+    </string-array>
+
+    <!-- Provincia de Paruro -->
+    <string-array name="Paruro">
+        <item>Paruro</item>
+        <item>Accha</item>
+        <item>CCatca</item>
+        <item>Curaquita</item>
+        <item>Huanoquite</item>
+        <item>Oropesa</item>
+        <item>Paucar</item>
+        <item>Pillpinto</item>
+        <item>Saño</item>
+        <item>Tekha</item>
+    </string-array>
+
+    <!-- Provincia de Paucartambo -->
+    <string-array name="Paucartambo">
+        <item>Paucartambo</item>
+        <item>Caicay</item>
+        <item>Challabamba</item>
+        <item>Colquepata</item>
+        <item>Huancarani</item>
+        <item>Kosñipata</item>
+        <item>Tres Cruces</item>
+    </string-array>
+
+    <!-- Provincia de Quispicanchi -->
+    <string-array name="Quispicanchi">
+        <item>Urcos</item>
+        <item>Andahuaylillas</item>
+        <item>Camanti</item>
+        <item>Ccarhuayo</item>
+        <item>Ccatca</item>
+        <item>Cusipata</item>
+        <item>Huaro</item>
+        <item>Lucre</item>
+        <item>Mariatana</item>
+        <item>San Pablo</item>
+        <item>San Pedro</item>
+    </string-array>
+
+    <!-- Provincia de Urubamba -->
+    <string-array name="Urubamba">
+        <item>Urubamba</item>
+        <item>Chinchero</item>
+        <item>Huayllabamba</item>
+        <item>Machupicchu</item>
+        <item>Maras</item>
+        <item>Ollantaytambo</item>
+        <item>Yucay</item>
+    </string-array>
+    <!--Huancavelica-->
+
+    <!-- Provincia de Acobamba -->
+    <string-array name="Acobamba">
+        <item>Acobamba</item>
+        <item>Colcabamba</item>
+        <item>La Union</item>
+        <item>San Juan</item>
+    </string-array>
+
+    <!-- Provincia de Angaraes -->
+    <string-array name="Angaraes">
+        <item>Lircay</item>
+        <item>Anchonga</item>
+        <item>Callanmarca</item>
+        <item>Chincho</item>
+        <item>Congalla</item>
+        <item>Huanca-Huanca</item>
+        <item>Huayllay Grande</item>
+        <item>Jircan</item>
+        <item>Lircay</item>
+    </string-array>
+
+    <!-- Provincia de Castrovirreyna -->
+    <string-array name="Castrovirreyna">
+        <item>Castrovirreyna</item>
+        <item>Arma</item>
+        <item>Aurahua</item>
+        <item>Capillas</item>
+        <item>Chupamarca</item>
+        <item>Cocas</item>
+        <item>Huachos</item>
+        <item>Leoncio Prado</item>
+        <item>Mariano J. Lorente</item>
+        <item>Pucara</item>
+        <item>Querco</item>
+        <item>San Juan</item>
+        <item>Tantara</item>
+        <item>Ticrapo</item>
+        <item>Yauli</item>
+    </string-array>
+
+    <!-- Provincia de Churcampa -->
+    <string-array name="Churcampa">
+        <item>Churcampa</item>
+        <item>Anco</item>
+        <item>Chinchihuasi</item>
+        <item>El Carmen</item>
+        <item>La Merced</item>
+        <item>Locroja</item>
+        <item>Pachamarca</item>
+        <item>Pucarbamba</item>
+        <item>San Miguel de Mayocc</item>
+        <item>San Pedro de Coris</item>
+        <item>San Pedro de Huacarpana</item>
+        <item>San Pedro de Querco</item>
+        <item>Tambos</item>
+        <item>Urbina</item>
+    </string-array>
+
+    <!-- Provincia de Huancavelica -->
+    <string-array name="huancavelica">
+        <item>Huancavelica</item>
+        <item>Acobambilla</item>
+        <item>Ahuaycha</item>
+        <item>Colcabamba</item>
+        <item>Cuenca</item>
+        <item>El Beni</item>
+        <item>Huachocolpa</item>
+        <item>Huayllahuara</item>
+        <item>Izcuchaca</item>
+        <item>Laria</item>
+        <item>Manta</item>
+        <item>Mariscal Caceres</item>
+        <item>Moya</item>
+        <item>New York</item>
+        <item>Palca</item>
+        <item>Pilchaca</item>
+        <item>Vilca</item>
+        <item>Yauli</item>
+        <item>Amarilis</item>
+    </string-array>
+
+    <!-- Provincia de Huaytara -->
+    <string-array name="Huaytara">
+        <item>Huaytara</item>
+        <item>Ayavi</item>
+        <item>Capillas</item>
+        <item>Cotaruse</item>
+        <item>Chavin de Pariarca</item>
+        <item>Huayacundo Arma</item>
+        <item>Laramarca</item>
+        <item>Leonor Ordoñez</item>
+        <item>Maria del Carmen</item>
+        <item>Purhuay</item>
+        <item>Querco</item>
+        <item>Quito-Arma</item>
+        <item>San Antonio de Cusicancha</item>
+        <item>San Francisco de Sangayaico</item>
+        <item>San Isidro</item>
+        <item>Santiago de Chocorvos</item>
+        <item>Santiago de Quirahuara</item>
+        <item>Santiago de la Mar</item>
+        <item>Viracocha</item>
+    </string-array>
+
+    <!-- Provincia de Tayacaja -->
+    <string-array name="Tayacaja">
+        <item>Pampas</item>
+        <item>Acostambo</item>
+        <item>Acraquía</item>
+        <item>Ahuaycha</item>
+        <item>Colcabamba</item>
+        <item>Daniel Hernandez</item>
+        <item>Huanca-Huanca</item>
+        <item>Huando</item>
+        <item>Huayllay Grande</item>
+        <item>Pacapausa</item>
+        <item>Pucara</item>
+        <item>Querco</item>
+        <item>Salcarimari</item>
+        <item>San Marcos de Rocchac</item>
+        <item>Surcubamba</item>
+        <item>Tintay Puncu</item>
+        <item>Ñahuimpuquio</item>
+    </string-array>
+    <!--Huanuco-->
+    <!-- Provincia de Ambo -->
+    <string-array name="Ambo">
+        <item>Ambo</item>
+        <item>Cayna</item>
+        <item>Colpas</item>
+        <item>Conchamarca</item>
+        <item>Huacar</item>
+        <item>San Francisco</item>
+        <item>San Rafael</item>
+        <item>Tomay Kichwa</item>
+    </string-array>
+
+    <!-- Provincia de Dos de Mayo -->
+    <string-array name="DosdeMayo">
+        <item>La Unión</item>
+        <item>Chuquis</item>
+        <item>Marías</item>
+        <item>Pachas</item>
+        <item>Quivilla</item>
+        <item>Ripan</item>
+        <item>Shunqui</item>
+        <item>Sillapata</item>
+    </string-array>
+
+    <!-- Provincia de Huacaybamba -->
+    <string-array name="Huacaybamba">
+        <item>Huacaybamba</item>
+        <item>Canchabamba</item>
+        <item>Cochabamba</item>
+        <item>Pinra</item>
+    </string-array>
+
+    <!-- Provincia de Huamalies -->
+    <string-array name="Huamalies">
+        <item>Llata</item>
+        <item>Arancay</item>
+        <item>Chavin de Pariarca</item>
+        <item>Jacas Grande</item>
+        <item>Jacus Grande</item>
+        <item>Jircan</item>
+        <item>Miraflores</item>
+        <item>Monzon</item>
+        <item>Punchao</item>
+        <item>Puyca</item>
+        <item>Ruricancha</item>
+        <item>San Miguel de Cauri</item>
+        <item>San Pedro de Chaulan</item>
+        <item>San Rafael</item>
+        <item>Santa Rosa de Alto Yanajanca</item>
+    </string-array>
+
+    <!-- Provincia de Huanuco -->
+    <string-array name="huanuco">
+        <item>Huanuco</item>
+        <item>Amarilis</item>
+        <item>Chinchao</item>
+        <item>Churubamba</item>
+        <item>Margos</item>
+        <item>Quisqui</item>
+        <item>San Francisco de Cayran</item>
+        <item>San Pedro de Chaulan</item>
+        <item>San Pedro de Pillao</item>
+        <item>Santa Maria del Valle</item>
+        <item>Yarumayo</item>
+        <item>Pillco Marca</item>
+    </string-array>
+
+    <!-- Provincia de La Unión -->
+    <string-array name="launion">
+        <item>Tantamayo</item>
+    </string-array>
+
+    <!-- Provincia de Leoncio Prado -->
+    <string-array name="LeoncioPrado">
+        <item>Tingo Maria</item>
+        <item>Cholón</item>
+        <item>Churubamba</item>
+        <item>Huachón</item>
+        <item>Mariano Damaso Beraun</item>
+        <item>Puchca</item>
+        <item>Pucusana</item>
+        <item>Yuyapichis</item>
+    </string-array>
+
+    <!-- Provincia de Marañón -->
+    <string-array name="Marañon">
+        <item>Huacrachuco</item>
+        <item>Cholón</item>
+        <item>San Buenaventura</item>
+        <item>La Morada</item>
+    </string-array>
+
+    <!-- Provincia de Pachitea -->
+    <string-array name="Pachitea">
+        <item>Panao</item>
+        <item>Chaglla</item>
+        <item>Molino</item>
+        <item>Umari</item>
+    </string-array>
+
+    <!-- Provincia de Puerto Inca -->
+    <string-array name="PuertoInca">
+        <item>Puerto Inca</item>
+        <item>Codo del Pozuzo</item>
+        <item>Honoria</item>
+        <item>Tournavista</item>
+        <item>Yuyapichis</item>
+    </string-array>
+
+    <!-- Provincia de Lauricocha -->
+    <string-array name="Lauricocha">
+        <item>Jesús</item>
+        <item>Baños</item>
+        <item>Jivia</item>
+    </string-array>
+
+    <!-- Provincia de Yarowilca -->
+    <string-array name="Yarowilca">
+        <item>Chavinillo</item>
+        <item>Cahuac</item>
+        <item>Chacabamba</item>
+        <item>Choras</item>
+        <item>Chupan</item>
+        <item>Jacas Chico</item>
+        <item>Obas</item>
+        <item>Pampamarca</item>
+        <item>Sacabis</item>
+        <item>San Juan de Jarpa</item>
+        <item>Soloco</item>
+        <item>Yacus</item>
+    </string-array>
+
+    <!--Ica-->
+    <!-- Provincia de Ica -->
+    <string-array name="ica">
+        <item>Ica</item>
+        <item>La Tinguiña</item>
+        <item>Los Aquijes</item>
+        <item>Ocucaje</item>
+        <item>Pachacutec</item>
+        <item>Parcona</item>
+        <item>Salas</item>
+        <item>San Juan Bautista</item>
+        <item>Santiago</item>
+        <item>Subtanjalla</item>
+    </string-array>
+
+    <!-- Provincia de Chincha -->
+    <string-array name="Chincha">
+        <item>Chincha Alta</item>
+        <item>Alto Larán</item>
+        <item>Chavin</item>
+        <item>Chincha Baja</item>
+        <item>El Carmen</item>
+        <item>Grocio Prado</item>
+        <item>Pueblo Nuevo</item>
+        <item>San Juan de Yanac</item>
+        <item>San Pedro de Huacarpana</item>
+        <item>Sunampe</item>
+        <item>Tambo de Mora</item>
+    </string-array>
+    <!-- Provincia de Nazca -->
+    <string-array name="Nazca">
+        <item>Nazca</item>
+        <item>Changuillo</item>
+        <item>El Ingenio</item>
+        <item>Marcona</item>
+        <item>Vista Alegre</item>
+    </string-array>
+    <!-- Provincia de Palpa -->
+    <string-array name="Palpa">
+        <item>Palpa</item>
+        <item>Llauta</item>
+        <item>Rio Grande</item>
+        <item>San Juan de Dios</item>
+        <item>Santa Cruz</item>
+    </string-array>
+    <!-- Provincia de Pisco -->
+    <string-array name="Pisco">
+        <item>Pisco</item>
+        <item>Huancano</item>
+        <item>Humay</item>
+        <item>Independencia</item>
+        <item>Paracas</item>
+        <item>San Andres</item>
+        <item>San Clemente</item>
+        <item>Tupac Amaru Inca</item>
+    </string-array>
+    <!-- Provincia de Subtanjalla -->
+    <string-array name="Subtanjalla">
+        <item>Subtanjalla</item>
+    </string-array>
+    <!--Junin-->
+    <!-- Provincia de Chanchamayo -->
+    <string-array name="Chanchamayo">
+        <item>Chanchamayo</item>
+        <item>Perene</item>
+        <item>Pichanaqui</item>
+        <item>San Luis de Shuaro</item>
+        <item>San Ramon</item>
+        <item>Vitoc</item>
+    </string-array>
+
+    <!-- Provincia de Chupaca -->
+    <string-array name="Chupaca">
+        <item>Chupaca</item>
+        <item>Ahuac</item>
+        <item>Chongos Bajo</item>
+        <item>Huachac</item>
+        <item>Huamancaca Chico</item>
+        <item>San Juan de Iscos</item>
+        <item>San Juan de Jarpa</item>
+        <item>Tres de Diciembre</item>
+        <item>Yanacancha</item>
+    </string-array>
+
+    <!-- Provincia de Concepcion -->
+    <string-array name="Concepcion">
+        <item>Concepcion</item>
+        <item>Amarilis</item>
+        <item>Carhuacallanga</item>
+        <item>Chicayán</item>
+        <item>Chillia</item>
+        <item>Huanzala</item>
+        <item>La Florida</item>
+        <item>Tomay Kichwa</item>
+    </string-array>
+
+    <!-- Provincia de Huancayo -->
+    <string-array name="Huancayo">
+        <item>Huancayo</item>
+        <item>Carhuacallanga</item>
+        <item>Chacapampa</item>
+        <item>Chicrín</item>
+        <item>Chilca</item>
+        <item>Chongos Alto</item>
+        <item>Chupuro</item>
+        <item>Colca</item>
+        <item>Cullhuas</item>
+        <item>El Tambo</item>
+        <item>Huacrapuquio</item>
+        <item>Hualhuas</item>
+        <item>Huancan</item>
+        <item>Huasicancha</item>
+        <item>Huayucachi</item>
+        <item>Ingenio</item>
+        <item>Pariahuanca</item>
+        <item>Pilcomayo</item>
+        <item>Pucara</item>
+        <item>Quichuay</item>
+        <item>Quilcas</item>
+        <item>San Agustin</item>
+        <item>San Jerónimo de Tunán</item>
+        <item>Saño</item>
+        <item>Sixto Durán Ballén</item>
+        <item>Viques</item>
+    </string-array>
+
+    <!-- Provincia de Jauja -->
+    <string-array name="Jauja">
+        <item>Jauja</item>
+        <item>Aco</item>
+        <item>Hualhuas</item>
+        <item>Ichu</item>
+        <item>Paccha</item>
+        <item>Palca</item>
+        <item>Pomacancha</item>
+        <item>Junin</item>
+    </string-array>
+
+    <!-- Provincia de Junin -->
+    <string-array name="junin">
+        <item>Junin</item>
+        <item>Carhuamayo</item>
+        <item>Ondores</item>
+        <item>Ulcumayo</item>
+    </string-array>
+
+    <!-- Provincia de Satipo -->
+    <string-array name="Satipo">
+        <item>Satipo</item>
+        <item>Coviriali</item>
+        <item>Llaylla</item>
+        <item>Mazamari</item>
+        <item>Pampa Hermosa</item>
+        <item>Panguana</item>
+        <item>Río Negro</item>
+    </string-array>
+
+    <!-- Provincia de Tarma -->
+    <string-array name="Tarma">
+        <item>Tarma</item>
+        <item>Acobamba</item>
+        <item>Hacienda</item>
+        <item>Huasahuasi</item>
+        <item>La Unión</item>
+        <item>Palca</item>
+        <item>Palmay</item>
+        <item>Tapo</item>
+        <item>Yauli</item>
+    </string-array>
+
+    <!-- Provincia de Yauli -->
+    <string-array name="Yauli">
+        <item>La Oroya</item>
+        <item>Chacapalpa</item>
+        <item>Huay-Huay</item>
+        <item>Morococha</item>
+        <item>Paccha</item>
+        <item>Santa Barbara de Carhuacayan</item>
+        <item>Santa Rosa de Sacco</item>
+        <item>Suitucancha</item>
+        <item>Yauli</item>
+    </string-array>
+    <!--La libertad-->
+    <!-- Provincia de Ascope -->
+    <string-array name="Ascope">
+        <item>Ascope</item>
+        <item>Casa Grande</item>
+        <item>Chicama</item>
+        <item>Chocope</item>
+        <item>Magdalena de Cao</item>
+        <item>Paijan</item>
+        <item>Rázuri</item>
+        <item>Santiago de Cao</item>
+        <item>Cachicadan</item>
+    </string-array>
+
+    <!-- Provincia de Bolivar -->
+    <string-array name="Bolivar">
+        <item>Bolívar</item>
+        <item>Bambamarca</item>
+        <item>Condormarca</item>
+        <item>Longotea</item>
+        <item>Uchumarca</item>
+        <item>Ucuncha</item>
+    </string-array>
+
+    <!-- Provincia de Gran Chimú -->
+    <string-array name="GranChimu">
+        <item>Gran Chimú</item>
+        <item>Cochorco</item>
+        <item>Curgos</item>
+        <item>La Libertad de Pallan</item>
+        <item>Pataz</item>
+        <item>Pias</item>
+        <item>Quiruvilca</item>
+        <item>Sitabamba</item>
+    </string-array>
+
+    <!-- Provincia de Julcan -->
+    <string-array name="Julcan">
+        <item>Julcan</item>
+        <item>Calamarca</item>
+        <item>Carabamba</item>
+        <item>Huaso</item>
+    </string-array>
+
+    <!-- Provincia de Pacasmayo -->
+    <string-array name="Pacasmayo">
+        <item>Pacasmayo</item>
+        <item>Jequetepeque</item>
+        <item>Guadalupe</item>
+        <item>San José</item>
+    </string-array>
+
+    <!-- Provincia de Pataz -->
+    <string-array name="Pataz">
+        <item>Tayabamba</item>
+        <item>Buldibuyo</item>
+        <item>Chillia</item>
+        <item>Huancaspata</item>
+        <item>Huaylillas</item>
+        <item>Huayo</item>
+        <item>Ongon</item>
+        <item>Parcoy</item>
+        <item>Pataz</item>
+        <item>Pias</item>
+        <item>Santiago de Challas</item>
+        <item>Taurija</item>
+        <item>Tingo</item>
+        <item>Urpay</item>
+    </string-array>
+
+    <!-- Provincia de Sanchez Carrión -->
+    <string-array name="SanchezCarrion">
+        <item>Huamachuco</item>
+        <item>Chugay</item>
+        <item>Cochorco</item>
+        <item>Curgos</item>
+        <item>Marcabal</item>
+        <item>Sanagoran</item>
+        <item>Sarin</item>
+        <item>Sartimbamba</item>
+    </string-array>
+
+    <!-- Provincia de Santiago de Chuco -->
+    <string-array name="SantiagodeChuco">
+        <item>Santiago de Chuco</item>
+        <item>Angasmarca</item>
+        <item>Cachicadan</item>
+        <item>Mollebamba</item>
+        <item>Mollepata</item>
+        <item>Quiruvilca</item>
+        <item>San Juan de Cairoma</item>
+    </string-array>
+
+    <!-- Provincia de Trujillo -->
+    <string-array name="Trujillo">
+        <item>Trujillo</item>
+        <item>El Porvenir</item>
+        <item>Florencia de Mora</item>
+        <item>Huanchaco</item>
+        <item>La Esperanza</item>
+        <item>Laredo</item>
+        <item>Moche</item>
+        <item>Poroto</item>
+        <item>Simoche</item>
+        <item>Victor Larco Herrera</item>
+    </string-array>
+
+    <!-- Provincia de Viru -->
+    <string-array name="Viru">
+        <item>Viru</item>
+        <item>Chao</item>
+        <item>Guadalupito</item>
+    </string-array>
+    <!--Lambayeque-->
+    <!-- Provincia de Motupe -->
+    <string-array name="Motupe">
+        <item>Motupe</item>
+    </string-array>
+    <!-- Provincia de Olmos -->
+    <string-array name="Olmos">
+        <item>Olmos</item>
+    </string-array>
+
+    <!-- Provincia de Ferreñafe -->
+    <string-array name="Ferrenafe">
+        <item>Ferreñafe</item>
+        <item>Cañaris</item>
+        <item>Incahuasi</item>
+        <item>Mochumí</item>
+    </string-array>
+
+    <!-- Provincia de Lambayeque -->
+    <string-array name="lambayeque">
+        <item>Lambayeque</item>
+        <item>Chochope</item>
+        <item>Illimo</item>
+        <item>Jayanca</item>
+        <item>La Victoria</item>
+        <item>Mochumi</item>
+        <item>Morrope</item>
+        <item>Motupe</item>
+        <item>Olmos</item>
+        <item>Pacora</item>
+        <item>Salas</item>
+        <item>San José</item>
+        <item>Tucume</item>
+    </string-array>
+    <!--Lima-->
+    <!-- Provincia de Barranca -->
+    <string-array name="Barranca">
+        <item>Barranca</item>
+        <item>Pativilca</item>
+        <item>Supe</item>
+        <item>Paramonga</item>
+        <item>Pativilca</item>
+        <item>Supe Puerto</item>
+        <item>Supe Pueblo</item>
+    </string-array>
+
+    <!-- Provincia de Cajatambo -->
+    <string-array name="Cajatambo">
+        <item>Cajatambo</item>
+        <item>Copa</item>
+        <item>Gorgor</item>
+        <item>Huancapampa</item>
+        <item>Manás</item>
+        <item>Cahuacán</item>
+        <item>Valle Hermoso</item>
+    </string-array>
+
+    <!-- Provincia de Canta -->
+    <string-array name="Canta">
+        <item>Canta</item>
+        <item>Arahuay</item>
+        <item>Huamantanga</item>
+        <item>Huaros</item>
+        <item>Lachaqui</item>
+        <item>San Buenaventura</item>
+    </string-array>
+
+    <!-- Provincia de Cañete -->
+    <string-array name="Cañete">
+        <item>San Vicente de Cañete</item>
+        <item>Asia</item>
+        <item>Calango</item>
+        <item>Cerro Azul</item>
+        <item>Chilca</item>
+        <item>Coayllo</item>
+        <item>Imperial</item>
+        <item>Lunahuana</item>
+        <item>Mala</item>
+        <item>Nuevo Imperial</item>
+        <item>Paracas</item>
+        <item>Quilmana</item>
+        <item>San Antonio</item>
+        <item>San Luis</item>
+        <item>Santa Cruz de Flores</item>
+        <item>Zúñiga</item>
+    </string-array>
+
+    <!-- Provincia de Huaral -->
+    <string-array name="Huaral">
+        <item>Huaral</item>
+        <item>Atavillos Alto</item>
+        <item>Atavillos Bajo</item>
+        <item>Aucallama</item>
+        <item>Chancay</item>
+        <item>Ihuari</item>
+        <item>Lampian</item>
+        <item>Pacaraos</item>
+        <item>Santa Cruz de Andamarca</item>
+        <item>Sumbilca</item>
+        <item>San Miguel de Acos</item>
+        <item>Veintisiete de Noviembre</item>
+    </string-array>
+
+    <!-- Provincia de Huarochirí -->
+    <string-array name="Huarochiri">
+        <item>Matiara</item>
+        <item>Antioquía</item>
+        <item>Callahuanca</item>
+        <item>Carampoma</item>
+        <item>Chicla</item>
+        <item>Cuenca</item>
+        <item>Huachupampa</item>
+        <item>Huanza</item>
+        <item>Huantan</item>
+        <item>Lahuaytambo</item>
+        <item>Mariahuasi</item>
+        <item>Matucana</item>
+        <item>Ricardo Palma</item>
+        <item>San Andres de Tupicocha</item>
+        <item>San Antonio</item>
+        <item>San Bartolome</item>
+        <item>San Damian</item>
+        <item>San Juan de Iris</item>
+        <item>San Juan de Tantaranche</item>
+        <item>San Lorenzo de Quinti</item>
+        <item>San Mateo</item>
+        <item>San Mateo de Otao</item>
+        <item>San Pedro de Casta</item>
+        <item>San Pedro de Huancayre</item>
+        <item>Sangallaya</item>
+        <item>Santa Cruz de Cocachacra</item>
+        <item>Santiago de Anchucaya</item>
+        <item>Santiago de Tuna</item>
+        <item>Santiago de Yunza</item>
+        <item>Surco</item>
+        <item>Ambar</item>
+    </string-array>
+
+    <!-- Provincia de Huaura -->
+    <string-array name="Huaura">
+        <item>Huacho</item>
+        <item>Ambar</item>
+        <item>Caleta de Carquin</item>
+        <item>Checras</item>
+        <item>Hualmay</item>
+        <item>Huaura</item>
+        <item>Leoncio Prado</item>
+        <item>Paccho</item>
+        <item>Santa Leonor</item>
+        <item>Santa María</item>
+        <item>Sayan</item>
+        <item>Vegueta</item>
+    </string-array>
+
+    <!-- Provincia de Lima -->
+    <string-array name="lima">
+        <item>Ancon</item>
+        <item>Ate</item>
+        <item>Barranco</item>
+        <item>Breña</item>
+        <item>Carabayllo</item>
+        <item>Carmen de La Legua Reynoso</item>
+        <item>Chaclacayo</item>
+        <item>Chorrillos</item>
+        <item>Cieneguilla</item>
+        <item>Comas</item>
+        <item>El Agustino</item>
+        <item>Independencia</item>
+        <item>Jesus Maria</item>
+        <item>La Molina</item>
+        <item>La Victoria</item>
+        <item>Lince</item>
+        <item>Lurigancho</item>
+        <item>Lurin</item>
+        <item>Magdalena del Mar</item>
+        <item>Miraflores</item>
+        <item>Pachacamac</item>
+        <item>Pucusana</item>
+        <item>Pueblo Libre</item>
+        <item>Puente Piedra</item>
+        <item>Punta Hermosa</item>
+        <item>Punta Negra</item>
+        <item>Rimac</item>
+        <item>San Bartolo</item>
+        <item>San Borja</item>
+        <item>San Isidro</item>
+        <item>San Juan de Lurigancho</item>
+        <item>San Juan de Miraflores</item>
+        <item>San Luis</item>
+        <item>San Martin de Porres</item>
+        <item>San Miguel</item>
+        <item>Santa Anita</item>
+        <item>Santa Maria del Mar</item>
+        <item>Santa Rosa</item>
+        <item>Santiago de Surco</item>
+        <item>Surquillo</item>
+        <item>Villa El Salvador</item>
+        <item>Villa Maria del Triunfo</item>
+    </string-array>
+
+    <!-- Provincia de Oyón -->
+    <string-array name="Oyon">
+        <item>Oyón</item>
+        <item>Andajes</item>
+        <item>Caujul</item>
+        <item>Cochamarca</item>
+        <item>Navan</item>
+        <item>Pachangara</item>
+    </string-array>
+
+    <!-- Provincia de Yauyos -->
+    <string-array name="Yauyos">
+        <item>Yauyos</item>
+        <item>Alis</item>
+        <item>Arapapa</item>
+        <item>Roblavio</item>
+        <item>Coayllo</item>
+        <item>Chocos</item>
+        <item>Huampara</item>
+        <item>Laraos</item>
+        <item>San Cristobal</item>
+        <item>Chincha</item>
+        <item>El Mantaro</item>
+        <item>Yauyos</item>
+    </string-array>
+    <!--Loreto-->
+    <!-- Provincia de Alto Amazonas -->
+    <string-array name="AltoAmazonas">
+        <item>Yurimaguas</item>
+        <item>Balsapuerto</item>
+        <item>Jeberos</item>
+        <item>Lagunas</item>
+        <item>Santa Cruz</item>
+        <item>Teniente Cesar López Rojas</item>
+        <item>Nueva Requena</item>
+        <item>Indiana</item>
+    </string-array>
+
+    <!-- Provincia de Datem del Marañón -->
+    <string-array name="DatemdelMaranon">
+        <item>Barranca</item>
+        <item>Cahuapanas</item>
+        <item>Manseriche</item>
+        <item>Morona</item>
+        <item>Pasto</item>
+        <item>Sarayacu</item>
+        <item>Vitoc</item>
+        <item>Andoas</item>
+    </string-array>
+
+    <!-- Provincia de Loreto -->
+    <string-array name="loreto">
+        <item>Maynas</item>
+        <item>Punchana</item>
+        <item>Belén</item>
+        <item>Iquitos</item>
+        <item>Alto Nanay</item>
+        <item>Fernando Lores</item>
+        <item>Las Amazonas</item>
+        <item>Mazan</item>
+        <item>Napo</item>
+        <item>Oroncote</item>
+        <item>Tigre</item>
+    </string-array>
+
+    <!-- Provincia de Mariscal Ramón Castilla -->
+    <string-array name="MariscalRamonCastilla">
+        <item>Caballococha</item>
+        <item>Pebas</item>
+        <item>Putumayo</item>
+        <item>San Pablo</item>
+    </string-array>
+
+    <!-- Provincia de Maynas -->
+    <string-array name="Maynas">
+        <item>Maynas</item>
+        <item>Indiana</item>
+    </string-array>
+
+    <!-- Provincia de Requena -->
+    <string-array name="Requena">
+        <item>Requena</item>
+        <item>Alto Tapiche</item>
+        <item>Capelo</item>
+        <item>Emilio San Martin</item>
+        <item>Maquia</item>
+        <item>Nauta</item>
+        <item>Punchana</item>
+        <item>Soplin</item>
+        <item>Tapiche</item>
+        <item>Vargas Guerra</item>
+    </string-array>
+
+    <!-- Provincia de Ucayali -->
+    <string-array name="ucayali">
+        <item>Callería</item>
+        <item>Yarinacocha</item>
+        <item>Selva Alegre</item>
+        <item>Masisea</item>
+        <item>Irazola</item>
+        <item>Curimaná</item>
+        <item>Padre Abad</item>
+        <item>Tahuamanu</item>
+    </string-array>
+    <!--Madre de Dios-->
+    <!-- Provincia de Manu -->
+    <string-array name="Manu">
+        <item>Manu</item>
+        <item>Fitzcarrald</item>
+        <item>Madre de Dios</item>
+        <item>Manu</item>
+        <item>Tambopata</item>
+    </string-array>
+
+    <!-- Provincia de Tambopata -->
+    <string-array name="Tambopata">
+        <item>Tambopata</item>
+        <item>Iñapari</item>
+        <item>Tahuamanu</item>
+    </string-array>
+
+    <!-- Provincia de Tahuamanu -->
+    <string-array name="Tahuamanu">
+        <item>Tahuamanu</item>
+        <item>Iberia</item>
+        <item>Curimana</item>
+        <item>Labanero</item>
+        <item>Tahuamanu</item>
+    </string-array>
+    <!-- Provincia de General Sánchez Cerro (Moquegua) -->
+    <string-array name="GeneralSanchezCerro">
+        <item>Moquegua</item>
+        <item>Carumas</item>
+        <item>Cuchumbaya</item>
+        <item>Samegua</item>
+        <item>San Cristobal</item>
+        <item>Torreblanca</item>
+    </string-array>
+
+    <!-- Provincia de Ilo (Moquegua) -->
+    <string-array name="Ilo">
+        <item>Ilo</item>
+        <item>El Algarrobal</item>
+        <item>Pacocha</item>
+        <item>Punta de Bombon</item>
+    </string-array>
+
+    <!-- Provincia de Mariscal Nieto (Moquegua) -->
+    <string-array name="MariscalNieto">
+        <item>Moquegua</item>
+        <item>Samegua</item>
+        <item>San Cristóbal</item>
+        <item>Calacoa</item>
+    </string-array>
+
+    <!-- Provincia de Daniel Alcides Carrión (Pasco) -->
+    <string-array name="DanielAlcidesCarrion">
+        <item>Yanahuanca</item>
+        <item>Chacayan</item>
+        <item>Goyllarisquizga</item>
+        <item>Paucar</item>
+        <item>San Pedro de Pillao</item>
+        <item>Santa Ana de Tusi</item>
+        <item>Tapas</item>
+        <item>Vilcabamba</item>
+        <item>Yanahuanca</item>
+    </string-array>
+
+    <!-- Provincia de Oxapampa (Pasco) -->
+    <string-array name="Oxapampa">
+        <item>Oxapampa</item>
+        <item>Chontabamba</item>
+        <item>Huancabamba</item>
+        <item>Palcazu</item>
+        <item>Pozuzo</item>
+        <item>Puerto Bermúdez</item>
+        <item>Villa Rica</item>
+    </string-array>
+
+    <!-- Provincia de Pasco (Pasco) -->
+    <string-array name="pasco">
+        <item>Cerro de Pasco</item>
+        <item>Chaupimarca</item>
+        <item>Huachon</item>
+        <item>Huariaca</item>
+        <item>Paucartambo</item>
+        <item>Simón Bolívar</item>
+        <item>Ticlacayan</item>
+        <item>Vicco</item>
+        <item>Yanacancha</item>
+    </string-array>
+    <!--Piura-->
+    <!-- Provincia de Ayabaca -->
+    <string-array name="Ayabaca">
+        <item>Ayabaca</item>
+        <item>Frias</item>
+        <item>Jilili</item>
+        <item>Lagunas</item>
+        <item>Montero</item>
+        <item>Pacaipampa</item>
+        <item>Paimas</item>
+        <item>Sapillica</item>
+        <item>Sicchez</item>
+        <item>Suyo</item>
+    </string-array>
+
+    <!-- Provincia de Huancabamba -->
+    <string-array name="Huancabamba">
+        <item>Huancabamba</item>
+        <item>Canchaque</item>
+        <item>El Carmen de la Frontera</item>
+        <item>Huarmaca</item>
+        <item>Lalaquiz</item>
+        <item>San Miguel de El Faique</item>
+        <item>Sondor</item>
+        <item>Sondorillo</item>
+    </string-array>
+
+    <!-- Provincia de Luciano Castillo Colonna (Jaén) -->
+    <string-array name="LucianoCastilloColonna">
+        <item>Jaén</item>
+        <item>Bellavista</item>
+        <item>Chontali</item>
+        <item>Colasay</item>
+        <item>Huabal</item>
+        <item>Las Pirias</item>
+        <item>Pomahuaca</item>
+        <item>Pucara</item>
+        <item>Sallique</item>
+        <item>San Felipe</item>
+        <item>San José del Alto</item>
+        <item>Santa Rosa</item>
+        <item>Tambogrande</item>
+    </string-array>
+
+    <!-- Provincia de Mercedes Cáceres (Huancabamba) -->
+    <string-array name="MercedesCaceres">
+        <item>Huarmaca</item>
+        <item>Canchaque</item>
+        <item>El Carmen de la Frontera</item>
+        <item>Lalaquiz</item>
+        <item>San Miguel de El Faique</item>
+        <item>Sondorillo</item>
+    </string-array>
+
+    <!-- Provincia de Sechura -->
+    <string-array name="Sechura">
+        <item>Sechura</item>
+        <item>Bellavista de la Unión</item>
+        <item>Bernal</item>
+        <item>Cristo Nos Valga</item>
+        <item>Rinconada Llicuar</item>
+        <item>Sechura</item>
+        <item>Vice</item>
+    </string-array>
+
+    <!-- Provincia de Paita -->
+    <string-array name="Paita">
+        <item>Paita</item>
+        <item>Amotape</item>
+        <item>Arenal</item>
+        <item>Colán</item>
+        <item>La Huaca</item>
+        <item>Tamarindo</item>
+        <item>Vichayal</item>
+    </string-array>
+
+    <!-- Provincia de Piura -->
+    <string-array name="piura">
+        <item>Piura</item>
+        <item>Catacaos</item>
+        <item>Castilla</item>
+        <item>Cura Mori</item>
+        <item>El Tallan</item>
+        <item>La Arena</item>
+        <item>La Union</item>
+        <item>Las Lomas</item>
+        <item>Tambogrande</item>
+        <item>24 de Diciembre</item>
+    </string-array>
+
+    <!-- Provincia de Talara -->
+    <string-array name="Talara">
+        <item>Talara</item>
+        <item>El Alto</item>
+        <item>La Brea</item>
+        <item>Pariñas</item>
+    </string-array>
+    <!--PUNO-->
+    <!-- Provincia de Azángaro -->
+    <string-array name="Azangaro">
+        <item>Azángaro</item>
+        <item>Achaya</item>
+        <item>Arapa</item>
+        <item>Asillo</item>
+        <item>Camincaca</item>
+        <item>Chupa</item>
+        <item>José Domingo Choquehuanca</item>
+        <item>Munani</item>
+        <item>Potoni</item>
+        <item>Saman</item>
+        <item>San Anton</item>
+        <item>San José</item>
+        <item>San Juan de Salinas</item>
+        <item>Santiago de Pupuja</item>
+        <item>Tirapata</item>
+        <item>Umachiri</item>
+    </string-array>
+
+    <!-- Provincia de Carabaya -->
+    <string-array name="Carabaya">
+        <item>Macusani</item>
+        <item>Ajoyani</item>
+        <item>Antequera</item>
+        <item>Asani</item>
+        <item>Capaso</item>
+        <item>Corani</item>
+        <item>Crucero</item>
+        <item>Ituata</item>
+        <item>Ollachea</item>
+        <item>San Gaban</item>
+        <item>Usicayos</item>
+        <item>Usicayos</item>
+    </string-array>
+
+    <!-- Provincia de Chucuito -->
+    <string-array name="Chucuito">
+        <item>Juli</item>
+        <item>Desaguadero</item>
+        <item>Huacullani</item>
+        <item>Kelluyo</item>
+        <item>Pisacoma</item>
+        <item>Pomata</item>
+        <item>Zepita</item>
+    </string-array>
+
+    <!-- Provincia de El Collao -->
+    <string-array name="ElCollao">
+        <item>Ilave</item>
+        <item>Capazo</item>
+        <item>Pilcuyo</item>
+        <item>Santa Rosa</item>
+        <item>Conduriri</item>
+        <item>Pichacani</item>
+        <item>Conima</item>
+    </string-array>
+
+    <!-- Provincia de Huancané -->
+    <string-array name="Huancane">
+        <item>Huancané</item>
+        <item>Cabana</item>
+        <item>Corani</item>
+        <item>Cusimayo</item>
+        <item>Huatasani</item>
+        <item>Ichuña</item>
+        <item>Ingavi</item>
+        <item>Mochumi</item>
+        <item>Putina</item>
+        <item>Santa Rosa</item>
+        <item>Vilque Chico</item>
+    </string-array>
+
+    <!-- Provincia de Lampa -->
+    <string-array name="Lampa">
+        <item>Lampa</item>
+        <item>Cabanilla</item>
+        <item>Calapuja</item>
+        <item>Nicasio</item>
+        <item>Paratía</item>
+        <item>Pucara</item>
+        <item>Santa Lucia</item>
+        <item>Vilavila</item>
+    </string-array>
+
+    <!-- Provincia de Melgar -->
+    <string-array name="Melgar">
+        <item>Ayaviri</item>
+        <item>Antauta</item>
+        <item>Cupi</item>
+        <item>Llalli</item>
+        <item>Macari</item>
+        <item>Nuñoa</item>
+        <item>Orurillo</item>
+        <item>Santa Rosa</item>
+        <item>Umachiri</item>
+    </string-array>
+
+    <!-- Provincia de Puno -->
+    <string-array name="puno">
+        <item>Puno</item>
+        <item>Acora</item>
+        <item>Amantani</item>
+        <item>Atuncolla</item>
+        <item>Capachica</item>
+        <item>Chucuito</item>
+        <item>Coata</item>
+        <item>Huata</item>
+        <item>Maquina</item>
+        <item>Paucarcolla</item>
+        <item>Pichacani</item>
+        <item>Plateria</item>
+        <item>San Antonio</item>
+        <item>Tiwanaku</item>
+        <item>Tiquillaca</item>
+        <item>Vilque</item>
+    </string-array>
+
+    <!-- Provincia de San Antonio de Putina -->
+    <string-array name="SanAntoniodePutina">
+        <item>Putina</item>
+        <item>Ananea</item>
+        <item>Pedro Vilca Apaza</item>
+        <item>Quilcapuncu</item>
+        <item>Sina</item>
+    </string-array>
+
+    <!-- Provincia de Sandia -->
+    <string-array name="Sandia">
+        <item>Yunguyo</item>
+        <item>Alto Inambari</item>
+        <item>San Pedro de Putina Punco</item>
+        <item>Phara</item>
+        <item>Oquendo</item>
+    </string-array>
+
+    <!-- Provincia de Yunguyo -->
+    <string-array name="Yunguyo">
+        <item>Yunguyo</item>
+        <item>Anapia</item>
+        <item>Copani</item>
+        <item>Cuturapi</item>
+        <item>Ollaraya</item>
+        <item>Tinicachi</item>
+    </string-array>
+    <!--San Martín-->
+    <!-- Provincia de Bellavista -->
+    <string-array name="Bellavista">
+        <item>Bellavista</item>
+        <item>Alto Biavo</item>
+        <item>Bajo Biavo</item>
+        <item>Biavo</item>
+        <item>Huallaga</item>
+        <item>San Pablo</item>
+    </string-array>
+
+    <!-- Provincia de El Dorado -->
+    <string-array name="ElDorado">
+        <item>San José de Sisa</item>
+        <item>Agua Blanca</item>
+        <item>San Martin</item>
+    </string-array>
+
+    <!-- Provincia de Huallaga -->
+    <string-array name="Huallaga">
+        <item>Saposoa</item>
+        <item>Alto Saposoa</item>
+        <item>El Eslabón</item>
+        <item>Piscoyacu</item>
+        <item>Sacanche</item>
+    </string-array>
+
+    <!-- Provincia de Lamas -->
+    <string-array name="Lamas">
+        <item>Lamas</item>
+        <item>Alonso de Alvarado</item>
+        <item>Barranquita</item>
+        <item>Caynarachi</item>
+        <item>Cumapa</item>
+        <item>Miraflores</item>
+        <item>Pinto Recodo</item>
+        <item>Rumisapa</item>
+        <item>San Roque de Cumbaza</item>
+        <item>Shanao</item>
+        <item>Tarapoto</item>
+        <item>New Tarapoto</item>
+    </string-array>
+
+    <!-- Provincia de Mariscal Cáceres -->
+    <string-array name="MariscalCaceres">
+        <item>Juanjui</item>
+        <item>Campanilla</item>
+        <item>Huicungo</item>
+        <item>Pachiza</item>
+        <item>Pajarillo</item>
+    </string-array>
+
+    <!-- Provincia de Moyobamba -->
+    <string-array name="Moyobamba">
+        <item>Moyobamba</item>
+        <item>Calzada</item>
+        <item>Habana</item>
+        <item>Jepelacio</item>
+        <item>Soritor</item>
+        <item>Yantalo</item>
+    </string-array>
+
+    <!-- Provincia de Picota -->
+    <string-array name="Picota">
+        <item>Picota</item>
+        <item>Alberto Leveaui Guerra</item>
+        <item>Cahuapanas</item>
+        <item>Huallaga</item>
+        <item>Luna Pizarro</item>
+        <item>San Cristobal</item>
+    </string-array>
+
+    <!-- Provincia de Rioja -->
+    <string-array name="Rioja">
+        <item>Rioja</item>
+        <item>Awajun</item>
+        <item>Espeleta</item>
+        <item>Nueva Cajamarca</item>
+        <item>Pardo Miguel</item>
+        <item>Tarapoto</item>
+    </string-array>
+
+    <!-- Provincias de Tocache -->
+    <string-array name="Tocache">
+        <item>Tocache</item>
+        <item>Nuevo Progreso</item>
+        <item>Polvora</item>
+        <item>Santa Lucia</item>
+        <item>Shunté</item>
+        <item>Uchiza</item>
+    </string-array>
+
+    <!-- Provincia de San Martín -->
+    <string-array name="SanMartin">
+        <item>Tocache</item>
+        <item>Nueva Cajamarca</item>
+        <item>Pinto Recodo</item>
+        <item>Shanao</item>
+        <item>Uchiza</item>
+    </string-array>
+    <!--TACNA-->
+    <!-- Provincia de Candarave -->
+    <string-array name="Candarave">
+        <item>Candarave</item>
+        <item>Cairani</item>
+        <item>Camilaca</item>
+        <item>Curibaya</item>
+        <item>Huanuara</item>
+        <item>Ite</item>
+    </string-array>
+
+    <!-- Provincia de Jorge Basadre -->
+    <string-array name="JorgeBasadre">
+        <item>Locumba</item>
+        <item>Ilabaya</item>
+        <item>Ite</item>
+    </string-array>
+
+    <!-- Provincia de Tacna -->
+    <string-array name="tacna">
+        <item>Tacna</item>
+        <item>Alto de la Alianza</item>
+        <item>Calana</item>
+        <item>Ciudad Nueva</item>
+        <item>Inclan</item>
+        <item>Pachia</item>
+        <item>Pocollay</item>
+        <item>Sama</item>
+        <item>Sueres</item>
+        <item>Tarata</item>
+    </string-array>
+
+    <!-- Provincia de Tarata -->
+    <string-array name="Tarata">
+        <item>Tarata</item>
+        <item>Héroes Albarracín</item>
+        <item>Estique</item>
+        <item>Estique-Pampa</item>
+        <item>Sitajara</item>
+    </string-array>
+    <!--TUMBES-->
+    <!-- Provincia de Contralmirante Villar (Tumbes) -->
+    <string-array name="ContralmiranteVillar">
+        <item>Zorritos</item>
+        <item>Corrales</item>
+        <item>La Cruz</item>
+    </string-array>
+
+    <!-- Provincia de Tumbes -->
+    <string-array name="tumbes">
+        <item>Tumbes</item>
+        <item>Corrales</item>
+        <item>La Cruz</item>
+        <item>Pampas de Hospital</item>
+        <item>San Jacinto</item>
+        <item>San Juan de la Virgen</item>
+    </string-array>
+
+    <!-- Provincia de Zarumilla (Tumbes) -->
+    <string-array name="Zarumilla">
+        <item>Zarumilla</item>
+        <item>Aguas Verdes</item>
+    </string-array>
+    <!--UCAYALI-->
+    <!-- Provincia de Atalaya -->
+    <string-array name="Atalaya">
+        <item>Raymondi</item>
+        <item>Sepahua</item>
+        <item>Virú</item>
+        <item>Yurúa</item>
+    </string-array>
+
+    <!-- Distritos de Pucallpa -->
+    <string-array name="Pucallpa">
+        <item>Callería</item>
+        <item>Yarinacocha</item>
+        <item>Manantay</item>
+    </string-array>
+
+    <!-- Provincia de Coronel Portillo (Pucallpa) -->
+    <string-array name="CoronelPortillo">
+        <item>Pucallpa</item>
+        <item>Callería</item>
+        <item>Campoverde</item>
+        <item>Iparía</item>
+        <item>Manantay</item>
+        <item>Masisea</item>
+        <item>Nueva Requena</item>
+        <item>Yarinacocha</item>
+    </string-array>
+
+    <!-- Provincia de Padre Abad -->
+    <string-array name="PadreAbad">
+        <item>Aguaytía</item>
+        <item>Calleria</item>
+        <item>Irazola</item>
+        <item>Curimana</item>
+        <item>Neshuya</item>
+    </string-array>
+
+    <!-- Provincia de Purús -->
+    <string-array name="Purus">
+        <item>Laberinto</item>
+        <item>Purús</item>
     </string-array>
 
 </resources>
