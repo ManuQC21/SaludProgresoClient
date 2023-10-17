@@ -61,6 +61,8 @@ import okhttp3.RequestBody;
 
 public class RegistrarUsuarioActivity extends AppCompatActivity {
     private File f;
+    String pattern = "^[a-zA-Z0-9.,!?\\s]*$";
+
     private PacienteViewModel pacienteViewModel;
     private UsuarioViewModel usuarioViewModel;
     private DocumentoAlmacenadoViewModel documentoAlmacenadoViewModel;
@@ -545,96 +547,134 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
             errorMessage("debe selecionar una foto de perfil");
             retorno = false;
         }
+        //NOMBRES
         if (nombres.isEmpty()) {
             txtInputNameUser.setError("Ingresar nombres");
+            retorno = false;
+        } else if (!nombres.matches(pattern)) {
+            txtInputNameUser.setError("Esta usando caracteres no permitidos");
             retorno = false;
         } else {
             txtInputNameUser.setErrorEnabled(false);
         }
+        //APELLIDO P
         if (apellidoPaterno.isEmpty()) {
             txtInputApellidoPaternoU.setError("Ingresar apellido paterno");
+            retorno = false;
+        } else if (!apellidoPaterno.matches(pattern)) {
+            txtInputApellidoPaternoU.setError("Esta usando caracteres no permitidos");
             retorno = false;
         } else {
             txtInputApellidoPaternoU.setErrorEnabled(false);
         }
+        //APELLIDO M
         if (apellidoMaterno.isEmpty()) {
             txtInputApellidoMaternoU.setError("Ingresar apellido materno");
+            retorno = false;
+        } else if (!apellidoMaterno.matches(pattern)) {
+            txtInputApellidoMaternoU.setError("Esta usando caracteres no permitidos");
             retorno = false;
         } else {
             txtInputApellidoMaternoU.setErrorEnabled(false);
         }
+        //NACIMIENTO
         if (fechanacimiento.isEmpty()) {
             txtInputfechanacimiento.setError("Ingresar fecha de nacimiento");
             retorno = false;
         } else {
             txtInputfechanacimiento.setErrorEnabled(false);
         }
+        //NUMERO DOC
         if (numDoc.isEmpty()) {
             txtInputNumeroDocU.setError("Ingresar número documento");
             retorno = false;
         } else {
             txtInputNumeroDocU.setErrorEnabled(false);
         }
+        //NUMERO TELEFONO
         if (telefono.isEmpty()) {
             txtInputTelefonoU.setError("Ingresar número telefónico");
             retorno = false;
         } else {
             txtInputTelefonoU.setErrorEnabled(false);
         }
+        //DIRECCION
         if (direccion.isEmpty()) {
             txtInputDireccionU.setError("Ingresar dirección de su casa");
+            retorno = false;
+        }else if (!alergias.matches(pattern)) {
+            txtInputDireccionU.setError("Esta usando caracteres no permitidos");
             retorno = false;
         } else {
             txtInputDireccionU.setErrorEnabled(false);
         }
+        //ALERGIAS
         if (alergias.isEmpty()) {
             txtInputAlergias.setError("Ingresar alergias en caso de tenerlas");
+            retorno = false;
+        } else if (!alergias.matches(pattern)) {
+            txtInputAlergias.setError("Esta usando caracteres no permitidos");
             retorno = false;
         } else {
             txtInputAlergias.setErrorEnabled(false);
         }
+        //INFO
         if (informacionadicional.isEmpty()) {
             txtInputinformacionadicional.setError("Ingresar información adicional importante del paciente");
+            retorno = false;
+        } else if (!informacionadicional.matches(pattern)) {
+            txtInputinformacionadicional.setError("Esta usando caracteres no permitidos");
             retorno = false;
         } else {
             txtInputinformacionadicional.setErrorEnabled(false);
         }
+        //CORREO
+
         if (correo.isEmpty()) {
             txtInputEmailUser.setError("Ingresar correo electrónico");
+            retorno = false;
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
+            txtInputEmailUser.setError("Correo electrónico no válido");
             retorno = false;
         } else {
             txtInputEmailUser.setErrorEnabled(false);
         }
+        //CLAVE
         if (clave.isEmpty()) {
             txtInputPasswordUser.setError("Ingresar clave para el inicio de sesión");
             retorno = false;
         } else {
             txtInputPasswordUser.setErrorEnabled(false);
         }
+        //TIPO DOC
         if (dropTipoDoc.isEmpty()) {
             txtInputTipoDoc.setError("Seleccionar Tipo Doc");
             retorno = false;
         } else {
             txtInputTipoDoc.setErrorEnabled(false);
         }
+        //DEP
         if (dropDepartamento.isEmpty()) {
             txtInputDepartamento.setError("Seleccionar Departamento");
             retorno = false;
         } else {
             txtInputDepartamento.setErrorEnabled(false);
         }
+        //PROVINCIA
         if (dropProvincia.isEmpty()) {
             txtInputProvincia.setError("Seleccionar Provincia");
             retorno = false;
         } else {
             txtInputProvincia.setErrorEnabled(false);
         }
+        //DISTRITO
         if (dropDistrito.isEmpty()) {
             txtInputDistrito.setError("Seleccionar Distrito");
             retorno = false;
         } else {
             txtInputDistrito.setErrorEnabled(false);
         }
+        //GENERO
         if (dropGeneros.isEmpty()) {
             txtInputGeneros.setError("Seleccionar Genero");
             retorno = false;

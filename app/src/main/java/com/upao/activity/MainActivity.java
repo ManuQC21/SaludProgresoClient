@@ -166,6 +166,9 @@ public class MainActivity extends AppCompatActivity {
         if (usuario.isEmpty()) {
             txtInputUsuario.setError("Ingrese su usario y/o correo electrónico");
             retorno = false;
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(usuario).matches()) {
+            txtInputUsuario.setError("Correo electrónico no válido");
+            retorno = false;
         } else {
             txtInputUsuario.setErrorEnabled(false);
         }

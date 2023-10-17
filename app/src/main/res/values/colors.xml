@@ -2,12 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="purple_200">#E8E1F1</color>
-    <color name="purple_500">#115e39</color>
-    <color name="purple_700">#1566e0</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="azulBajo">#2A3742</color>
-    <color name="colorGris">#888888</color>
+    <color name="blanquito">#E8E1F1</color>
+    <color name="verdesito">#115e39</color>
+    <color name="azulitomejor">#1566e0</color>
+    <color name="celestito">#FF03DAC5</color>
+    <color name="celestitito">#FF018786</color>
+    <color name="mediogris">#2A3742</color>
+    <color name="gris">#888888</color>
     <color name="colorAzul">#1566e0</color>
+    <color name="registro">#000000</color>
+    <color name="red">#C64949</color>
+    <color name="blue">#0048FF</color>
+    <color name="bluepersonalizado">#1566e0</color>
 </resources>

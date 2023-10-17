@@ -37,6 +37,7 @@
             android:fontFamily="@font/san_francisco"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/red"
             android:gravity="center|center_horizontal"
             android:text="@string/label_bienvenida"/>
     </LinearLayout>
@@ -97,7 +98,8 @@
             android:id="@+id/btnIniciarSesion"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/background_green"
+            android:textColor="@color/white"
+            app:backgroundTint="#1566e0"
             android:drawableEnd="@drawable/ic_login"
             android:drawableTint="#fff"
             android:fontFamily="@font/poppins_medium"
@@ -117,8 +119,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/san_francisco"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/purple_500"
+            android:textStyle="italic"
+            android:textColor="@color/blue"
             android:gravity="center|center_horizontal"
             android:text="@string/label_nuevoUser"/>
     </LinearLayout>

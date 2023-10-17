@@ -22,7 +22,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/purple_700"
+                android:background="@color/azulitomejor"
                 app:navigationIcon="@drawable/ic_volver_atras"
                 app:title="Registrar Usuario"
                 app:titleTextColor="@color/white" />
@@ -46,7 +46,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:backgroundTint="@color/azulBajo"
+                    android:backgroundTint="@color/mediogris"
                     android:elevation="8dp"
                     app:cardCornerRadius="15dp">
 
@@ -156,7 +156,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="12sp" />
+                                        android:textSize="12sp"
+                                        android:maxLength="100"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
@@ -180,7 +181,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="12sp" />
+                                        android:textSize="12sp"
+                                        android:maxLength="100"/>
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <com.google.android.material.textfield.TextInputLayout
@@ -197,7 +199,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="12sp" />
+                                        android:textSize="12sp"
+                                        android:maxLength="100"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -223,7 +226,8 @@
                                         android:fontFamily="@font/san_francisco"
                                         android:textSize="12sp"
                                         android:clickable="true"
-                                        android:focusable="false" />
+                                        android:focusable="false"
+                                        android:maxLength="100"/>
                                 </com.google.android.material.textfield.TextInputLayout>
 
                                 <!-- Campo de Género -->
@@ -277,6 +281,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:hint="Num. de Documento"
+
                                     app:startIconDrawable="@drawable/ic_huella">
 
                                     <com.google.android.material.textfield.TextInputEditText
@@ -285,7 +290,8 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="number"
-                                        android:textSize="10sp" />
+                                        android:textSize="10sp"
+                                        android:maxLength="8"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
@@ -374,7 +380,8 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
                                         android:inputType="number"
-                                        android:textSize="15sp" />
+                                        android:textSize="10sp"
+                                        android:maxLength="9"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
@@ -396,7 +403,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="12sp" />
+                                        android:textSize="12sp"
+                                        android:maxLength="100"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -417,7 +425,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="12sp" />
+                                        android:textSize="12sp"
+                                        android:maxLength="100"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                             <LinearLayout
@@ -438,7 +447,8 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/san_francisco"
-                                        android:textSize="12sp" />
+                                        android:textSize="12sp"
+                                        android:maxLength="400"/>
                                 </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
                         </LinearLayout>
