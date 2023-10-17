@@ -23,6 +23,9 @@ public class ConfigApi {
     private static String token="";
 
     private static UsuarioApi usuarioApi;
+    private static PacienteApi pacienteApi;
+    private static DocumentoAlmacenadoApi documentoAlmacenadoApi;
+
 
     static {
         initClient();
@@ -55,17 +58,29 @@ public class ConfigApi {
                 .addNetworkInterceptor(stetho);
         return builder.build();
     }
-
     public static void setToken(String value) {
         token = value;
         initClient();
     }
-
     public static UsuarioApi getUsuarioApi() {
         if (usuarioApi == null) {
             usuarioApi = retrofit.create(UsuarioApi.class);
         }
         return usuarioApi;
     }
+    public static PacienteApi getPacienteApi() {
+        if (pacienteApi == null) {
+            pacienteApi = retrofit.create(PacienteApi.class);
+        }
+        return pacienteApi;
+    }
+    public static DocumentoAlmacenadoApi getDocumentoAlmacenadoApi() {
+        if (documentoAlmacenadoApi == null) {
+            documentoAlmacenadoApi = retrofit.create(DocumentoAlmacenadoApi.class);
+        }
+        return documentoAlmacenadoApi;
+    }
+
+
 
 }

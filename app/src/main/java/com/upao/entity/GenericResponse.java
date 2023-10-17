@@ -1,4 +1,4 @@
-package com.upao.activity.entity;
+package com.upao.entity;
 
 public class GenericResponse<T> {
     private String type;

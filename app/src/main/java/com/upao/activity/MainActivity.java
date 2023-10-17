@@ -25,13 +25,15 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import com.upao.R;
-import com.upao.activity.entity.service.Usuario;
+import com.upao.entity.service.Usuario;
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
 import com.upao.viewmodel.UsuarioViewModel;
 
 import java.sql.Time;
 import java.sql.Date;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MainActivity extends AppCompatActivity {
     private EditText edtMail, edtPassword;
@@ -88,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
             }catch (Exception e){
                 toastIncorrecto("Se ha producido un error al intentar loguearte : " + e.getMessage());
             }
+        });
+        txtNuevoUsuario.setOnClickListener(v -> {
+            Intent i = new Intent(this, RegistrarUsuarioActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.left_in, R.anim.left_out);
         });
         edtMail.addTextChangedListener(new TextWatcher() {
             @Override
@@ -171,7 +178,33 @@ public class MainActivity extends AppCompatActivity {
         return retorno;
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String pref = preferences.getString("UsuarioJson", "");
+        if(!pref.equals("")){
+            toastCorrecto("Se detecto una sesión activa, el login será omitido!");
+            this.startActivity(new Intent(this, InicioActivity.class));
+            this.overridePendingTransition(R.anim.left_in, R.anim.left_out);
+        }
+    }
 
+    @Override
+    public void onBackPressed() {
+        new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE).setTitleText("has oprimido el botón atrás")
+                .setContentText("¿Quieres cerrar la aplicación?")
+                .setCancelText("No, Cancelar!").setConfirmText("Sí, Cerrar")
+                .showCancelButton(true).setCancelClickListener(sDialog -> {
+                    sDialog.dismissWithAnimation();
+                    new SweetAlertDialog(this, SweetAlertDialog.ERROR_TYPE).setTitleText("Operación cancelada")
+                            .setContentText("No saliste de la app")
+                            .show();
+                }).setConfirmClickListener(sweetAlertDialog -> {
+                    sweetAlertDialog.dismissWithAnimation();
+                    System.exit(0);
+                }).show();
+    }
 
 
 }

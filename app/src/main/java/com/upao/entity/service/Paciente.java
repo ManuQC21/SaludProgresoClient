@@ -1,15 +1,13 @@
-package com.upao.activity.entity.service;
-
-import java.util.Date;
+package com.upao.entity.service;
 
 
 public class Paciente {
 
     private int id;
-    private String nombre;
+    private String nombres;
     private String apellidoPaterno;
     private String apellidoMaterno;
-    private Date fechanacimiento;
+    private String fechanacimiento;
     private String tipoDoc;
     private String numDoc;
     private String departamento;
@@ -22,6 +20,13 @@ public class Paciente {
     private String informacionadicional;
     private DocumentoAlmacenado foto;
 
+    public Paciente() {
+    }
+
+    public Paciente(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
@@ -30,12 +35,12 @@ public class Paciente {
         this.id = ID_Paciente;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
     public String getApellidoPaterno() {
@@ -54,11 +59,11 @@ public class Paciente {
         this.apellidoMaterno = apellidoMaterno;
     }
 
-    public Date getFechanacimiento() {
+    public String getFechanacimiento() {
         return fechanacimiento;
     }
 
-    public void setFechanacimiento(Date fechanacimiento) {
+    public void setFechanacimiento(String fechanacimiento) {
         this.fechanacimiento = fechanacimiento;
     }
 
@@ -149,5 +154,11 @@ public class Paciente {
     public void setFoto(DocumentoAlmacenado foto) {
         this.foto = foto;
     }
+
+    public String getNombreCompletoPaciente(){
+        return this.nombres != null && this.apellidoPaterno != null && this.apellidoMaterno != null ?
+                this.nombres + " " + this.apellidoPaterno + " " + this.apellidoMaterno : "-----";
+    }
+
 
 }

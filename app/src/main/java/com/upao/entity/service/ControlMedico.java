@@ -1,4 +1,4 @@
-package com.upao.activity.entity.service;
+package com.upao.entity.service;
 
 import java.util.Date;
 

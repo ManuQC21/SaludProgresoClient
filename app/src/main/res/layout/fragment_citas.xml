@@ -11,5 +11,5 @@
     <View
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="#326CFF" /> <!-- Color de fondo naranja -->
+        android:background="#1566e0" /> <!-- Color de fondo naranja -->
 </LinearLayout>

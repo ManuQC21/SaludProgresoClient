@@ -23,34 +23,6 @@
     </string-array>
     <string-array name="departamentos">
         <item>Amazonas</item>
-        <item>Áncash</item>
-        <item>Apurímac</item>
-        <item>Arequipa</item>
-        <item>Ayacucho</item>
-        <item>Cajamarca</item>
-        <item>Callao</item>
-        <item>Cusco</item>
-        <item>Huancavelica</item>
-        <item>Huánuco</item>
-        <item>Ica</item>
-        <item>Junín</item>
-        <item>La Libertad</item>
-        <item>Lambayeque</item>
-        <item>Lima</item>
-        <item>Loreto</item>
-        <item>Madre de Dios</item>
-        <item>Moquegua</item>
-        <item>Pasco</item>
-        <item>Piura</item>
-        <item>Puno</item>
-        <item>San Martín</item>
-        <item>Tacna</item>
-        <item>Tumbes</item>
-        <item>Ucayali</item>
-        <item>Lima</item>
-    </string-array>
-    <string-array name="provincias">
-        <item>Amazonas</item>
         <item>Ancash</item>
         <item>Apurimac</item>
         <item>Arequipa</item>
@@ -63,7 +35,6 @@
         <item>Ica</item>
         <item>Junin</item>
         <item>La Libertad</item>
-        <item>Chiclayo</item>
         <item>Lambayeque</item>
         <item>Lima</item>
         <item>Loreto</item>
@@ -76,49 +47,332 @@
         <item>Tacna</item>
         <item>Tumbes</item>
         <item>Ucayali</item>
-        <item>Ferreñafe</item>
+        <item>Lima</item>
     </string-array>
-    <string-array name="distritos">
+    <string-array name="generos">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <!-- Departamento 1: Amazonas -->
+    <string-array name="Amazonas">
+        <item>Condorcanqui</item>
+        <item>Bagua</item>
+        <item>Bongara</item>
+        <item>Utcubamba</item>
+        <item>Luya</item>
+        <item>Rodríguez de Mendoza</item>
+        <item>Chachapoyas</item>
+    </string-array>
+
+    <!-- Departamento 2: Ancash -->
+    <string-array name="Ancash">
+        <item>Aija</item>
+        <item>Antonio Raymondi</item>
+        <item>Asunción</item>
+        <item>Bolognesi</item>
+        <item>Carhuaz</item>
+        <item>Casma</item>
+        <item>Corongo</item>
+        <item>Huaraz</item>
+        <item>Huari</item>
+        <item>Huarmey</item>
+        <item>Huaylas</item>
+        <item>Mariscal Luzuriaga</item>
+        <item>Ocros</item>
+        <item>Pallasca</item>
+        <item>Pomabamba</item>
+        <item>Recuay</item>
+        <item>Santa</item>
+        <item>Sihuas</item>
+        <item>Yungay</item>
+    </string-array>
+
+    <!-- Departamento 3: Apurimac -->
+    <string-array name="Apurimac">
         <item>Abancay</item>
         <item>Andahuaylas</item>
+        <item>Antabamba</item>
+        <item>Aymaraes</item>
+        <item>Chincheros</item>
+        <item>Cotabambas</item>
+        <item>Grau</item>
+        <item>Huancarama</item>
+        <item>Tambobamba</item>
+        <item>Coyllurqui</item>
+        <item>Haquira</item>
+        <item>Lucanas</item>
+        <item>Saúl Cantoral</item>
+        <item>San Pedro de Cachora</item>
+    </string-array>
+
+    <!-- Departamento 4: Arequipa -->
+    <string-array name="Arequipa">
         <item>Arequipa</item>
-        <item>Ayacucho</item>
+        <item>Camaná</item>
+        <item>Caravelí</item>
+        <item>Castilla</item>
+        <item>Caylloma</item>
+        <item>Condesuyos</item>
+        <item>Islay</item>
+        <item>La Unión</item>
+        <item>Castilla</item>
+        <item>Huarinavi</item>
+        <item>Píscopi</item>
+    </string-array>
+
+    <!-- Departamento 5: Ayacucho -->
+    <string-array name="Ayacucho">
+        <item>Cangallo</item>
+        <item>Huanta</item>
+        <item>Huamanga</item>
+        <item>La Mar</item>
+        <item>Lucanas</item>
+        <item>Parinacochas</item>
+        <item>Paucar del Sara Sara</item>
+        <item>Sucre</item>
+        <item>Víctor Fajardo</item>
+        <item>Vilcas Huamán</item>
+    </string-array>
+
+    <!-- Departamento 6: Cajamarca -->
+    <string-array name="Cajamarca">
         <item>Cajamarca</item>
+        <item>Cajabamba</item>
+        <item>Celendín</item>
+        <item>Chota</item>
+        <item>Contumazá</item>
+        <item>Cutervo</item>
+        <item>Hualgayoc</item>
+        <item>Jaén</item>
+        <item>San Ignacio</item>
+        <item>San Marcos</item>
+        <item>San Miguel</item>
+        <item>San Pablo</item>
+        <item>Santa Cruz</item>
+    </string-array>
+
+    <!-- Departamento 7: Callao -->
+    <string-array name="Callao">
+        <item>Callao</item>
+    </string-array>
+
+    <!-- Departamento 8: Cusco -->
+    <string-array name="Cusco">
+        <item>Acomayo</item>
+        <item>Anta</item>
+        <item>Calca</item>
+        <item>Canas</item>
+        <item>Canchis</item>
+        <item>Chumbivilcas</item>
         <item>Cusco</item>
-        <item>Chachapoyas</item>
-        <item>Chiclayo</item>
-        <item>Chimbote</item>
-        <item>Chincha Alta</item>
-        <item>Chulucanas</item>
-        <item>Cerro de Pasco</item>
-        <item>Cajamarca</item>
-        <item>Huacho</item>
-        <item>Huancayo</item>
-        <item>Huánuco</item>
-        <item>Huaraz</item>
+        <item>Espinar</item>
+        <item>La Convención</item>
+        <item>Paruro</item>
+        <item>Paucartambo</item>
+        <item>Quispicanchi</item>
+        <item>Urubamba</item>
+    </string-array>
+
+    <!-- Departamento 9: Huancavelica -->
+    <string-array name="Huancavelica">
+        <item>Acobamba</item>
+        <item>Angaraes</item>
+        <item>Castrovirreyna</item>
+        <item>Churcampa</item>
+        <item>Huancavelica</item>
+        <item>Huaytará</item>
+        <item>Tayacaja</item>
+    </string-array>
+
+    <!-- Departamento 10: Huánuco -->
+    <string-array name="Huanuco">
+        <item>Ambo</item>
+        <item>Dos de Mayo</item>
+        <item>Huacaybamba</item>
+        <item>Huamalíes</item>
+        <item>Huanuco</item>
+        <item>La Unión</item>
+        <item>Leoncio Prado</item>
+        <item>Marañón</item>
+        <item>Pachitea</item>
+        <item>Puerto Inca</item>
+        <item>Lauricocha</item>
+        <item>Yarowilca</item>
+    </string-array>
+
+    <!-- Departamento 11: Ica -->
+    <string-array name="Ica">
         <item>Ica</item>
-        <item>Iquitos</item>
-        <item>Juliaca</item>
+        <item>Chincha</item>
+        <item>Nazca</item>
+        <item>Palpa</item>
+        <item>Pisco</item>
+        <item>Subtanjalla</item>
+    </string-array>
+
+    <!-- Departamento 12: Junin -->
+    <string-array name="Junin">
+        <item>Chanchamayo</item>
+        <item>Chupaca</item>
+        <item>Concepción</item>
+        <item>Huancayo</item>
+        <item>Jauja</item>
         <item>Junín</item>
-        <item>Moyobamba</item>
+        <item>Satipo</item>
+        <item>Tarma</item>
+        <item>Yauli</item>
+        <item>Chupaca</item>
+    </string-array>
+
+    <!-- Departamento 13: La Libertad -->
+    <string-array name="LaLibertad">
+        <item>Ascope</item>
+        <item>Bolívar</item>
+        <item>Gran Chimú</item>
+        <item>Julcán</item>
         <item>Pacasmayo</item>
+        <item>Pataz</item>
+        <item>Sánchez Carrión</item>
+        <item>Santiago de Chuco</item>
+        <item>Trujillo</item>
+        <item>Virú</item>
+    </string-array>
+
+    <!-- Departamento 14: Lambayeque -->
+    <string-array name="Lambayeque">
+    <item>Chiclayo</item>
+    <item>Ferreñafe</item>
+    <item>Lambayeque</item>
+    </string-array>
+
+    <!-- Departamento 15: Lima -->
+    <string-array name="Lima">
+        <item>Barranca</item>
+        <item>Cajatambo</item>
+        <item>Canta</item>
+        <item>Cañete</item>
+        <item>Huaral</item>
+        <item>Huarochirí</item>
+        <item>Huaura</item>
+        <item>Lima</item>
+        <item>Oyón</item>
+        <item>Yauyos</item>
+    </string-array>
+
+    <!-- Departamento 16: Loreto -->
+    <string-array name="Loreto">
+        <item>Alto Amazonas</item>
+        <item>Datem del Marañón</item>
+        <item>Loreto</item>
+        <item>Mariscal Ramón Castilla</item>
+        <item>Maynas</item>
+        <item>Requena</item>
+        <item>Ucayali</item>
+    </string-array>
+
+    <!-- Departamento 17: Madre de Dios -->
+    <string-array name="MadreDeDios">
+        <item>Manu</item>
+        <item>Tambopata</item>
+        <item>Tahuamanu</item>
+    </string-array>
+
+    <!-- Departamento 18: Moquegua -->
+    <string-array name="Moquegua">
+        <item>General Sánchez Cerro</item>
+        <item>Ilo</item>
+        <item>Mariscal Nieto</item>
+    </string-array>
+
+    <!-- Departamento 19: Pasco -->
+    <string-array name="Pasco">
+        <item>Daniel Alcides Carrión</item>
+        <item>Oxapampa</item>
+        <item>Pasco</item>
+    </string-array>
+
+    <!-- Departamento 20: Piura -->
+    <string-array name="Piura">
+        <item>Ayabaca</item>
+        <item>Huancabamba</item>
+        <item>Luciano Castillo Colonna</item>
+        <item>Mercedes Cáceres</item>
+        <item>Sechura</item>
         <item>Paita</item>
         <item>Piura</item>
-        <item>Pucallpa</item>
-        <item>Puno</item>
-        <item>Sullana</item>
-        <item>Tacna</item>
         <item>Talara</item>
-        <item>Tarapoto</item>
-        <item>Tingo María</item>
-        <item>Tocache</item>
-        <item>Trujillo</item>
-        <item>Tumbes</item>
-        <item>Yurimaguas</item>
-        <item>Ferreñafe</item>
-        <item>Pueblo Nuevo</item>
-        <item>Mesones Muro</item>
-        <item>Inkahuasi</item>
-        <item>Kañaris</item>
+
     </string-array>
+
+    <!-- Departamento 21: Puno -->
+    <string-array name="Puno">
+        <item>Azangaro</item>
+        <item>Carabaya</item>
+        <item>Chucuito</item>
+        <item>El Collao</item>
+        <item>Huancane</item>
+        <item>Lampa</item>
+        <item>Melgar</item>
+        <item>Puno</item>
+        <item>San Antonio de Putina</item>
+        <item>Sandia</item>
+        <item>Yunguyo</item>
+    </string-array>
+
+    <!-- Departamento 22: San Martín -->
+    <string-array name="San_Martin">
+        <item>Bellavista</item>
+        <item>El Dorado</item>
+        <item>Huallaga</item>
+        <item>Lamas</item>
+        <item>Mariscal Caceres</item>
+        <item>Moyobamba</item>
+        <item>Picota</item>
+        <item>Rioja</item>
+        <item>San Martin</item>
+        <item>Tocache</item>
+    </string-array>
+
+    <!-- Departamento 23: Tacna -->
+    <string-array name="Tacna">
+        <item>Candarave</item>
+        <item>Jorge Basadre</item>
+        <item>Tacna</item>
+        <item>Tarata</item>
+    </string-array>
+
+    <!-- Departamento 24: Tumbes -->
+    <string-array name="Tumbes">
+        <item>Contralmirante Villar</item>
+        <item>Tumbes</item>
+        <item>Zarumilla</item>
+    </string-array>
+
+    <!-- Departamento 25: Ucayali -->
+    <string-array name="Ucayali">
+        <item>Atalaya</item>
+        <item>Coronel Portillo</item>
+        <item>Padre Abad</item>
+        <item>Purús</item>
+    </string-array>
+
+    <string-array name="Condorcanqui">
+        <item>Distrito 1</item>
+        <item>Distrito 2</item>
+        <item>Distrito 3</item>
+    </string-array>
+
+    <string-array name="Bagua">
+        <item>Distrito 1</item>
+        <item>Distrito 2</item>
+        <item>Distrito 3</item>
+    </string-array>
+    <string-array name="Bongara">
+        <item>Distrito 1</item>
+        <item>Distrito 2</item>
+        <item>Distrito 3</item>
+    </string-array>
+
 </resources>

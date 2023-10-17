@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import com.upao.api.ConfigApi;
 import com.upao.api.UsuarioApi;
-import com.upao.activity.entity.GenericResponse;
-import com.upao.activity.entity.service.Usuario;
+import com.upao.entity.GenericResponse;
+import com.upao.entity.service.Usuario;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -43,5 +43,24 @@ public class UsuarioRepository {
         });
         return mld;
     }
+
+    public LiveData<GenericResponse<Usuario>> save (Usuario u){
+        final MutableLiveData<GenericResponse<Usuario>> mld = new MutableLiveData<>();
+        this.api.save(u).enqueue(new Callback<GenericResponse<Usuario>>() {
+            @Override
+            public void onResponse(Call<GenericResponse<Usuario>> call, Response<GenericResponse<Usuario>> response) {
+                mld.setValue(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<GenericResponse<Usuario>> call, Throwable t) {
+                mld.setValue(new GenericResponse<>());
+                System.out.println("Se ha producido un error : " + t.getMessage());
+                t.printStackTrace();
+            }
+        });
+        return mld;
+    }
+
 
 }
