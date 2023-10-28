@@ -243,10 +243,10 @@
 
     <!-- Departamento 14: Lambayeque -->
     <string-array name="Lambayeque">
-    <item>Ferreñafe</item>
-    <item>Lambayeque</item>
-    <item>Motupe</item>
-    <item>Olmos</item>
+        <item>Ferreñafe</item>
+        <item>Lambayeque</item>
+        <item>Motupe</item>
+        <item>Olmos</item>
     </string-array>
 
     <!-- Departamento 15: Lima -->
