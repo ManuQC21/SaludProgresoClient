@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fecha_array">
+        <item>2023-01-01</item>
+        <item>2023-01-02</item>
+        <item>2023-01-03</item>
+        <!-- Agrega más fechas según sea necesario -->
+    </string-array>
+
+    <string-array name="especialidad_array">
+        <item>Cardiología</item>
+        <item>Neurología</item>
+        <item>Pediatría</item>
+        <!-- Agrega más especialidades según sea necesario -->
+    </string-array>
+</resources>

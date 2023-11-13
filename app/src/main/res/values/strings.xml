@@ -18,6 +18,7 @@
     <string name="menu_citas">Generar Citas</string>
     <string name="menu_listar_citas">Mis Citas</string>
     <string name="menu_perfil">Mi perfil</string>
+    <string name="mis_citas">Mis Citas</string>
     <string-array name="tipoDoc">
         <item>DNI</item>
         <item>RUC</item>

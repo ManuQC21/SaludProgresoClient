@@ -1,20 +1,25 @@
-<!-- fragment_mis_citas.xml -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-
+    tools:context=".activity.ui.MisCitas.MisCitasActivity">
+    <!-- Título del fragmento -->
     <TextView
+        android:id="@+id/txtMisCitasInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mis Citas"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:visibility="gone" />
+    <!-- RecyclerView para listar las citas -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvDetalleMisCitas"
+        android:id="@+id/recyclerViewMisCitas"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_marginTop="-6dp"
+        android:scrollbars="vertical" />
+
+</FrameLayout>

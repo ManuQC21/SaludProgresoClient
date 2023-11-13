@@ -8,14 +8,14 @@ public class FechasCitas {
 
     private Long id;
 
-    private LocalDate fecha;    // Fecha de la cita
+    private String fecha;    // Fecha de la cita
 
     private List<HorasCitas> horasCitas;     // Lista de horas de citas asociadas a esta fecha
 
     public FechasCitas() {
     }
 
-    public FechasCitas(LocalDate fecha, List<HorasCitas> horasCitas) {
+    public FechasCitas(String fecha, List<HorasCitas> horasCitas) {
         this.fecha = fecha;
         this.horasCitas = horasCitas;
     }
@@ -28,11 +28,11 @@ public class FechasCitas {
         this.id = id;
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

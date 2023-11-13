@@ -56,6 +56,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //-----------------Dependencias----------------------------------//
+    implementation 'androidx.cardview:cardview:1.0.0'
 
     // Lifecycle components
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"

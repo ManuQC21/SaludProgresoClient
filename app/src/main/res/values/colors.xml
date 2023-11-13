@@ -14,4 +14,8 @@
     <color name="red">#C64949</color>
     <color name="blue">#0048FF</color>
     <color name="bluepersonalizado">#1566e0</color>
+    <color name="color1">#3F51B5</color>
+    <color name="color2">#303F9F</color>
+    <color name="color3">#D50000</color>
+    <color name="color4">#3A3A3A</color>
 </resources>

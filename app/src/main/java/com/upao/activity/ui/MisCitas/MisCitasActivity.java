@@ -1,5 +1,5 @@
 package com.upao.activity.ui.MisCitas;
-/*
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.upao.R;
@@ -18,4 +18,3 @@ public class MisCitasActivity extends AppCompatActivity {
         }
     }
 }
-*/

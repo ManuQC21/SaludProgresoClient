@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/background_card">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplazar Cita"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una nueva fecha y especialidad para la cita:"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"/>
+
+    <!-- Fila de selección de fecha y especialidad -->
+    <LinearLayout
+        android:id="@+id/linearLayoutFechaEspecialidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputFecha"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Fecha"
+            app:startIconDrawable="@drawable/ic_calendar"
+            android:layout_marginEnd="4dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdownFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputEspecialidad"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Especialidad"
+            app:startIconDrawable="@drawable/ic_especialidad"
+            android:layout_marginStart="4dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdownEspecialidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Contenedor para las fechas disponibles -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFechasDisponibles"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <!-- Botón para confirmar la nueva fecha seleccionada -->
+    <Button
+        android:id="@+id/btnConfirmarAplazamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Aplazamiento"
+        android:backgroundTint="@color/color1"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>
