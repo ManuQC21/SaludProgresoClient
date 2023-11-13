@@ -3,8 +3,10 @@ package com.upao.entity.service;
 public class Medico {
 
     private int id;
-    private String NombreMedico;
-    private String Especialidad;
+    private String nombreMedico;
+    private String especialidad;
+
+    private DocumentoAlmacenado foto;
 
     public int getId() {
         return id;
@@ -14,19 +16,31 @@ public class Medico {
         this.id = ID_Medico;
     }
 
+
     public String getNombreMedico() {
-        return NombreMedico;
+        return nombreMedico;
     }
 
     public void setNombreMedico(String nombreMedico) {
-        NombreMedico = nombreMedico;
+        this.nombreMedico = nombreMedico;
     }
 
     public String getEspecialidad() {
-        return Especialidad;
+        return especialidad;
     }
 
     public void setEspecialidad(String especialidad) {
-        Especialidad = especialidad;
+        this.especialidad = especialidad;
     }
+
+    public DocumentoAlmacenado getFoto() {
+        return foto;
+    }
+
+    public void setFoto(DocumentoAlmacenado foto) {
+        this.foto = foto;
+    }
+
+
+
 }

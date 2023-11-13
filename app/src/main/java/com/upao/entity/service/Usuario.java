@@ -3,14 +3,13 @@ package com.upao.entity.service;
 public class Usuario {
 
     private int id;
-
     private String email;
-
     private String clave;
-
     private boolean vigencia;
-
     private Paciente paciente;
+    private Medico medico;
+
+    private RolUsuario rol;
 
     public int getId() {
         return id;
@@ -52,5 +51,19 @@ public class Usuario {
         this.paciente = paciente;
     }
 
+    public Medico getMedico() {
+        return medico;
+    }
 
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
+
+    public RolUsuario getRol() {
+        return rol;
+    }
+
+    public void setRol(RolUsuario rol) {
+        this.rol = rol;
+    }
 }

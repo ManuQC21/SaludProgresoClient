@@ -32,6 +32,9 @@
             android:label="@string/title_activity_inicio"
             android:theme="@style/Theme.SaludProgreso.NoActionBar" />
         <activity
+            android:name=".activity.ui.MisCitas.DetalleMisCitasActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>

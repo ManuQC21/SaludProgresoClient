@@ -3,7 +3,6 @@ package com.upao.api;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
 
@@ -18,12 +17,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ConfigApi {
 
-    public static final String baseUrlE = "http://10.0.2.2:9090";
+    public static final String baseUrlE = "http://10.0.2.2:8080";
     private static Retrofit retrofit;
     private static String token="";
 
     private static UsuarioApi usuarioApi;
     private static PacienteApi pacienteApi;
+    private static CitasApi citasApi;
+
     private static DocumentoAlmacenadoApi documentoAlmacenadoApi;
 
 
@@ -37,10 +38,11 @@ public class ConfigApi {
                 .registerTypeAdapter(Time.class, new TimeSerializer())
                 .create();
         retrofit = new Retrofit.Builder()
-                .baseUrl(baseUrlE)//Si quieren ejecutar la app desde su móvil, cambiar aquí con la ip de su ordenador
+                .baseUrl(baseUrlE)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(getClient())
                 .build();
+
     }
 
     public static OkHttpClient getClient() {
@@ -80,7 +82,10 @@ public class ConfigApi {
         }
         return documentoAlmacenadoApi;
     }
-
-
-
+    public static CitasApi getCitasApi() {
+        if (citasApi == null) {
+            citasApi = retrofit.create(CitasApi.class);
+        }
+        return citasApi;
+    }
 }

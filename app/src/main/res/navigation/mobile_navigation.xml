@@ -8,18 +8,24 @@
     <fragment
         android:id="@+id/nav_inicio"
         android:name="com.upao.activity.ui.inicio.InicioFragment"
-        android:label="@string/menu_home"
+        android:label="@string/menu_inicio"
         tools:layout="@layout/fragment_inicio" />
 
     <fragment
         android:id="@+id/nav_citas"
         android:name="com.upao.activity.ui.citas.CitasFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_citas"
         tools:layout="@layout/fragment_citas" />
 
     <fragment
         android:id="@+id/nav_perfil"
         android:name="com.upao.activity.ui.perfil.PerfilFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_perfil"
         tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_listar_citas"
+        android:name="com.upao.activity.ui.MisCitas.MisCitasFragment"
+        android:label="@string/menu_listar_citas"
+        tools:layout="@layout/activity_mis_citas" />
 </navigation>

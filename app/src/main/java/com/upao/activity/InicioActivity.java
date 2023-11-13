@@ -12,10 +12,8 @@ import android.view.Menu;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -23,7 +21,6 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.squareup.picasso.OkHttp3Downloader;
@@ -34,8 +31,6 @@ import com.upao.databinding.ActivityInicioBinding;
 import com.upao.entity.service.Usuario;
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.sql.Date;
 import java.sql.Time;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -64,7 +59,7 @@ public class InicioActivity extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_inicio, R.id.nav_citas, R.id.nav_perfil)
+                R.id.nav_inicio, R.id.nav_citas, R.id.nav_perfil,R.id.nav_listar_citas)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_inicio);

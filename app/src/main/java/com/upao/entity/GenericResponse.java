@@ -57,4 +57,6 @@ public class GenericResponse<T> {
     public void setBody(T body) {
         this.body = body;
     }
+
+
 }
