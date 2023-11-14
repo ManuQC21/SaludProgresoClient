@@ -179,4 +179,28 @@ public class CitasRepository {
         return data;
     }
 
+    // Método para obtener citas por fecha y especialidad
+    public LiveData<GenericResponse<List<Citas>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
+        final MutableLiveData<GenericResponse<List<Citas>>> data = new MutableLiveData<>();
+
+        api.obtenerCitasPorFechaYEspecialidad(fecha, especialidad).enqueue(new Callback<GenericResponse<List<Citas>>>() {
+            @Override
+            public void onResponse(Call<GenericResponse<List<Citas>>> call, Response<GenericResponse<List<Citas>>> response) {
+                if (response.isSuccessful()) {
+                    data.setValue(response.body());
+                } else {
+                    data.setValue(new GenericResponse<>(null, -1, "Error al obtener citas", null));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<GenericResponse<List<Citas>>> call, Throwable t) {
+                data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
+            }
+        });
+
+        return data;
+    }
+
+
 }

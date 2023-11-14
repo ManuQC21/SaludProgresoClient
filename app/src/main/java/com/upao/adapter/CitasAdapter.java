@@ -1,14 +1,19 @@
 package com.upao.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.upao.R;
+import com.upao.activity.ui.MisCitas.AplazarCitasActivity;
 import com.upao.api.ConfigApi;
 import com.upao.entity.service.Citas;
 import java.time.format.DateTimeFormatter;
@@ -53,6 +58,8 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
         private ImageView doctorImageView;
         private TextView doctorNameTextView, doctorSpecialtyTextView, appointmentDateTextView, appointmentTimeTextView;
 
+        private Button btnAplazar, btnEliminar;
+
         public CitasViewHolder(@NonNull View itemView) {
             super(itemView);
             doctorImageView = itemView.findViewById(R.id.doctorImageView);
@@ -60,6 +67,8 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
             doctorSpecialtyTextView = itemView.findViewById(R.id.doctorSpecialtyTextView);
             appointmentDateTextView = itemView.findViewById(R.id.appointmentDateTextView);
             appointmentTimeTextView = itemView.findViewById(R.id.appointmentTimeTextView);
+            btnAplazar = itemView.findViewById(R.id.btnAplazar);
+            btnEliminar = itemView.findViewById(R.id.btnEliminar);
         }
 
         void bind(Citas cita) {
@@ -74,9 +83,19 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
             Picasso.get().load(imageUrl).error(R.drawable.image_not_found).into(doctorImageView);
 
             // Si necesitas manejar clics en elementos de la lista, puedes hacerlo aquí.
-            // itemView.setOnClickListener(v -> {
-            //     // Maneja el evento de clic aquí
-            // });
+            btnAplazar.setOnClickListener(v -> {
+                // Aquí inicias la actividad AplazarCitasActivity
+                Intent intent = new Intent(itemView.getContext(), AplazarCitasActivity.class);
+                intent.putExtra("cita_id", cita.getId());
+                itemView.getContext().startActivity(intent);
+            });
+
+            btnEliminar.setOnClickListener(v -> {
+                // Aquí puedes manejar la eliminación de la cita
+                Toast.makeText(itemView.getContext(), "Se hizo prueba, se eliminó", Toast.LENGTH_SHORT).show();
+                // Además, aquí podrías agregar la lógica para eliminar la cita de la base de datos o del servicio que estés utilizando.
+            });
+
         }
     }
 }

@@ -37,4 +37,9 @@ public interface CitasApi {
 
     @GET(base + "/listarTodas")
     Call<GenericResponse<List<Citas>>> listarTodasLasCitas();
+
+    @GET("/citas/obtenerPorFechaYEspecialidad")
+    Call<GenericResponse<List<Citas>>> obtenerCitasPorFechaYEspecialidad(
+            @Query("fecha") String fecha,
+            @Query("especialidad") String especialidad);
 }

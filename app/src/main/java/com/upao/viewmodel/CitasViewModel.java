@@ -49,4 +49,9 @@ public class CitasViewModel extends AndroidViewModel {
     public LiveData<GenericResponse<List<Citas>>> listarTodasLasCitas() {
         return repository.listarTodasLasCitas();
     }
+
+    // Método para obtener citas por fecha y especialidad
+    public LiveData<GenericResponse<List<Citas>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
+        return repository.obtenerCitasPorFechaYEspecialidad(fecha, especialidad);
+    }
 }

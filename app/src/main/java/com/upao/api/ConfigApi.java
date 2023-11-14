@@ -25,6 +25,8 @@ public class ConfigApi {
     private static PacienteApi pacienteApi;
     private static CitasApi citasApi;
 
+    private static MedicoApi medicoApi;
+
     private static DocumentoAlmacenadoApi documentoAlmacenadoApi;
 
 
@@ -88,4 +90,11 @@ public class ConfigApi {
         }
         return citasApi;
     }
+    public static MedicoApi getMedicoApi() {
+        if (medicoApi == null) {
+            medicoApi = retrofit.create(MedicoApi.class);
+        }
+        return medicoApi;
+    }
+
 }
