@@ -1,5 +1,6 @@
 package com.upao.activity.ui.citas;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -146,10 +149,24 @@ public class CitasFragment extends Fragment {
 
         // Enviar la cita para guardarla
         citasViewModel.guardarCita(nuevaCita).observe(getViewLifecycleOwner(), response -> {
-                Toast.makeText(getContext(), "Cita guardada con éxito.", Toast.LENGTH_SHORT).show();
+            mostrarDialogoConfirmacion();
         });
 
     }
-
+    private void mostrarDialogoConfirmacion() {
+        new AlertDialog.Builder(getContext())
+                .setTitle("Cita Guardada")
+                .setMessage("La cita ha sido guardada correctamente.")
+                .setPositiveButton("OK", (dialog, which) -> {
+                    dialog.dismiss();
+                    cerrarFragmento();
+                })
+                .show();
+    }
+    private void cerrarFragmento() {
+        if (getActivity() != null) {
+            getActivity().getSupportFragmentManager().popBackStack();
+        }
+    }
 
 }
