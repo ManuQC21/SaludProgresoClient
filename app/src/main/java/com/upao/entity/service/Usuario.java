@@ -11,6 +11,10 @@ public class Usuario {
 
     private RolUsuario rol;
 
+    public Usuario() {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

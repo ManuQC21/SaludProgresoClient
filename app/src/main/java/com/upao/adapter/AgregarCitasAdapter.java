@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.upao.R;
 import com.upao.api.ConfigApi;
+import com.upao.entity.service.DatosCitaSeleccionada;
 import com.upao.entity.service.DisponibilidadMedico;
 
 import java.util.List;
@@ -135,11 +136,13 @@ public class AgregarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         return seleccionActual;
     }
 
-    public  datos(int position){
+    public DatosCitaSeleccionada obtenerDatosCitaSeleccionada(int position) {
         DisponibilidadMedico disponibilidadMedico = disponibilidadList.get(position);
-        int idmedico = disponibilidadMedico.getMedico().getId();
-        Long idfecha = disponibilidadMedico.getFechaCita().getId();
-        Long idhora = disponibilidadMedico.getHoraCita().getId();
-        return ??;
+        int idMedico = disponibilidadMedico.getMedico().getId();
+        long idFecha = disponibilidadMedico.getFechaCita().getId();
+        long idHora = disponibilidadMedico.getHoraCita().getId();
+
+        return new DatosCitaSeleccionada(idMedico, idFecha, idHora);
     }
+
 }

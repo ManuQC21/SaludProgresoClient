@@ -1,7 +1,5 @@
 package com.upao.entity.service;
 
-
-import java.time.LocalDate;
 import java.util.List;
 
 public class FechasCitas {
@@ -21,6 +19,7 @@ public class FechasCitas {
     }
 
     public FechasCitas(Long id) {
+        this.id = id;
     }
 
     public Long getId() {

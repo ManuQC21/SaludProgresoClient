@@ -9,8 +9,8 @@ public class Medico {
     private DocumentoAlmacenado foto;
 
     public Medico(int id) {
+        this.id = id;
     }
-
     public int getId() {
         return id;
     }

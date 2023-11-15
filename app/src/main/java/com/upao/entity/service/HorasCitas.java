@@ -17,6 +17,7 @@ public class HorasCitas {
     }
 
     public HorasCitas(Long id) {
+        this.id = id;
     }
 
 // Getters y setters

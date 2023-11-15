@@ -26,6 +26,7 @@ import com.google.gson.GsonBuilder;
 import com.upao.R;
 import com.upao.adapter.AgregarCitasAdapter;
 import com.upao.entity.service.Citas;
+import com.upao.entity.service.DatosCitaSeleccionada;
 import com.upao.entity.service.DisponibilidadMedico;
 import com.upao.entity.service.FechasCitas;
 import com.upao.entity.service.HorasCitas;
@@ -123,47 +124,32 @@ public class CitasFragment extends Fragment {
     private void guardarCita() {
         DisponibilidadMedico seleccion = agregarCitasAdapter.getSeleccionActual();
         if (seleccion == null || seleccion.getMedico() == null || seleccion.getHoraCita() == null || seleccion.getFechaCita() == null) {
-            Toast.makeText(getContext(), "Por favor, seleccione una hora y fecha para la cita.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Por favor, seleccione una hora para la cita.", Toast.LENGTH_SHORT).show();
             return;
         }
+
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
         String usuarioJson = sp.getString("UsuarioJson", null);
+        if (usuarioJson == null) {
+            Toast.makeText(getContext(), "Información del usuario no disponible.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         Gson gson = new GsonBuilder().create();
         Usuario u = gson.fromJson(usuarioJson, Usuario.class);
-        // Obtener el ID del paciente de SharedPreferences
-        int pacienteId = u.getPaciente().getId();
-        Log.d("Id DEL USUARIO", String.valueOf(pacienteId));
+
         Citas nuevaCita = new Citas();
-        nuevaCita.setPaciente(new Paciente(pacienteId));
-
-        // Crear el objeto Citas
-        String fechaseleccionada = dropdownFecha.getText().toString();
-        Log.d("fecha seleccionada :",fechaseleccionada);
-
-
-        String horaseleccionada = agregarCitasAdapter.getHoraSeleccionada().toString();
-        Log.d("hora seleccionada :",horaseleccionada);
-
-        DisponibilidadMedico disponibilidadMedico = agregarCitasAdapter.datos(1);
-        disponibilidadMedico.g
-
-        nuevaCita.setFechaCita(new FechasCitas(seleccion.getFechaCita().getId()));
-        nuevaCita.setHoraCita(new HorasCitas(seleccion.getHoraCita().getId()));
-        nuevaCita.setMedico(new Medico(seleccion.getMedico().getId()));
-
+        nuevaCita.setPaciente(new Paciente(u.getPaciente().getId())); // Asignar paciente basado en el usuario actual
+        nuevaCita.setMedico(new Medico(seleccion.getMedico().getId())); // Asignar médico basado en la selección
+        nuevaCita.setFechaCita(new FechasCitas(seleccion.getFechaCita().getId())); // Asignar fecha basada en la selección
+        nuevaCita.setHoraCita(new HorasCitas(seleccion.getHoraCita().getId())); // Asignar hora basada en la selección
 
         // Enviar la cita para guardarla
         citasViewModel.guardarCita(nuevaCita).observe(getViewLifecycleOwner(), response -> {
-            if (response != null && response.getRpta() == 1) {
                 Toast.makeText(getContext(), "Cita guardada con éxito.", Toast.LENGTH_SHORT).show();
-            } else {
-                String mensajeError = response != null ? response.getMessage() : "Error al guardar la cita";
-                Toast.makeText(getContext(), mensajeError, Toast.LENGTH_SHORT).show();
-            }
         });
+
     }
-
-
 
 
 }
