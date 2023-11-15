@@ -19,6 +19,10 @@
     <string name="menu_listar_citas">Mis Citas</string>
     <string name="menu_perfil">Mi perfil</string>
     <string name="mis_citas">Mis Citas</string>
+    <string name="welcome_message">Bienvenido a Salud Progreso</string>
+    <string name="inspirational_message">Cuidamos tu salud en cada paso del camino</string>
+    <string name="logo">Logo de Salud Progreso</string>
+    <string name="background_image">Imagen de fondo</string>
     <string-array name="tipoDoc">
         <item>DNI</item>
         <item>RUC</item>

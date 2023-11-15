@@ -6,10 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
 
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#FF5733" /> <!-- Color de fondo naranja -->
+    <!-- Logo o Imagen Representativa -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/salud"
+        android:contentDescription="@string/logo"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Texto de Bienvenida con Estilo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="10" />
+
+    <!-- Descripción o Mensaje Inspirador -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inspirational_message"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:maxLines="3"
+        android:ellipsize="end" />
+
 </LinearLayout>

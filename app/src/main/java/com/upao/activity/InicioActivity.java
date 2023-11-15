@@ -1,7 +1,9 @@
 package com.upao.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Gravity;
@@ -31,6 +33,9 @@ import com.upao.databinding.ActivityInicioBinding;
 import com.upao.entity.service.Usuario;
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.sql.Date;
 import java.sql.Time;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -65,8 +70,26 @@ public class InicioActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_inicio);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        binding.appBarInicio.whatsappIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirWhatsApp();
+            }
+        });
     }
+    private void abrirWhatsApp() {
+        String mensaje = "¡Hola! Necesito ayuda. ¿Podrías brindarme más información?";
+        try {
+            mensaje = URLEncoder.encode(mensaje, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
 
+        String url = "https://api.whatsapp.com/send?phone=+51943887016&text=" + mensaje;
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.inicio, menu);
