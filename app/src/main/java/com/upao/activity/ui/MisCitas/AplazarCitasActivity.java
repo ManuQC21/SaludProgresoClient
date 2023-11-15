@@ -2,16 +2,22 @@ package com.upao.activity.ui.MisCitas;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.upao.R;
 import com.upao.adapter.AplazarCitasAdapter;
+import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Citas;
+import com.upao.entity.service.DisponibilidadMedico;
 import com.upao.viewmodel.CitasViewModel;
 import com.upao.viewmodel.MedicoViewModel;
 
@@ -25,6 +31,7 @@ public class AplazarCitasActivity extends AppCompatActivity {
     private MedicoViewModel medicoViewModel;
     private RecyclerView recyclerViewCitas;
     private AplazarCitasAdapter aplazarCitasAdapter;
+    private Button btnConfirmarAplazamiento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +44,14 @@ public class AplazarCitasActivity extends AppCompatActivity {
         cargarEspecialidades();
         cargarFechasDisponibles();
         setupDropdownListeners();
+
+        btnConfirmarAplazamiento = findViewById(R.id.btnConfirmarAplazamiento);
+        btnConfirmarAplazamiento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                confirmarAplazamiento();
+            }
+        });
     }
 
     private void initViews() {
@@ -51,7 +66,7 @@ public class AplazarCitasActivity extends AppCompatActivity {
     }
 
     private void setUpRecyclerView() {
-        aplazarCitasAdapter = new AplazarCitasAdapter(new ArrayList<>());
+        aplazarCitasAdapter = new AplazarCitasAdapter(this,new ArrayList<>());
         recyclerViewCitas.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewCitas.setAdapter(aplazarCitasAdapter);
     }
@@ -99,13 +114,40 @@ public class AplazarCitasActivity extends AppCompatActivity {
         if (!fechaSeleccionada.isEmpty() && !especialidadSeleccionada.isEmpty()) {
             citasViewModel.obtenerCitasPorFechaYEspecialidad(fechaSeleccionada, especialidadSeleccionada)
                     .observe(this, genericResponse -> {
+                        System.err.println("Error en agregarFechaConHoras: " + fechaSeleccionada + especialidadSeleccionada);
                         if (genericResponse != null && genericResponse.getRpta() == 1) {
-                            List<Citas> citas = genericResponse.getBody();
-                            aplazarCitasAdapter.setCitasList(citas);
+                            // Suponiendo que tu adaptador pueda manejar una lista de DisponibilidadMedico
+                            List<DisponibilidadMedico> disponibilidadMedicos = genericResponse.getBody();
+                            aplazarCitasAdapter.setDisponibilidadList(disponibilidadMedicos);
                         } else {
-                            Toast.makeText(AplazarCitasActivity.this, "No hay citas disponibles en esta fecha y especialidad.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AplazarCitasActivity.this, "No hay doctores disponibles en esta fecha y especialidad.", Toast.LENGTH_SHORT).show();
                         }
                     });
         }
+    }
+
+    private void confirmarAplazamiento() {
+        String nuevaFecha = dropdownFecha.getText().toString();
+        String nuevaHora = aplazarCitasAdapter.getHoraSeleccionada();
+
+        if (nuevaFecha.isEmpty() || nuevaHora == null) {
+            Toast.makeText(this, "Por favor, seleccione una fecha y hora.", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        // Aquí debes obtener el ID de la cita que quieres aplazar.
+        // Este es un ejemplo, debes reemplazarlo con el ID real de tu cita.
+        Long citaId = 1L;
+
+        citasViewModel.aplazarCita(citaId, nuevaFecha, nuevaHora).observe(this, new Observer<GenericResponse<Citas>>() {
+            @Override
+            public void onChanged(GenericResponse<Citas> respuesta) {
+                if (respuesta.getRpta() == 1) {
+                    Toast.makeText(AplazarCitasActivity.this, "Cita aplazada con éxito.", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(AplazarCitasActivity.this, "Error al aplazar la cita.", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
 }

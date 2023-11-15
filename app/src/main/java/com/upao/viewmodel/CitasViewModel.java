@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData;
 
 import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Citas;
+import com.upao.entity.service.DisponibilidadMedico;
 import com.upao.entity.service.HorasCitas;
 import com.upao.repository.CitasRepository;
 
@@ -51,7 +52,7 @@ public class CitasViewModel extends AndroidViewModel {
     }
 
     // Método para obtener citas por fecha y especialidad
-    public LiveData<GenericResponse<List<Citas>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
-        return repository.obtenerCitasPorFechaYEspecialidad(fecha, especialidad);
+    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
+        return repository.obtenerDoctoresDisponiblesPorFechaYEspecialidad(fecha, especialidad);
     }
 }

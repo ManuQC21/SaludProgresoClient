@@ -11,6 +11,9 @@ import retrofit2.http.PUT;
 import retrofit2.http.DELETE;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
+
+import com.upao.entity.service.DisponibilidadMedico;
+import com.upao.entity.service.FechasCitas;
 import com.upao.entity.service.HorasCitas;
 public interface CitasApi {
     String base = "/citas";
@@ -38,8 +41,8 @@ public interface CitasApi {
     @GET(base + "/listarTodas")
     Call<GenericResponse<List<Citas>>> listarTodasLasCitas();
 
-    @GET("/citas/obtenerPorFechaYEspecialidad")
-    Call<GenericResponse<List<Citas>>> obtenerCitasPorFechaYEspecialidad(
+    @GET(base + "/obtenerPorFechaYEspecialidad")
+    Call<GenericResponse<List<DisponibilidadMedico>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(
             @Query("fecha") String fecha,
             @Query("especialidad") String especialidad);
 }

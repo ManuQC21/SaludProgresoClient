@@ -4,6 +4,7 @@ import com.upao.api.CitasApi;
 import com.upao.api.ConfigApi;
 import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Citas;
+import com.upao.entity.service.DisponibilidadMedico;
 import com.upao.entity.service.HorasCitas;
 
 import java.util.List;
@@ -180,27 +181,26 @@ public class CitasRepository {
     }
 
     // Método para obtener citas por fecha y especialidad
-    public LiveData<GenericResponse<List<Citas>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
-        final MutableLiveData<GenericResponse<List<Citas>>> data = new MutableLiveData<>();
+    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(String fecha, String especialidad) {
+        final MutableLiveData<GenericResponse<List<DisponibilidadMedico>>> data = new MutableLiveData<>();
 
-        api.obtenerCitasPorFechaYEspecialidad(fecha, especialidad).enqueue(new Callback<GenericResponse<List<Citas>>>() {
+        api.obtenerDoctoresDisponiblesPorFechaYEspecialidad(fecha, especialidad).enqueue(new Callback<GenericResponse<List<DisponibilidadMedico>>>() {
             @Override
-            public void onResponse(Call<GenericResponse<List<Citas>>> call, Response<GenericResponse<List<Citas>>> response) {
+            public void onResponse(Call<GenericResponse<List<DisponibilidadMedico>>> call, Response<GenericResponse<List<DisponibilidadMedico>>> response) {
                 if (response.isSuccessful()) {
                     data.setValue(response.body());
                 } else {
-                    data.setValue(new GenericResponse<>(null, -1, "Error al obtener citas", null));
+                    data.setValue(new GenericResponse<>(null, -1, "Error al obtener doctores disponibles", null));
                 }
             }
 
             @Override
-            public void onFailure(Call<GenericResponse<List<Citas>>> call, Throwable t) {
+            public void onFailure(Call<GenericResponse<List<DisponibilidadMedico>>> call, Throwable t) {
                 data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
             }
         });
 
         return data;
     }
-
 
 }

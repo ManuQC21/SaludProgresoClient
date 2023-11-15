@@ -1,5 +1,10 @@
 package com.upao.adapter;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,22 +17,28 @@ import com.squareup.picasso.Picasso;
 import com.upao.R;
 import com.upao.api.ConfigApi;
 import com.upao.entity.service.Citas;
+import com.upao.entity.service.DisponibilidadMedico;
 
+import java.lang.reflect.Field;
 import java.util.List;
 
 public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int TIPO_NORMAL = 0;
     private static final int TIPO_SIN_CITAS = 1;
-    private List<Citas> citasList;
+    private List<DisponibilidadMedico> disponibilidadList;
 
-    public AplazarCitasAdapter(List<Citas> citasList) {
-        this.citasList = citasList;
+    private Context context;
+    private String horaSeleccionada;
+
+    public AplazarCitasAdapter(Context context, List<DisponibilidadMedico> disponibilidadList) {
+        this.disponibilidadList = disponibilidadList;
+        this.context = context;
     }
 
     @Override
     public int getItemViewType(int position) {
-        if (citasList.isEmpty()) {
+        if (disponibilidadList.isEmpty()) {
             return TIPO_SIN_CITAS;
         }
         return TIPO_NORMAL;
@@ -46,27 +57,38 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (getItemViewType(position) == TIPO_NORMAL) {
-            Citas cita = citasList.get(position);
-            AplazarCitasViewHolder viewHolder = (AplazarCitasViewHolder) holder;
-            viewHolder.textViewNombreDoctor.setText(cita.getMedico().getNombreMedico());
-            viewHolder.textViewEspecialidadDoctor.setText(cita.getMedico().getEspecialidad());
-            viewHolder.buttonHoraCita.setText(cita.getHoraCita().getHora());
+            DisponibilidadMedico disponibilidadMedico = disponibilidadList.get(position);
+            Log.d("DisponibilidadMedico", "ID: " + disponibilidadMedico.getId());
+            Log.d("DisponibilidadMedico", "Medico ID: " + disponibilidadMedico.getMedico().getId());
+            Log.d("DisponibilidadMedico", "Medico Nombre: " + disponibilidadMedico.getMedico().getNombreMedico());
+            Log.d("DisponibilidadMedico", "Medico Especialidad: " + disponibilidadMedico.getMedico().getEspecialidad());
+            Log.d("DisponibilidadMedico", "Fecha Cita: " + disponibilidadMedico.getFechaCita().getFecha());
+            Log.d("DisponibilidadMedico", "Hora Cita: " + disponibilidadMedico.getHoraCita().getHora());
 
-            String imageUrl = ConfigApi.baseUrlE + "/api/documento-almacenado/download/" + cita.getMedico().getFoto().getFileName();
+            AplazarCitasViewHolder viewHolder = (AplazarCitasViewHolder) holder;
+            viewHolder.textViewNombreDoctor.setText(disponibilidadMedico.getMedico().getNombreMedico());
+            viewHolder.textViewEspecialidadDoctor.setText(disponibilidadMedico.getMedico().getEspecialidad());
+            viewHolder.buttonHoraCita.setText(disponibilidadMedico.getHoraCita().getHora());
+
+            String imageUrl = ConfigApi.baseUrlE + "/api/documento-almacenado/download/" + disponibilidadMedico.getMedico().getFoto().getFileName();
             Picasso.get().load(imageUrl).error(R.drawable.image_not_found).into(viewHolder.imageViewDoctor);
+            viewHolder.buttonHoraCita.setOnClickListener(v -> {
+                String horaSeleccionadaTemp = disponibilidadMedico.getHoraCita().getHora();
+                mostrarDialogoConfirmacion(horaSeleccionadaTemp, viewHolder.buttonHoraCita);
+            });
         }
     }
-
     @Override
     public int getItemCount() {
-        return citasList.isEmpty() ? 1 : citasList.size();
+        return disponibilidadList.isEmpty() ? 1 : disponibilidadList.size();
     }
 
-    public void setCitasList(List<Citas> citasList) {
-        this.citasList = citasList;
+    public void setDisponibilidadList(List<DisponibilidadMedico> disponibilidadList) {
+        this.disponibilidadList = disponibilidadList;
         notifyDataSetChanged();
     }
 
@@ -88,5 +110,32 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         public SinCitasViewHolder(@NonNull View itemView) {
             super(itemView);
         }
+    }
+
+    private void mostrarDialogoConfirmacion(String hora, Button buttonHoraCita) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("Confirmar selección de hora");
+        builder.setMessage("Usted seleccionó la hora: " + hora);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                horaSeleccionada = hora;
+                Log.d("Nueva hora es: ",horaSeleccionada);
+                buttonHoraCita.setBackgroundColor(Color.GRAY);
+                dialog.dismiss();
+            }
+        });
+        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                horaSeleccionada = null;
+                buttonHoraCita.setBackgroundColor(Color.WHITE);
+                dialog.dismiss();
+            }
+        });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+    public String getHoraSeleccionada() {
+        return horaSeleccionada;
     }
 }
