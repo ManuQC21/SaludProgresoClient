@@ -52,7 +52,6 @@ public class AplazarCitasActivity extends AppCompatActivity {
         initViews();
         initViewModels();
         setUpRecyclerView();
-        cargarEspecialidades();
         cargarFechasDisponibles();
         setupDropdownListeners();
 
@@ -67,7 +66,6 @@ public class AplazarCitasActivity extends AppCompatActivity {
 
     private void initViews() {
         dropdownFecha = findViewById(R.id.dropdownFecha);
-        dropdownEspecialidad = findViewById(R.id.dropdownEspecialidad);
         recyclerViewCitas = findViewById(R.id.recyclerViewFechasDisponibles);
     }
 
@@ -81,21 +79,6 @@ public class AplazarCitasActivity extends AppCompatActivity {
         recyclerViewCitas.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewCitas.setAdapter(aplazarCitasAdapter);
     }
-
-    private void cargarEspecialidades() {
-        medicoViewModel.getEspecialidades().observe(this, genericResponse -> {
-            if (genericResponse != null && genericResponse.getRpta() == 1) {
-                List<String> especialidades = genericResponse.getBody();
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, especialidades);
-                dropdownEspecialidad.setAdapter(adapter);
-            } else {
-                // Manejo de errores, por ejemplo, mostrar un mensaje si no hay especialidades disponibles o si hay un error
-                String mensajeError = genericResponse != null ? genericResponse.getMessage() : "Error al cargar especialidades";
-                Toast.makeText(this, mensajeError, Toast.LENGTH_LONG).show();
-            }
-        });
-    }
-
 
     private void cargarFechasDisponibles() {
         citasViewModel.buscarFechasDisponibles().observe(this, genericResponse -> {
@@ -115,27 +98,36 @@ public class AplazarCitasActivity extends AppCompatActivity {
 
     private void setupDropdownListeners() {
         dropdownFecha.setOnItemClickListener((parent, view, position, id) -> actualizarCitas());
-        dropdownEspecialidad.setOnItemClickListener((parent, view, position, id) -> actualizarCitas());
     }
 
     private void actualizarCitas() {
         String fechaSeleccionada = dropdownFecha.getText().toString();
-        String especialidadSeleccionada = dropdownEspecialidad.getText().toString();
 
-        if (!fechaSeleccionada.isEmpty() && !especialidadSeleccionada.isEmpty()) {
-            citasViewModel.obtenerCitasPorFechaYEspecialidad(fechaSeleccionada, especialidadSeleccionada)
-                    .observe(this, genericResponse -> {
-                        System.err.println("Error en agregarFechaConHoras: " + fechaSeleccionada + especialidadSeleccionada);
-                        if (genericResponse != null && genericResponse.getRpta() == 1) {
-                            // Suponiendo que tu adaptador pueda manejar una lista de DisponibilidadMedico
-                            List<DisponibilidadMedico> disponibilidadMedicos = genericResponse.getBody();
-                            aplazarCitasAdapter.setDisponibilidadList(disponibilidadMedicos);
-                        } else {
-                            Toast.makeText(AplazarCitasActivity.this, "No hay doctores disponibles en esta fecha y especialidad.", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+        if (!fechaSeleccionada.isEmpty() && citaId != -1) {
+            // Primero obtener la especialidad de la cita
+            citasViewModel.buscarEspecialidadPorId(citaId).observe(this, responseEspecialidad -> {
+                if (responseEspecialidad != null && responseEspecialidad.getRpta() == 1) {
+                    String especialidadObtenida = responseEspecialidad.getBody();
+
+                    // Ahora obtener citas disponibles para la fecha y especialidad obtenida
+                    citasViewModel.obtenerCitasPorFechaYEspecialidad(fechaSeleccionada, especialidadObtenida)
+                            .observe(this, genericResponse -> {
+                                if (genericResponse != null && genericResponse.getRpta() == 1) {
+                                    List<DisponibilidadMedico> disponibilidadMedicos = genericResponse.getBody();
+                                    aplazarCitasAdapter.setDisponibilidadList(disponibilidadMedicos);
+                                } else {
+                                    Toast.makeText(AplazarCitasActivity.this, "Lo sentimos no hay horarios disponibles para esta fecha.", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                } else {
+                    Toast.makeText(AplazarCitasActivity.this, "Error al obtener la especialidad de la cita.", Toast.LENGTH_SHORT).show();
+                }
+            });
+        } else {
+            Toast.makeText(AplazarCitasActivity.this, "Por favor, seleccione una fecha.", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private void mostrarMensaje(String titulo, String mensaje) {
         new AlertDialog.Builder(this)

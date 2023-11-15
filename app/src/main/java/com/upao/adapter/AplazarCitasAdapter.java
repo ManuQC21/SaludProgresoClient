@@ -28,6 +28,10 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     private Context context;
     private String horaSeleccionada;
 
+    private Long idMedicoSeleccionado;
+
+    private String especialidad;
+
     public AplazarCitasAdapter(Context context, List<DisponibilidadMedico> disponibilidadList) {
         this.disponibilidadList = disponibilidadList;
         this.context = context;
@@ -68,6 +72,8 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             Picasso.get().load(imageUrl).error(R.drawable.image_not_found).into(viewHolder.imageViewDoctor);
             viewHolder.buttonHoraCita.setOnClickListener(v -> {
                 String horaSeleccionadaTemp = disponibilidadMedico.getHoraCita().getHora();
+                idMedicoSeleccionado = Long.valueOf(disponibilidadMedico.getMedico().getId()); // Guardar ID del médico
+                especialidad = disponibilidadMedico.getMedico().getEspecialidad();
                 mostrarDialogoConfirmacion(horaSeleccionadaTemp, viewHolder.buttonHoraCita);
             });
         }
@@ -127,5 +133,13 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
     public String getHoraSeleccionada() {
         return horaSeleccionada;
+    }
+
+    public Long idDelMedico(){
+        return idMedicoSeleccionado;
+    }
+
+    public String getEspecialidad(){
+        return especialidad;
     }
 }

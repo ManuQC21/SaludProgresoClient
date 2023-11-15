@@ -48,4 +48,8 @@ public interface CitasApi {
     @GET(base + "/citasdisponibles")
     Call<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(
             @Query("fecha") String fecha);
+
+    @GET("citas/{citaId}/especialidad")
+    Call<GenericResponse<String>> buscarEspecialidadPorId(@Path("citaId") Long citaId);
+
 }

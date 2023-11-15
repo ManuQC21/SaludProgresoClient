@@ -224,4 +224,26 @@ public class CitasRepository {
 
         return data;
     }
+    //Metodo para obtener especialidad en base al id de la cita
+    public LiveData<GenericResponse<String>> buscarEspecialidadPorId(Long citaId) {
+        MutableLiveData<GenericResponse<String>> data = new MutableLiveData<>();
+        api.buscarEspecialidadPorId(citaId).enqueue(new Callback<GenericResponse<String>>() {
+            @Override
+            public void onResponse(Call<GenericResponse<String>> call, Response<GenericResponse<String>> response) {
+                if (response.isSuccessful()) {
+                    data.setValue(response.body());
+                } else {
+                    data.setValue(new GenericResponse<>(null, -1, "Error al buscar especialidad", null));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<GenericResponse<String>> call, Throwable t) {
+                data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
+            }
+        });
+        return data;
+    }
+
+
 }

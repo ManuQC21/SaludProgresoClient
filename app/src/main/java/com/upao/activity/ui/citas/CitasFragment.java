@@ -140,7 +140,7 @@ public class CitasFragment extends Fragment {
 
         Gson gson = new GsonBuilder().create();
         Usuario u = gson.fromJson(usuarioJson, Usuario.class);
-
+        Log.d("Medico id:", String.valueOf(seleccion.getMedico().getId()));
         Citas nuevaCita = new Citas();
         nuevaCita.setPaciente(new Paciente(u.getPaciente().getId())); // Asignar paciente basado en el usuario actual
         nuevaCita.setMedico(new Medico(seleccion.getMedico().getId())); // Asignar médico basado en la selección
