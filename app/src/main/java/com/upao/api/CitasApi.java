@@ -45,4 +45,7 @@ public interface CitasApi {
     Call<GenericResponse<List<DisponibilidadMedico>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(
             @Query("fecha") String fecha,
             @Query("especialidad") String especialidad);
+    @GET(base + "/citasdisponibles")
+    Call<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(
+            @Query("fecha") String fecha);
 }

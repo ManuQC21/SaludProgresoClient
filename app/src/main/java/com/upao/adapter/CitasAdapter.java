@@ -86,7 +86,7 @@ public class CitasAdapter extends RecyclerView.Adapter<CitasAdapter.CitasViewHol
             btnAplazar.setOnClickListener(v -> {
                 // Aquí inicias la actividad AplazarCitasActivity
                 Intent intent = new Intent(itemView.getContext(), AplazarCitasActivity.class);
-                intent.putExtra("cita_id", cita.getId());
+                intent.putExtra("citaId", cita.getId());
                 itemView.getContext().startActivity(intent);
             });
 

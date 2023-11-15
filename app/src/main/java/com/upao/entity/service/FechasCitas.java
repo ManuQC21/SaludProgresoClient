@@ -20,6 +20,9 @@ public class FechasCitas {
         this.horasCitas = horasCitas;
     }
 
+    public FechasCitas(Long id) {
+    }
+
     public Long getId() {
         return id;
     }

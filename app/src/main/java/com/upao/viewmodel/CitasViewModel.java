@@ -55,4 +55,8 @@ public class CitasViewModel extends AndroidViewModel {
     public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
         return repository.obtenerDoctoresDisponiblesPorFechaYEspecialidad(fecha, especialidad);
     }
+    // Metodo para obtener citas disponibles
+    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(String fecha) {
+        return repository.obtenerCitasDisponibles(fecha);
+    }
 }

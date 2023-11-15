@@ -1,7 +1,11 @@
 package com.upao.activity.ui.MisCitas;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -33,11 +37,18 @@ public class AplazarCitasActivity extends AppCompatActivity {
     private AplazarCitasAdapter aplazarCitasAdapter;
     private Button btnConfirmarAplazamiento;
 
+    private Long citaId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aplazar_cita);
 
+
+        // Obtener el citaId del Intent
+        Intent intent = getIntent();
+        citaId = intent.getLongExtra("citaId", -1); // El valor por defecto es -1 para indicar que no se pasó un ID válido
+        Log.e("EL id de la cita es: ",citaId.toString());
         initViews();
         initViewModels();
         setUpRecyclerView();
@@ -126,27 +137,38 @@ public class AplazarCitasActivity extends AppCompatActivity {
         }
     }
 
+    private void mostrarMensaje(String titulo, String mensaje) {
+        new AlertDialog.Builder(this)
+                .setTitle(titulo)
+                .setMessage(mensaje)
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                .show();
+    }
+    private void mostrarMensajeYCerrar(String titulo, String mensaje) {
+        new AlertDialog.Builder(this)
+                .setTitle(titulo)
+                .setMessage(mensaje)
+                .setPositiveButton("OK", (dialog, which) -> {
+                    dialog.dismiss();
+                    finish(); // Cierra la actividad actual
+                })
+                .show();
+    }
     private void confirmarAplazamiento() {
         String nuevaFecha = dropdownFecha.getText().toString();
         String nuevaHora = aplazarCitasAdapter.getHoraSeleccionada();
 
         if (nuevaFecha.isEmpty() || nuevaHora == null) {
-            Toast.makeText(this, "Por favor, seleccione una fecha y hora.", Toast.LENGTH_LONG).show();
+            mostrarMensaje("Atención", "Por favor, seleccione una fecha y hora.");
             return;
         }
 
-        // Aquí debes obtener el ID de la cita que quieres aplazar.
-        // Este es un ejemplo, debes reemplazarlo con el ID real de tu cita.
-        Long citaId = 1L;
-
-        citasViewModel.aplazarCita(citaId, nuevaFecha, nuevaHora).observe(this, new Observer<GenericResponse<Citas>>() {
-            @Override
-            public void onChanged(GenericResponse<Citas> respuesta) {
-                if (respuesta.getRpta() == 1) {
-                    Toast.makeText(AplazarCitasActivity.this, "Cita aplazada con éxito.", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(AplazarCitasActivity.this, "Error al aplazar la cita.", Toast.LENGTH_LONG).show();
-                }
+        // Resto del código...
+        citasViewModel.aplazarCita(citaId, nuevaFecha, nuevaHora).observe(this, respuesta -> {
+            if (respuesta.getRpta() == 1) {
+                mostrarMensajeYCerrar("Éxito", "Cita aplazada con éxito.");
+            } else {
+                mostrarMensaje("Error", "Error al aplazar la cita.");
             }
         });
     }

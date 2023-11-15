@@ -8,6 +8,9 @@ public class Medico {
 
     private DocumentoAlmacenado foto;
 
+    public Medico(int id) {
+    }
+
     public int getId() {
         return id;
     }

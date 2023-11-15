@@ -15,7 +15,7 @@
         android:id="@+id/nav_citas"
         android:name="com.upao.activity.ui.citas.CitasFragment"
         android:label="@string/menu_citas"
-        tools:layout="@layout/fragment_citas" />
+        tools:layout="@layout/activity_guardar_cita" />
 
     <fragment
         android:id="@+id/nav_perfil"
@@ -26,6 +26,5 @@
     <fragment
         android:id="@+id/nav_listar_citas"
         android:name="com.upao.activity.ui.MisCitas.MisCitasFragment"
-        android:label="@string/menu_listar_citas"
-        tools:layout="@layout/activity_mis_citas" />
+        android:label="@string/menu_listar_citas"/>
 </navigation>

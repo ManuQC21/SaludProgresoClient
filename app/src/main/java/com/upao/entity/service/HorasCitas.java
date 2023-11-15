@@ -16,6 +16,9 @@ public class HorasCitas {
         this.fechaCita = fechaCita;
     }
 
+    public HorasCitas(Long id) {
+    }
+
 // Getters y setters
 
     public Long getId() {

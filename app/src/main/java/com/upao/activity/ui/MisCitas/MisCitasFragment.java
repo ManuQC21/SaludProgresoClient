@@ -35,19 +35,20 @@ public class MisCitasFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mis_citas, container, false);
         recyclerView = view.findViewById(R.id.recyclerViewMisCitas);
-        textViewCitaInfo = view.findViewById(R.id.txtMisCitasInfo); // Asegúrate de que este ID existe en tu layout.
-
+        textViewCitaInfo = view.findViewById(R.id.txtMisCitasInfo);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         citasAdapter = new CitasAdapter();
         recyclerView.setAdapter(citasAdapter);
-
         citasViewModel = new ViewModelProvider(this).get(CitasViewModel.class);
         loadData();
-
         return view;
     }
-
-    private void loadData() {
+    @Override
+    public void onResume() {
+        super.onResume();
+        loadData(); // Recargar los datos cada vez que se muestra el fragmento
+    }
+    public void loadData() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
         String usuarioJson = sp.getString("UsuarioJson", null);
 

@@ -202,5 +202,26 @@ public class CitasRepository {
 
         return data;
     }
+    // Método para obtener citas por fecha y especialidad
+    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(String fecha) {
+        final MutableLiveData<GenericResponse<List<DisponibilidadMedico>>> data = new MutableLiveData<>();
 
+        api.obtenerCitasDisponibles(fecha).enqueue(new Callback<GenericResponse<List<DisponibilidadMedico>>>() {
+            @Override
+            public void onResponse(Call<GenericResponse<List<DisponibilidadMedico>>> call, Response<GenericResponse<List<DisponibilidadMedico>>> response) {
+                if (response.isSuccessful()) {
+                    data.setValue(response.body());
+                } else {
+                    data.setValue(new GenericResponse<>(null, -1, "Error al obtener doctores disponibles", null));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<GenericResponse<List<DisponibilidadMedico>>> call, Throwable t) {
+                data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
+            }
+        });
+
+        return data;
+    }
 }
