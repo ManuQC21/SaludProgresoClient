@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center_vertical"
-    android:padding="10dp">
+    android:padding="2dp"
+    android:layout_marginBottom="17dp">
     <LinearLayout
         android:layout_width="50dp"
         android:layout_height="50dp">
@@ -20,13 +21,12 @@
     </LinearLayout>
     <TextView
         android:id="@+id/textViewNombreDoctor"
-        android:layout_width="0dp"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Dr. Nombre"
-        android:textSize="13dp"
-        android:textAppearance="?attr/textAppearanceListItemSmall"
-        android:layout_marginEnd="10dp"/>
+        android:textSize="10dp"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
 
     <TextView
         android:id="@+id/textViewEspecialidadDoctor"
@@ -34,15 +34,15 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="Especialidad"
-        android:textSize="13dp"
-        android:textAppearance="?attr/textAppearanceListItemSmall"
-        android:layout_marginEnd="10dp"/>
+        android:textSize="10dp"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
 
     <Button
         android:id="@+id/buttonHoraCita"
-        android:layout_width="110dp"
-        android:layout_height="40dp"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
         android:text="10:00 AM"
-        android:textSize="11dp"
+        android:textSize="10dp"
         android:background="@drawable/selector_hora_cita"/>
+
 </LinearLayout>
