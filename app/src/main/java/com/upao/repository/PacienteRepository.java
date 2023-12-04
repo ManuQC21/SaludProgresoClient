@@ -2,7 +2,6 @@ package com.upao.repository;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
 import com.upao.entity.service.Paciente;
 import com.upao.api.PacienteApi;
 import com.upao.api.ConfigApi;

@@ -2,7 +2,6 @@ package com.upao.api;
 
 import com.upao.entity.service.Usuario;
 import com.upao.entity.GenericResponse;
-
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;

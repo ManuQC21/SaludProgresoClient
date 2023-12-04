@@ -4,11 +4,11 @@ public class Citas {
     private Long id;
     private Paciente paciente;
     private Medico medico;
-    private FechasCitas fechaCita;
-    private HorasCitas horaCita;
+    private Programacion_Cita fechaCita;
+    private Horario_Cita horaCita;
     public Citas() {
     }
-    public Citas(Long id, Paciente paciente, Medico medico, FechasCitas fechaCita, HorasCitas horaCita) {
+    public Citas(Long id, Paciente paciente, Medico medico, Programacion_Cita fechaCita, Horario_Cita horaCita) {
         this.id = id;
         this.paciente = paciente;
         this.medico = medico;
@@ -40,19 +40,19 @@ public class Citas {
         this.medico = medico;
     }
 
-    public FechasCitas getFechaCita() {
+    public Programacion_Cita getFechaCita() {
         return fechaCita;
     }
 
-    public void setFechaCita(FechasCitas fechaCita) {
+    public void setFechaCita(Programacion_Cita fechaCita) {
         this.fechaCita = fechaCita;
     }
 
-    public HorasCitas getHoraCita() {
+    public Horario_Cita getHoraCita() {
         return horaCita;
     }
 
-    public void setHoraCita(HorasCitas horaCita) {
+    public void setHoraCita(Horario_Cita horaCita) {
         this.horaCita = horaCita;
     }
 }

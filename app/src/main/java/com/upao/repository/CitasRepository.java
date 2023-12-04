@@ -4,9 +4,8 @@ import com.upao.api.CitasApi;
 import com.upao.api.ConfigApi;
 import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Citas;
-import com.upao.entity.service.DisponibilidadMedico;
-import com.upao.entity.service.HorasCitas;
-
+import com.upao.entity.service.Agenda_Medica;
+import com.upao.entity.service.Horario_Cita;
 import java.util.List;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -118,11 +117,11 @@ public class CitasRepository {
     }
 
     // Método para buscar horas disponibles
-    public LiveData<GenericResponse<List<HorasCitas>>> buscarHorasDisponibles(String fecha) {
-        MutableLiveData<GenericResponse<List<HorasCitas>>> data = new MutableLiveData<>();
-        api.buscarHorasDisponibles(fecha).enqueue(new Callback<GenericResponse<List<HorasCitas>>>() {
+    public LiveData<GenericResponse<List<Horario_Cita>>> buscarHorasDisponibles(String fecha) {
+        MutableLiveData<GenericResponse<List<Horario_Cita>>> data = new MutableLiveData<>();
+        api.buscarHorasDisponibles(fecha).enqueue(new Callback<GenericResponse<List<Horario_Cita>>>() {
             @Override
-            public void onResponse(Call<GenericResponse<List<HorasCitas>>> call, Response<GenericResponse<List<HorasCitas>>> response) {
+            public void onResponse(Call<GenericResponse<List<Horario_Cita>>> call, Response<GenericResponse<List<Horario_Cita>>> response) {
                 if (response.isSuccessful()) {
                     data.setValue(response.body());
                 } else {
@@ -131,7 +130,7 @@ public class CitasRepository {
             }
 
             @Override
-            public void onFailure(Call<GenericResponse<List<HorasCitas>>> call, Throwable t) {
+            public void onFailure(Call<GenericResponse<List<Horario_Cita>>> call, Throwable t) {
                 data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
             }
         });
@@ -181,12 +180,12 @@ public class CitasRepository {
     }
 
     // Método para obtener citas por fecha y especialidad
-    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(String fecha, String especialidad) {
-        final MutableLiveData<GenericResponse<List<DisponibilidadMedico>>> data = new MutableLiveData<>();
+    public LiveData<GenericResponse<List<Agenda_Medica>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(String fecha, String especialidad) {
+        final MutableLiveData<GenericResponse<List<Agenda_Medica>>> data = new MutableLiveData<>();
 
-        api.obtenerDoctoresDisponiblesPorFechaYEspecialidad(fecha, especialidad).enqueue(new Callback<GenericResponse<List<DisponibilidadMedico>>>() {
+        api.obtenerDoctoresDisponiblesPorFechaYEspecialidad(fecha, especialidad).enqueue(new Callback<GenericResponse<List<Agenda_Medica>>>() {
             @Override
-            public void onResponse(Call<GenericResponse<List<DisponibilidadMedico>>> call, Response<GenericResponse<List<DisponibilidadMedico>>> response) {
+            public void onResponse(Call<GenericResponse<List<Agenda_Medica>>> call, Response<GenericResponse<List<Agenda_Medica>>> response) {
                 if (response.isSuccessful()) {
                     data.setValue(response.body());
                 } else {
@@ -195,7 +194,7 @@ public class CitasRepository {
             }
 
             @Override
-            public void onFailure(Call<GenericResponse<List<DisponibilidadMedico>>> call, Throwable t) {
+            public void onFailure(Call<GenericResponse<List<Agenda_Medica>>> call, Throwable t) {
                 data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
             }
         });
@@ -203,12 +202,12 @@ public class CitasRepository {
         return data;
     }
     // Método para obtener citas por fecha y especialidad
-    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(String fecha) {
-        final MutableLiveData<GenericResponse<List<DisponibilidadMedico>>> data = new MutableLiveData<>();
+    public LiveData<GenericResponse<List<Agenda_Medica>>> obtenerCitasDisponibles(String fecha) {
+        final MutableLiveData<GenericResponse<List<Agenda_Medica>>> data = new MutableLiveData<>();
 
-        api.obtenerCitasDisponibles(fecha).enqueue(new Callback<GenericResponse<List<DisponibilidadMedico>>>() {
+        api.obtenerCitasDisponibles(fecha).enqueue(new Callback<GenericResponse<List<Agenda_Medica>>>() {
             @Override
-            public void onResponse(Call<GenericResponse<List<DisponibilidadMedico>>> call, Response<GenericResponse<List<DisponibilidadMedico>>> response) {
+            public void onResponse(Call<GenericResponse<List<Agenda_Medica>>> call, Response<GenericResponse<List<Agenda_Medica>>> response) {
                 if (response.isSuccessful()) {
                     data.setValue(response.body());
                 } else {
@@ -217,7 +216,7 @@ public class CitasRepository {
             }
 
             @Override
-            public void onFailure(Call<GenericResponse<List<DisponibilidadMedico>>> call, Throwable t) {
+            public void onFailure(Call<GenericResponse<List<Agenda_Medica>>> call, Throwable t) {
                 data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
             }
         });

@@ -18,7 +18,7 @@ public class Paciente {
     private String telefono;
     private String alergias;
     private String informacionadicional;
-    private DocumentoAlmacenado foto;
+    private Foto foto;
 
     public Paciente() {
     }
@@ -147,11 +147,11 @@ public class Paciente {
         this.informacionadicional = informacionadicional;
     }
 
-    public DocumentoAlmacenado getFoto() {
+    public Foto getFoto() {
         return foto;
     }
 
-    public void setFoto(DocumentoAlmacenado foto) {
+    public void setFoto(Foto foto) {
         this.foto = foto;
     }
 

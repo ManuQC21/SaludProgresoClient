@@ -1,7 +1,6 @@
 package com.upao.activity.ui.MisCitas;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,20 +10,14 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Toast;
-
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.upao.R;
 import com.upao.adapter.AplazarCitasAdapter;
-import com.upao.entity.GenericResponse;
-import com.upao.entity.service.Citas;
-import com.upao.entity.service.DisponibilidadMedico;
+import com.upao.entity.service.Agenda_Medica;
 import com.upao.viewmodel.CitasViewModel;
 import com.upao.viewmodel.MedicoViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -113,7 +106,7 @@ public class AplazarCitasActivity extends AppCompatActivity {
                     citasViewModel.obtenerCitasPorFechaYEspecialidad(fechaSeleccionada, especialidadObtenida)
                             .observe(this, genericResponse -> {
                                 if (genericResponse != null && genericResponse.getRpta() == 1) {
-                                    List<DisponibilidadMedico> disponibilidadMedicos = genericResponse.getBody();
+                                    List<Agenda_Medica> disponibilidadMedicos = genericResponse.getBody();
                                     aplazarCitasAdapter.setDisponibilidadList(disponibilidadMedicos);
                                 } else {
                                     Toast.makeText(AplazarCitasActivity.this, "Lo sentimos no hay horarios disponibles para esta fecha.", Toast.LENGTH_SHORT).show();

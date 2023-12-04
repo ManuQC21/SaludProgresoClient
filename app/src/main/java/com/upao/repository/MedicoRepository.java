@@ -2,13 +2,10 @@ package com.upao.repository;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
 import com.upao.api.ConfigApi;
 import com.upao.api.MedicoApi;
 import com.upao.entity.GenericResponse;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

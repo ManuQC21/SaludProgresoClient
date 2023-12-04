@@ -5,13 +5,11 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-
 import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Citas;
-import com.upao.entity.service.DisponibilidadMedico;
-import com.upao.entity.service.HorasCitas;
+import com.upao.entity.service.Agenda_Medica;
+import com.upao.entity.service.Horario_Cita;
 import com.upao.repository.CitasRepository;
-
 import java.util.List;
 
 public class CitasViewModel extends AndroidViewModel {
@@ -39,7 +37,7 @@ public class CitasViewModel extends AndroidViewModel {
         return repository.eliminarCita(citaId);
     }
 
-    public LiveData<GenericResponse<List<HorasCitas>>> buscarHorasDisponibles(String fecha) {
+    public LiveData<GenericResponse<List<Horario_Cita>>> buscarHorasDisponibles(String fecha) {
         return repository.buscarHorasDisponibles(fecha);
     }
 
@@ -52,11 +50,11 @@ public class CitasViewModel extends AndroidViewModel {
     }
 
     // Método para obtener citas por fecha y especialidad
-    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
+    public LiveData<GenericResponse<List<Agenda_Medica>>> obtenerCitasPorFechaYEspecialidad(String fecha, String especialidad) {
         return repository.obtenerDoctoresDisponiblesPorFechaYEspecialidad(fecha, especialidad);
     }
     // Metodo para obtener citas disponibles
-    public LiveData<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(String fecha) {
+    public LiveData<GenericResponse<List<Agenda_Medica>>> obtenerCitasDisponibles(String fecha) {
         return repository.obtenerCitasDisponibles(fecha);
     }
     //Metodo para obtener especialidad en base al id de la cita

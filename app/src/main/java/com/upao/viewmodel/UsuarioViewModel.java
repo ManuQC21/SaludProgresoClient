@@ -5,11 +5,9 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-
 import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Usuario;
 import com.upao.repository.UsuarioRepository;
-
 import org.jetbrains.annotations.NotNull;
 
 public class UsuarioViewModel extends AndroidViewModel {

@@ -2,10 +2,8 @@ package com.upao.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
-
 import com.upao.entity.GenericResponse;
 import com.upao.repository.MedicoRepository;
-
 import java.util.List;
 
 public class MedicoViewModel extends ViewModel {

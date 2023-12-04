@@ -16,14 +16,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.upao.R;
 import com.upao.api.ConfigApi;
-import com.upao.entity.service.DisponibilidadMedico;
+import com.upao.entity.service.Agenda_Medica;
 import java.util.List;
 
 public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int TIPO_NORMAL = 0;
     private static final int TIPO_SIN_CITAS = 1;
-    private List<DisponibilidadMedico> disponibilidadList;
+    private List<Agenda_Medica> disponibilidadList;
 
     private Context context;
     private String horaSeleccionada;
@@ -32,7 +32,7 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private String especialidad;
 
-    public AplazarCitasAdapter(Context context, List<DisponibilidadMedico> disponibilidadList) {
+    public AplazarCitasAdapter(Context context, List<Agenda_Medica> disponibilidadList) {
         this.disponibilidadList = disponibilidadList;
         this.context = context;
     }
@@ -62,7 +62,7 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (getItemViewType(position) == TIPO_NORMAL) {
-            DisponibilidadMedico disponibilidadMedico = disponibilidadList.get(position);
+            Agenda_Medica disponibilidadMedico = disponibilidadList.get(position);
             AplazarCitasViewHolder viewHolder = (AplazarCitasViewHolder) holder;
             viewHolder.textViewNombreDoctor.setText(disponibilidadMedico.getMedico().getNombreMedico());
             viewHolder.textViewEspecialidadDoctor.setText(disponibilidadMedico.getMedico().getEspecialidad());
@@ -83,7 +83,7 @@ public class AplazarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         return disponibilidadList.isEmpty() ? 1 : disponibilidadList.size();
     }
 
-    public void setDisponibilidadList(List<DisponibilidadMedico> disponibilidadList) {
+    public void setDisponibilidadList(List<Agenda_Medica> disponibilidadList) {
         this.disponibilidadList = disponibilidadList;
         notifyDataSetChanged();
     }

@@ -2,23 +2,23 @@ package com.upao.entity.service;
 
 import java.util.List;
 
-public class FechasCitas {
+public class Programacion_Cita {
 
     private Long id;
 
     private String fecha;    // Fecha de la cita
 
-    private List<HorasCitas> horasCitas;     // Lista de horas de citas asociadas a esta fecha
+    private List<Horario_Cita> horasCitas;     // Lista de horas de citas asociadas a esta fecha
 
-    public FechasCitas() {
+    public Programacion_Cita() {
     }
 
-    public FechasCitas(String fecha, List<HorasCitas> horasCitas) {
+    public Programacion_Cita(String fecha, List<Horario_Cita> horasCitas) {
         this.fecha = fecha;
         this.horasCitas = horasCitas;
     }
 
-    public FechasCitas(Long id) {
+    public Programacion_Cita(Long id) {
         this.id = id;
     }
 
@@ -38,11 +38,11 @@ public class FechasCitas {
         this.fecha = fecha;
     }
 
-    public List<HorasCitas> getHorasCitas() {
+    public List<Horario_Cita> getHorasCitas() {
         return horasCitas;
     }
 
-    public void setHorasCitas(List<HorasCitas> horasCitas) {
+    public void setHorasCitas(List<Horario_Cita> horasCitas) {
         this.horasCitas = horasCitas;
     }
 }

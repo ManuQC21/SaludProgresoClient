@@ -1,7 +1,6 @@
 package com.upao.activity.ui.citas;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -13,31 +12,23 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.material.checkbox.MaterialCheckBox;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.upao.R;
 import com.upao.adapter.AgregarCitasAdapter;
 import com.upao.entity.service.Citas;
-import com.upao.entity.service.DatosCitaSeleccionada;
-import com.upao.entity.service.DisponibilidadMedico;
-import com.upao.entity.service.FechasCitas;
-import com.upao.entity.service.HorasCitas;
+import com.upao.entity.service.Agenda_Medica;
+import com.upao.entity.service.Programacion_Cita;
+import com.upao.entity.service.Horario_Cita;
 import com.upao.entity.service.Medico;
 import com.upao.entity.service.Paciente;
 import com.upao.entity.service.Usuario;
 import com.upao.viewmodel.CitasViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,8 +39,6 @@ public class CitasFragment extends Fragment {
     private RecyclerView recyclerViewCitas;
     private AgregarCitasAdapter agregarCitasAdapter;
     private Button btnGuardarCita;
-
-    private CitasActivity citasActivity;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -114,7 +103,7 @@ public class CitasFragment extends Fragment {
             citasViewModel.obtenerCitasDisponibles(fechaSeleccionada)
                     .observe(getViewLifecycleOwner(), genericResponse -> {
                         if (genericResponse != null && genericResponse.getRpta() == 1) {
-                            List<DisponibilidadMedico> disponibilidadMedicos = genericResponse.getBody();
+                            List<Agenda_Medica> disponibilidadMedicos = genericResponse.getBody();
                             agregarCitasAdapter.setDisponibilidadList(disponibilidadMedicos);
                         } else {
                             Toast.makeText(requireContext(), "No hay Citas Disponibles para esta fecha.", Toast.LENGTH_SHORT).show();
@@ -125,7 +114,7 @@ public class CitasFragment extends Fragment {
 
     //se agrego:
     private void guardarCita() {
-        DisponibilidadMedico seleccion = agregarCitasAdapter.getSeleccionActual();
+        Agenda_Medica seleccion = agregarCitasAdapter.getSeleccionActual();
         if (seleccion == null || seleccion.getMedico() == null || seleccion.getHoraCita() == null || seleccion.getFechaCita() == null) {
             Toast.makeText(getContext(), "Por favor, seleccione una hora para la cita.", Toast.LENGTH_SHORT).show();
             return;
@@ -144,8 +133,8 @@ public class CitasFragment extends Fragment {
         Citas nuevaCita = new Citas();
         nuevaCita.setPaciente(new Paciente(u.getPaciente().getId())); // Asignar paciente basado en el usuario actual
         nuevaCita.setMedico(new Medico(seleccion.getMedico().getId())); // Asignar médico basado en la selección
-        nuevaCita.setFechaCita(new FechasCitas(seleccion.getFechaCita().getId())); // Asignar fecha basada en la selección
-        nuevaCita.setHoraCita(new HorasCitas(seleccion.getHoraCita().getId())); // Asignar hora basada en la selección
+        nuevaCita.setFechaCita(new Programacion_Cita(seleccion.getFechaCita().getId())); // Asignar fecha basada en la selección
+        nuevaCita.setHoraCita(new Horario_Cita(seleccion.getHoraCita().getId())); // Asignar hora basada en la selección
 
         // Enviar la cita para guardarla
         citasViewModel.guardarCita(nuevaCita).observe(getViewLifecycleOwner(), response -> {

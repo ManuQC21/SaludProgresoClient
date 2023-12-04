@@ -11,10 +11,8 @@ import retrofit2.http.PUT;
 import retrofit2.http.DELETE;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
-
-import com.upao.entity.service.DisponibilidadMedico;
-import com.upao.entity.service.FechasCitas;
-import com.upao.entity.service.HorasCitas;
+import com.upao.entity.service.Agenda_Medica;
+import com.upao.entity.service.Horario_Cita;
 public interface CitasApi {
     String base = "/citas";
 
@@ -33,7 +31,7 @@ public interface CitasApi {
     Call<GenericResponse<String>> eliminarCita(@Path("citaId") Long citaId);
 
     @GET(base + "/horasDisponibles")
-    Call<GenericResponse<List<HorasCitas>>> buscarHorasDisponibles(@Query("fecha") String fecha);
+    Call<GenericResponse<List<Horario_Cita>>> buscarHorasDisponibles(@Query("fecha") String fecha);
 
     @GET(base + "/fechasDisponibles")
     Call<GenericResponse<List<String>>> buscarFechasDisponibles();
@@ -42,11 +40,11 @@ public interface CitasApi {
     Call<GenericResponse<List<Citas>>> listarTodasLasCitas();
 
     @GET(base + "/obtenerPorFechaYEspecialidad")
-    Call<GenericResponse<List<DisponibilidadMedico>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(
+    Call<GenericResponse<List<Agenda_Medica>>> obtenerDoctoresDisponiblesPorFechaYEspecialidad(
             @Query("fecha") String fecha,
             @Query("especialidad") String especialidad);
     @GET(base + "/citasdisponibles")
-    Call<GenericResponse<List<DisponibilidadMedico>>> obtenerCitasDisponibles(
+    Call<GenericResponse<List<Agenda_Medica>>> obtenerCitasDisponibles(
             @Query("fecha") String fecha);
 
     @GET("citas/{citaId}/especialidad")

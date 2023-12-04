@@ -15,23 +15,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
-
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-
 import com.upao.R;
-import com.upao.activity.ui.MisCitas.MisCitasFragment;
 import com.upao.entity.service.Usuario;
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
 import com.upao.viewmodel.UsuarioViewModel;
-
 import java.sql.Time;
 import java.sql.Date;
 

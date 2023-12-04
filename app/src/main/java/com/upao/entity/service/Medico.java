@@ -6,7 +6,7 @@ public class Medico {
     private String nombreMedico;
     private String especialidad;
 
-    private DocumentoAlmacenado foto;
+    private Foto foto;
 
     public Medico(int id) {
         this.id = id;
@@ -36,11 +36,11 @@ public class Medico {
         this.especialidad = especialidad;
     }
 
-    public DocumentoAlmacenado getFoto() {
+    public Foto getFoto() {
         return foto;
     }
 
-    public void setFoto(DocumentoAlmacenado foto) {
+    public void setFoto(Foto foto) {
         this.foto = foto;
     }
 

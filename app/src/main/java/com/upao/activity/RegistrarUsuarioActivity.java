@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,6 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,28 +29,19 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.ViewModelProvider;
-
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.upao.R;
-import com.upao.entity.service.DocumentoAlmacenado;
+import com.upao.entity.service.Foto;
 import com.upao.entity.service.Paciente;
 import com.upao.entity.service.Usuario;
-import com.upao.viewmodel.DocumentoAlmacenadoViewModel;
+import com.upao.viewmodel.FotoViewModel;
 import com.upao.viewmodel.PacienteViewModel;
 import com.upao.viewmodel.UsuarioViewModel;
-
 import org.jetbrains.annotations.NotNull;
-
 import java.io.File;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
-
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.MediaType;
@@ -65,7 +54,7 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
 
     private PacienteViewModel pacienteViewModel;
     private UsuarioViewModel usuarioViewModel;
-    private DocumentoAlmacenadoViewModel documentoAlmacenadoViewModel;
+    private FotoViewModel documentoAlmacenadoViewModel;
     private Button btnSubirImagen, btnGuardarDatos;
     private CircleImageView imageUser;
     private AutoCompleteTextView dropdownTipoDoc, dropdownDepartamento, dropdownProvincia, dropdownDistrito, dropdownGeneros;
@@ -135,7 +124,7 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
         });
         this.pacienteViewModel = vmp.get(PacienteViewModel.class);
         this.usuarioViewModel = vmp.get(UsuarioViewModel.class);
-        this.documentoAlmacenadoViewModel = vmp.get(DocumentoAlmacenadoViewModel.class);
+        this.documentoAlmacenadoViewModel = vmp.get(FotoViewModel.class);
     }
 
     @Override
@@ -457,7 +446,7 @@ public class RegistrarUsuarioActivity extends AppCompatActivity {
                 somedata = RequestBody.create("profilePh" + filename, MediaType.parse("text/plain"));
                 this.documentoAlmacenadoViewModel.save(part, somedata).observe(this, response -> {
                     if (response.getRpta() == 1) {
-                        p.setFoto(new DocumentoAlmacenado());
+                        p.setFoto(new Foto());
                         p.getFoto().setId(response.getBody().getId());
                         this.pacienteViewModel.guardarPaciente(p).observe(this, cResponse -> {
                             if (cResponse.getRpta() == 1) {

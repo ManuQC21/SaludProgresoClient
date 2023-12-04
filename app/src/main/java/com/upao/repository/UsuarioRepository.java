@@ -6,7 +6,6 @@ import com.upao.api.ConfigApi;
 import com.upao.api.UsuarioApi;
 import com.upao.entity.GenericResponse;
 import com.upao.entity.service.Usuario;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

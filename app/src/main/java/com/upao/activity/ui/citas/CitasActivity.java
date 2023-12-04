@@ -8,12 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.upao.R;
 import com.upao.adapter.AgregarCitasAdapter;
-import com.upao.entity.service.DisponibilidadMedico;
+import com.upao.entity.service.Agenda_Medica;
 import com.upao.viewmodel.CitasViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +73,7 @@ public class CitasActivity extends AppCompatActivity {
             citasViewModel.obtenerCitasDisponibles(fechaSeleccionada)
                     .observe(this, genericResponse -> {
                         if (genericResponse != null && genericResponse.getRpta() == 1) {
-                            List<DisponibilidadMedico> disponibilidadMedicos = genericResponse.getBody();
+                            List<Agenda_Medica> disponibilidadMedicos = genericResponse.getBody();
                             agregarCitasAdapter.setDisponibilidadList(disponibilidadMedicos);
                         } else {
                             Toast.makeText(CitasActivity.this, "No hay Citas Disponibles.", Toast.LENGTH_SHORT).show();

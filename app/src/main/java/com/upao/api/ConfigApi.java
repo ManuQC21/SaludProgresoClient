@@ -5,11 +5,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
-
 import java.sql.Date;
 import java.sql.Time;
 import java.util.concurrent.TimeUnit;
-
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -27,7 +25,7 @@ public class ConfigApi {
 
     private static MedicoApi medicoApi;
 
-    private static DocumentoAlmacenadoApi documentoAlmacenadoApi;
+    private static FotoApi documentoAlmacenadoApi;
 
 
     static {
@@ -78,9 +76,9 @@ public class ConfigApi {
         }
         return pacienteApi;
     }
-    public static DocumentoAlmacenadoApi getDocumentoAlmacenadoApi() {
+    public static FotoApi getDocumentoAlmacenadoApi() {
         if (documentoAlmacenadoApi == null) {
-            documentoAlmacenadoApi = retrofit.create(DocumentoAlmacenadoApi.class);
+            documentoAlmacenadoApi = retrofit.create(FotoApi.class);
         }
         return documentoAlmacenadoApi;
     }

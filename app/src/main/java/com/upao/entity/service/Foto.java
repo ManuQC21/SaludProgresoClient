@@ -2,7 +2,7 @@ package com.upao.entity.service;
 
 import okhttp3.MultipartBody;
 
-public class DocumentoAlmacenado {
+public class Foto {
 
     private long id;
     private String nombre;
@@ -12,7 +12,7 @@ public class DocumentoAlmacenado {
     private boolean eliminado;
     private String urlFile;
     private MultipartBody.Part file;
-    public DocumentoAlmacenado() {
+    public Foto() {
         id = 0;
         nombre = "";
         fileName = "";

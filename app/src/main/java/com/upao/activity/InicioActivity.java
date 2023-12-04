@@ -33,7 +33,6 @@ import com.upao.databinding.ActivityInicioBinding;
 import com.upao.entity.service.Usuario;
 import com.upao.utils.DateSerializer;
 import com.upao.utils.TimeSerializer;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.sql.Date;

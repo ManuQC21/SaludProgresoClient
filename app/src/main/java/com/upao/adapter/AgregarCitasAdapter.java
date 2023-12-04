@@ -17,22 +17,21 @@ import com.squareup.picasso.Picasso;
 import com.upao.R;
 import com.upao.api.ConfigApi;
 import com.upao.entity.service.DatosCitaSeleccionada;
-import com.upao.entity.service.DisponibilidadMedico;
-
+import com.upao.entity.service.Agenda_Medica;
 import java.util.List;
 
 public class AgregarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int TIPO_NORMAL = 0;
     private static final int TIPO_SIN_CITAS = 1;
-    private List<DisponibilidadMedico> disponibilidadList;
+    private List<Agenda_Medica> disponibilidadList;
 
     private Context context;
     private String horaSeleccionada;
-    private DisponibilidadMedico seleccionActual;
+    private Agenda_Medica seleccionActual;
 
 
-    public AgregarCitasAdapter(Context context, List<DisponibilidadMedico> disponibilidadList) {
+    public AgregarCitasAdapter(Context context, List<Agenda_Medica> disponibilidadList) {
         this.disponibilidadList = disponibilidadList;
         this.context = context;
     }
@@ -62,7 +61,7 @@ public class AgregarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (getItemViewType(position) == TIPO_NORMAL) {
-            DisponibilidadMedico disponibilidadMedico = disponibilidadList.get(position);
+            Agenda_Medica disponibilidadMedico = disponibilidadList.get(position);
             AgregarCitasAdapter.AgregarCitasViewHolder viewHolder = (AgregarCitasAdapter.AgregarCitasViewHolder) holder;
             viewHolder.textViewNombreDoctor.setText(disponibilidadMedico.getMedico().getNombreMedico());
             viewHolder.textViewEspecialidadDoctor.setText(disponibilidadMedico.getMedico().getEspecialidad());
@@ -80,7 +79,7 @@ public class AgregarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         return disponibilidadList.isEmpty() ? 1 : disponibilidadList.size();
     }
 
-    public void setDisponibilidadList(List<DisponibilidadMedico> disponibilidadList) {
+    public void setDisponibilidadList(List<Agenda_Medica> disponibilidadList) {
         this.disponibilidadList = disponibilidadList;
         notifyDataSetChanged();
     }
@@ -105,7 +104,7 @@ public class AgregarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
-    private void mostrarDialogoConfirmacion(DisponibilidadMedico disponibilidadMedico, Button buttonHoraCita) {
+    private void mostrarDialogoConfirmacion(Agenda_Medica disponibilidadMedico, Button buttonHoraCita) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Confirmar selección de hora");
         builder.setMessage("Usted seleccionó la hora: " + disponibilidadMedico.getHoraCita().getHora());
@@ -132,12 +131,12 @@ public class AgregarCitasAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public String getHoraSeleccionada() {
         return horaSeleccionada;
     }
-    public DisponibilidadMedico getSeleccionActual() {
+    public Agenda_Medica getSeleccionActual() {
         return seleccionActual;
     }
 
     public DatosCitaSeleccionada obtenerDatosCitaSeleccionada(int position) {
-        DisponibilidadMedico disponibilidadMedico = disponibilidadList.get(position);
+        Agenda_Medica disponibilidadMedico = disponibilidadList.get(position);
         int idMedico = disponibilidadMedico.getMedico().getId();
         long idFecha = disponibilidadMedico.getFechaCita().getId();
         long idHora = disponibilidadMedico.getHoraCita().getId();

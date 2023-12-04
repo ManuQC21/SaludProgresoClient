@@ -1,19 +1,19 @@
 package com.upao.entity.service;
 
-public class DisponibilidadMedico {
+public class Agenda_Medica {
 
     private Long id;
 
     private Medico medico;
 
-    private FechasCitas fechaCita;
+    private Programacion_Cita fechaCita;
 
-    private HorasCitas horaCita;
+    private Horario_Cita horaCita;
 
-    public DisponibilidadMedico() {
+    public Agenda_Medica() {
     }
 
-    public DisponibilidadMedico(Long id, Medico medico, FechasCitas fechaCita, HorasCitas horaCita) {
+    public Agenda_Medica(Long id, Medico medico, Programacion_Cita fechaCita, Horario_Cita horaCita) {
         this.id = id;
         this.medico = medico;
         this.fechaCita = fechaCita;
@@ -36,19 +36,19 @@ public class DisponibilidadMedico {
         this.medico = medico;
     }
 
-    public FechasCitas getFechaCita() {
+    public Programacion_Cita getFechaCita() {
         return fechaCita;
     }
 
-    public void setFechaCita(FechasCitas fechaCita) {
+    public void setFechaCita(Programacion_Cita fechaCita) {
         this.fechaCita = fechaCita;
     }
 
-    public HorasCitas getHoraCita() {
+    public Horario_Cita getHoraCita() {
         return horaCita;
     }
 
-    public void setHoraCita(HorasCitas horaCita) {
+    public void setHoraCita(Horario_Cita horaCita) {
         this.horaCita = horaCita;
     }
 }

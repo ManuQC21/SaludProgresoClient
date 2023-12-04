@@ -9,19 +9,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.squareup.picasso.Picasso;
 import com.upao.R;
 import com.upao.activity.ui.MisCitas.AplazarCitasActivity;
 import com.upao.api.ConfigApi;
 import com.upao.entity.service.Citas;
 import com.upao.viewmodel.CitasViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
