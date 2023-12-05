@@ -49,5 +49,10 @@ public interface CitasApi {
 
     @GET("citas/{citaId}/especialidad")
     Call<GenericResponse<String>> buscarEspecialidadPorId(@Path("citaId") Long citaId);
+    @GET(base + "/vigentes")
+    Call<GenericResponse<List<Citas>>> buscarCitasVigentes();
+
+    @GET(base + "/vencidas")
+    Call<GenericResponse<List<Citas>>> buscarCitasVencidas();
 
 }

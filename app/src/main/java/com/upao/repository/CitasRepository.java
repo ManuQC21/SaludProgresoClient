@@ -244,5 +244,35 @@ public class CitasRepository {
         return data;
     }
 
+    public LiveData<GenericResponse<List<Citas>>> buscarCitasVigentes() {
+        MutableLiveData<GenericResponse<List<Citas>>> data = new MutableLiveData<>();
+        api.buscarCitasVigentes().enqueue(new Callback<GenericResponse<List<Citas>>>() {
+            @Override
+            public void onResponse(Call<GenericResponse<List<Citas>>> call, Response<GenericResponse<List<Citas>>> response) {
+                data.setValue(response.isSuccessful() ? response.body() : new GenericResponse<>(null, -1, "Error al buscar citas vigentes", null));
+            }
 
+            @Override
+            public void onFailure(Call<GenericResponse<List<Citas>>> call, Throwable t) {
+                data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
+            }
+        });
+        return data;
+    }
+
+    public LiveData<GenericResponse<List<Citas>>> buscarCitasVencidas() {
+        MutableLiveData<GenericResponse<List<Citas>>> data = new MutableLiveData<>();
+        api.buscarCitasVencidas().enqueue(new Callback<GenericResponse<List<Citas>>>() {
+            @Override
+            public void onResponse(Call<GenericResponse<List<Citas>>> call, Response<GenericResponse<List<Citas>>> response) {
+                data.setValue(response.isSuccessful() ? response.body() : new GenericResponse<>(null, -1, "Error al buscar citas vencidas", null));
+            }
+
+            @Override
+            public void onFailure(Call<GenericResponse<List<Citas>>> call, Throwable t) {
+                data.setValue(new GenericResponse<>(null, -1, "Fallo en la conexión: " + t.getMessage(), null));
+            }
+        });
+        return data;
+    }
 }

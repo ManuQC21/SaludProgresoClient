@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ConfigApi {
 
-    public static final String baseUrlE = "https://saludprogresoservice-production.up.railway.app";
+    public static final String baseUrlE = "http://10.0.2.2:8080";
     private static Retrofit retrofit;
     private static String token="";
 

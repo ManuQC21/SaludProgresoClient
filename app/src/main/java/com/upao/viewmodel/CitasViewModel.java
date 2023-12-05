@@ -61,4 +61,12 @@ public class CitasViewModel extends AndroidViewModel {
     public LiveData<GenericResponse<String>> buscarEspecialidadPorId(Long citaId) {
         return repository.buscarEspecialidadPorId(citaId);
     }
+
+    public LiveData<GenericResponse<List<Citas>>> buscarCitasVigentes() {
+        return repository.buscarCitasVigentes();
+    }
+
+    public LiveData<GenericResponse<List<Citas>>> buscarCitasVencidas() {
+        return repository.buscarCitasVencidas();
+    }
 }
