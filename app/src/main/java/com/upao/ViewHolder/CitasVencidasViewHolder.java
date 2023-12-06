@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LifecycleOwner;
@@ -57,6 +58,12 @@ public class CitasVencidasViewHolder extends RecyclerView.ViewHolder {
         });
 
         btnEliminar.setOnClickListener(v -> mostrarDialogoConfirmacion(cita));
+        doctorImageView.setOnClickListener(v -> {
+            // Mostrar un Toast con el ID del médico
+            Toast.makeText(itemView.getContext(),
+                    "ID del Doctor: " + cita.getMedico().getId(),
+                    Toast.LENGTH_SHORT).show();
+        });
     }
 
     private void mostrarDialogoConfirmacion(Citas cita) {
